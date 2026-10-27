@@ -5,6 +5,14 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow, noarchive">
 <title>Nordisk Orakel Runer</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0d1215">
+<link rel="icon" type="image/png" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Nordisk Orakel">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Archivo:wdth,wght@100..125,500..700&family=Noto+Sans+Runic&display=swap">
 <style>
@@ -456,6 +464,15 @@ details.legendbar .lgd div{display:grid;gap:6px;align-content:start}
 .band > .in{width:100%;box-sizing:border-box}
 .morepanel a{text-transform:none;letter-spacing:0;font-family:var(--body)}
 .pager a{font-family:var(--display)}
+
+/* install as an app */
+.installbtn{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 12px;border:1px solid var(--gilt);border-radius:3px;background:transparent;color:var(--gilt);cursor:pointer;font-family:var(--label);font-size:14px;font-weight:600;white-space:nowrap}
+.installbtn[hidden]{display:none}
+.installbtn:hover{background:rgba(217,183,102,.1)}
+@media (max-width:860px){.installbtn span{display:none}.installbtn{width:44px;padding:0;justify-content:center}}
+.installhint{position:fixed;left:16px;right:16px;bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:40;max-width:520px;margin:0 auto;padding:16px 18px;background:#121a1e;color:#ece6d6;border:1px solid #d9b766;border-radius:4px;box-shadow:0 18px 40px rgba(0,0,0,.5);display:grid;gap:8px}
+.installhint[hidden]{display:none}
+.installhint p{font-size:16px;margin:0}
 </style>
 
 <div class="wrap">
@@ -474,7 +491,7 @@ details.legendbar .lgd div{display:grid;gap:6px;align-content:start}
         </div>
       </details>
     </nav>
-    <div class="tools"><button class="themebtn" id="themeBtn" type="button"></button><select id="lang" aria-label="Language / Språk / Kalba"></select></div>
+    <div class="tools"><button class="installbtn" id="installBtn" type="button" hidden><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></svg><span data-t="installBtn"></span></button><button class="themebtn" id="themeBtn" type="button"></button><select id="lang" aria-label="Language / Språk / Kalba"></select></div>
   </div>
   </div></header>
 
@@ -591,6 +608,7 @@ details.legendbar .lgd div{display:grid;gap:6px;align-content:start}
 
   <div class="band froan" data-view="froan"><div class="in"><section id="v-froan" style="padding-top:clamp(100px,14vw,200px)"><div id="local"></div><p class="photo-credit">Froano salynas iš drono, 2026 m. vasara.</p></section></div></div>
 
+  <div class="installhint" id="installHint" role="dialog" aria-live="polite" hidden><p data-t="installIos"></p><button type="button" class="link-btn" id="installHintClose" data-t="close"></button></div>
   <nav class="pager" id="pager" aria-label="Pager"></nav>
 
   <footer>
@@ -1124,6 +1142,26 @@ try{const s=localStorage.getItem("orakel-lang");if(s&&LANGS.some(l=>l[0]===s))st
 setLang(start).then(()=>{drawTree(); document.fonts&&document.fonts.ready.then(drawTree)});
 getSample().then(async s=>{if(!s){$("aiNote").hidden=false;$("aiBtn").disabled=true;$("recBtn").disabled=true;$("photo").disabled=true;return}
   const lim=await s.limits().catch(()=>null);imagesOK=!!(lim&&lim.images);if(!imagesOK)$("photo").disabled=true});
+
+/* ---------- install as an app (PWA) ---------- */
+(function(){
+  const btn=$("installBtn"), hint=$("installHint");
+  const standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
+  const ios=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+  let deferred=null;
+  /* only where sw.js sits next to the page (GitHub Pages and later Cloudflare), not inside the Claude preview */
+  if("serviceWorker" in navigator && location.protocol==="https:" && !/claude\.ai|claudeusercontent/.test(location.hostname)){
+    navigator.serviceWorker.register("sw.js").catch(()=>{});
+    addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferred=e;btn.hidden=false});
+    addEventListener("appinstalled",()=>{btn.hidden=true;deferred=null});
+    if(ios&&!standalone) btn.hidden=false;
+  }
+  btn.addEventListener("click",async()=>{
+    if(deferred){deferred.prompt();await deferred.userChoice.catch(()=>{});deferred=null;btn.hidden=true}
+    else hint.hidden=false;
+  });
+  $("installHintClose").addEventListener("click",()=>hint.hidden=true);
+})();
 </script>
 
 </html>

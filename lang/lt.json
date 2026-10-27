@@ -1836,7 +1836,10 @@
   "theme_auto": "Kaip įrenginyje",
   "theme_light": "Šviesios",
   "theme_dark": "Tamsios",
-  "legendOpen": "Ką reiškia ženklai?"
+  "legendOpen": "Ką reiškia ženklai?",
+  "installBtn": "Įdiegti programėlę",
+  "installIos": "Kad įdiegtumėte „iPhone“ ar „iPad“: „Safari“ apačioje paspauskite bendrinimo mygtuką (kvadratėlis su rodykle aukštyn) ir pasirinkite pridėti prie pradžios ekrano. Programėlė atsiras tarp kitų programėlių ir veiks be interneto.",
+  "close": "Uždaryti"
  },
  "spreads": {
   "en": {
