@@ -1,0 +1,2043 @@
+{
+ "ui": {
+  "langName": "Lietuvių",
+  "aiLanguage": "Lithuanian",
+  "eyebrow": "Prototipas · Runos",
+  "lede": "Vyresnysis futarkas turi 24 runas. Užduokite klausimą, pasirinkite išdėstymą ir ištraukite runas. Prie kiekvienos runos rodoma, ką istoriškai žinome apie jos pavadinimą, ir šiuolaikinis aiškinimas.",
+  "questionPlaceholder": "Jūsų klausimas, pvz., „Ką turėčiau pasiimti su savimi į žiemą?“",
+  "questionLabel": "Jūsų klausimas",
+  "reversedToggle": "Apverstos runos",
+  "drawBtn": "Traukti runas",
+  "revealAll": "Rodyti visas",
+  "meaningsTitle": "Reikšmės",
+  "revealHint": "Spustelėkite akmenis, kad juos apverstumėte, arba pasirinkite „Rodyti visas“.",
+  "questionPrefix": "Klausimas",
+  "reversedWord": "apversta",
+  "reversedTag": "Apversta",
+  "revealStone": "Apversti akmenį {n}",
+  "faceDownN": "Akmuo {n} guli tuščia puse į viršų",
+  "faceDownNote": "Akmenų, nukritusių tuščia puse į viršų: {n}. Jie neskaitomi.",
+  "ringsLegend": "Vidinis ratas: reikalo esmė · vidurinis: tai, kas daro įtaką · išorinis: fonas",
+  "readingLabel": "Šiuolaikinis aiškinimas",
+  "histLabel": "Istoriškai",
+  "symNote": "Ši runa atrodo vienodai abiem kryptimis, todėl apverstos reikšmės neturi.",
+  "aiNote": "Toliau pateiktos DI funkcijos veikia tik tada, kai puslapis atidarytas per Claude.",
+  "premiumChip": "Premium · prototipas",
+  "aiTitle": "Viso išdėstymo aiškinimas",
+  "aiDesc": "DI skaito runas kartu pagal jūsų klausimą: pagrindinė tema, runa po runos, kaip jos tarpusavyje susijusios ir patarimas.",
+  "aiBtn": "Aiškinti runas",
+  "stop": "Stabdyti",
+  "interpreting": "Aiškinamos runos …",
+  "aiHeads": [
+   "Pagrindinė tema",
+   "Runa po runos",
+   "Kaip runos susijusios tarpusavyje",
+   "Patarimas"
+  ],
+  "photoTitle": "Nufotografuokite savo runų akmenis",
+  "photoDesc": "Įkelkite savo runų akmenų nuotrauką, padarytą tiesiai iš viršaus. Mes atpažįstame runas, jūs patikrinate sąrašą, o tada gaunate aiškinimą.",
+  "dropLabel": "Pasirinkite arba nutempkite nuotrauką",
+  "spreadOnPhoto": "Koks išdėstymas nuotraukoje",
+  "freeSpread": "Laisvas išdėstymas (nežinau)",
+  "previewAlt": "Jūsų įkelta nuotrauka",
+  "recBtn": "Atpažinti runas",
+  "photoInterp": "Aiškinti šį išdėstymą",
+  "photoReady": "Nuotrauka paruošta.",
+  "looking": "Žiūrima į nuotrauką …",
+  "found": "Rasta runų: {n}. Prieš aiškinimą patikrinkite sąrašą.",
+  "noneFound": "Nuotraukoje runų nerasta. Pabandykite ryškesnę nuotrauką, padarytą tiesiai iš viršaus.",
+  "chooseRune": "– pasirinkite runą –",
+  "runeN": "Runa {n}",
+  "confHigh": "aiški",
+  "confMedium": "gana aiški",
+  "confLow": "neaiški",
+  "notRecognized": "neatpažinta",
+  "refTitle": "24 runos",
+  "refDesc": "Futarkas tradiciškai skirstomas į tris ættir po aštuonias runas. Pasirinkite runą, kad pamatytumėte pavadinimą, ką jis reiškia, ir šiuolaikinį aiškinimą.",
+  "footer": "Runų aiškinimas šiame puslapyje skirtas kultūrai, apmąstymams ir pramogai. Tai nėra medicininiai, teisiniai ar finansiniai patarimai, ir jokie rezultatai negarantuojami. Runos traukiamos atsitiktinai. Aiškinimai yra šiuolaikiniai: nėra patikimų šaltinių, kad vikingų laikais runos būtų naudotos būrimui. DI aiškinimą sukūrė dirbtinis intelektas, o ne žmogus.",
+  "sourcesNote": "Istorinė informacija: rekonstruoti protogermanų kalbos pavadinimai ir senosios skandinavų bei senosios anglų runų poemos (Store norske leksikon, Vikipedija su šaltiniais). Trijomis runomis (ᛉ, ᛊ, ᛟ) buvo piktnaudžiaujama nacistinėje ir ekstremistinėje simbolikoje; čia jos vartojamos tik pirmine prasme.",
+  "errors": {
+   "not_granted": "Jūs nesuteikėte puslapiui leidimo naudoti Claude.",
+   "sampling_disabled": "DI šiai paskyrai nepasiekiamas.",
+   "rate_limited": "Šiuo metu per daug užklausų. Pabandykite dar kartą po kurio laiko.",
+   "session_expired": "Turite prisijungti iš naujo.",
+   "image_rejected": "Nuotraukos nepavyko perskaityti. Pabandykite JPEG arba PNG nuotrauką.",
+   "images_unavailable": "Nuotraukų įkėlimas čia nepasiekiamas.",
+   "refused": "Į šią užklausą atsakyti negalima. Pabandykite kitą klausimą.",
+   "invalid_json": "Atsakymo nepavyko perskaityti. Pabandykite dar kartą.",
+   "empty_completion": "Atsakymo negauta. Pabandykite dar kartą.",
+   "generic": "Kažkas nepavyko. Pabandykite dar kartą."
+  },
+  "navCast": "Būrimas",
+  "navRunes": "Runos",
+  "navName": "Vardas runomis",
+  "navBooks": "Juodosios knygos",
+  "heroTitle": "Paklauskite runų",
+  "heroStone": "Dienos runa",
+  "heroStoneHint": "Šiandien visiems ta pati runa. Palieskite, kad apie ją paskaitytumėte.",
+  "castTitle": "Metimas",
+  "clothCaption": "Romėnų istorikas Tacitas apie 98 m. aprašė, kaip germanai ant baltos drobės mėtydavo pažymėtus medžio gabalėlius, ieškodami atsakymų. Ar tie ženklai buvo runos, niekas nežino.",
+  "nameTitle": "Jūsų vardas runomis",
+  "nameDesc": "Įrašykite vardą ar žodį, ir mes jį parašysime vyresniuoju futarku.",
+  "namePlaceholder": "Pvz., Ingrid",
+  "nameLabel": "Vardas ar žodis",
+  "nameCopy": "Kopijuoti runas",
+  "nameCopied": "Nukopijuota",
+  "nameEmpty": "Įrašykite ką nors viršuje, kad pamatytumėte tai runomis.",
+  "nameNote": "Tai šiuolaikinis fonetinis užrašymas. Nebuvo nustatyta taisyklių, kaip šių dienų vardus rašyti vyresniuoju futarku, o raidės c, q, x ir y neturi savo runos.",
+  "booksTitle": "Iš juodųjų knygų (svartebøker)",
+  "booksDesc": "Norvegiškos juodosios knygos (svartebøker) yra ranka rašytos knygos su užkalbėjimais ir patarimais, sudarytos maždaug 1480–1850 m. Dauguma jų skirtos apsaugai ir gydymui. Šis skyrius dar kuriamas.",
+  "booksSoon": "Netrukus",
+  "booksNote": "Žalinga magija, prievarta ir prakeiksmai minimi tik kaip istorija, niekada kaip receptas.",
+  "srcTitle": "Apie šaltinius",
+  "booksFacts": [
+   {
+    "n": "100–200",
+    "t": "išlikusių juodųjų knygų Norvegijoje, priklausomai nuo skaičiavimo būdo"
+   },
+   {
+    "n": "apie 1480–1520",
+    "t": "Vinjeboka iš Telemarko, seniausia išlikusi juodoji knyga Šiaurės šalyse"
+   },
+   {
+    "n": "1576",
+    "t": "užkalbėjimai ir apeigos, kuriuos 1901–02 m. surinko A. C. Bangas"
+   }
+  ],
+  "booksTopics": [
+   "Kraujo stabdymas",
+   "Gydomieji užkalbėjimai (signing)",
+   "Apsauga nuo ugnies",
+   "Gyvulių apsauga",
+   "Vagių paieška",
+   "Sėkmė prekyboje ir kortų žaidimuose",
+   "Apsauga nuo burtų",
+   "Joninės",
+   "Kalėdos ir oskoreia"
+  ],
+  "navTools": "Runų dirbtuvės",
+  "toolsTitle": "Runų dirbtuvės",
+  "toolsDesc": "Keturi įrankiai. Du remiasi istorinėmis runų sistemomis, vienas – runų kalendorių principu, o vienas yra šiuolaikinė skaičių mistika. Kiekvienas įrankis pats nurodo, kuo remiasi.",
+  "tabName": "Vardas runomis",
+  "tabCipher": "Šifruotos runos",
+  "tabNum": "Vardo runa",
+  "tabCal": "Runų kalendorius",
+  "tagHistoric": "Istorinė sistema",
+  "tagModern": "Šiuolaikinė",
+  "tagCalendar": "Istorinis principas",
+  "scriptElder": "Vyresnysis futarkas",
+  "scriptYounger": "Jaunesnysis futarkas",
+  "scriptMedieval": "Viduramžių runos",
+  "scriptElderNote": "Vyresnysis futarkas naudotas maždaug 150–700 m. Kiekviena runa turi savo garsą.",
+  "scriptYoungerNote": "Vikingų laikų abėcėlė nuo maždaug 800 m. turėjo tik 16 runų. Viena runa žymėjo kelis garsus: ᚢ – u, o, v, w, y ir ø, ᛁ – i ir e, ᚴ – k ir g, ᛏ – t ir d, ᛒ – b ir p. Ta pati runa du kartus iš eilės nerašyta.",
+  "scriptMedievalNote": "Viduramžiais runos gavo taškus garsams atskirti, pavyzdžiui, ᛂ – e, ᛑ – d, ᚵ – g, ᛔ – p. Abėcėlė galutinai susiformavo XIII a. pradžioje.",
+  "cipherDesc": "Šifruotos runos (norv. lønnruner) – istorinis kodas. Kiekviena runa užrašoma dviem skaičiais: kuriai ætt ji priklauso ir kelinta ji toje ætt. Šakotosiose runose (kvistruner) ætt rodo kairėje kamieno pusėje esančios šakelės, o vietą – dešinėje esančios. Šifruotų runų yra, pavyzdžiui, ant Riokio (Rök) akmens Švedijoje, Meišau (Maeshowe) kape Orknio salose (XII a.) ir Bryggeno įrašuose Bergene.",
+  "cipherReverse": "Skaičiuoti ættir atvirkščiai (3–2–1), kaip daugelyje įrašų",
+  "cipherCode": "Kodas",
+  "cipherEmpty": "Įrašykite vardą viršuje ir pamatysite jį šifruotomis runomis.",
+  "numDesc": "Tai šiuolaikinė skaičių mistika, ne vikingų tradicija. Švedų runologas Sigurdas Agrellas XX a. trečiajame–ketvirtajame dešimtmetyje perkėlė fehu į runų eilės galą ir suteikė runoms skaitines vertes: uruz yra 1, fehu – 24. Istoriniai šaltiniai šios teorijos nepatvirtina. Kaip pats Agrellas sudėdavo žodžius, mūsų turimuose šaltiniuose neaprašoma; čia vertės sudedamos ir imama dalybos iš 24 liekana.",
+  "numResult": "Vardo runa",
+  "numSum": "Suma",
+  "numReduce": "{sum} padalijus iš 24, liekana {r}",
+  "numZero": "(liekana 0 laikoma 24)",
+  "numEmpty": "Įrašykite vardą viršuje ir apskaičiuosime vardo runą.",
+  "calDesc": "Runų kalendoriai (runų lazdos) Šiaurėje naudoti nuo viduramžių: seniausias žinomas yra iš Nykiopingo ir, manoma, kilęs iš XIII a., tačiau dauguma išlikusių – XVI–XVII a. Pirmosios septynios jaunesniojo futarko runos per visus metus kartojosi kaip savaitės dienos. Devyniolika ženklų – 16 runų ir trys papildomi (ᛮ ᛯ ᛰ) – žymėjo aukso skaičius ir jaunaties dienas.",
+  "calYear": "Metai",
+  "calGolden": "Aukso skaičius",
+  "calGoldenText": "{y} m. aukso skaičius yra {g}. Runų kalendoriuje šiuo ženklu tais metais buvo pažymėtos jaunaties dienos.",
+  "calSunday": "Sekmadienio runa",
+  "calSundayText": "{y} m. sekmadienius žymi runa {r}.",
+  "calLeap": "{y} m. – keliamieji metai: nuo kovo 1 d. sekmadienio runa yra {r}.",
+  "calToday": "Šiandien runų kalendoriuje",
+  "calTodayText": "{d}-oji metų diena yra po runa {r}.",
+  "calNote": "Aukso skaičius skaičiuojamas taip: metų dalybos iš 19 liekana + 1. Sekmadienio runa apskaičiuota pagal Grigaliaus kalendorių, ᚠ priskiriant sausio 1 d.; Danija–Norvegija Grigaliaus kalendorių perėmė 1700 m., todėl senesnės lazdos rėmėsi Julijaus kalendoriumi.",
+  "booksGroupsTitle": "Bango keturiolika grupių",
+  "booksGroupsDesc": "Tautosakininkas A. C. Bangas surinko 1576 formules iš norvegų juodųjų knygų ir žodinės tradicijos ir suskirstė jas į keturiolika grupių (1901–1902).",
+  "booksGroups": [
+   {
+    "n": "I",
+    "t": "Odinas ir kumeliuko koja",
+    "d": "Užkalbėjimai nuo išnirimų ir patempimų žmonėms bei arkliams – ta pati tradicija kaip garsusis Merseburgo užkalbėjimas."
+   },
+   {
+    "n": "II",
+    "t": "Užkalbėjimai",
+    "d": "Liga, troliai ar pavydas išvaromi žodžiais, dažnai pasakojimo forma."
+   },
+   {
+    "n": "III",
+    "t": "Pagalbos svečias",
+    "d": "Pasirodo antgamtinė būtybė ir nurodo, kokį vaistą vartoti."
+   },
+   {
+    "n": "IV",
+    "t": "Trys Nornos",
+    "d": "Formulės, kuriose trys moterys – Nornos, Freja ar Mergelė Marija – suriša ligą."
+   },
+   {
+    "n": "V",
+    "t": "Raktai",
+    "d": "„Surišti“ ir „užčiaupti“: užrakinti priešo ar plėšrūno nasrus."
+   },
+   {
+    "n": "VI",
+    "t": "Simpatijos priemonės",
+    "d": "Didžiausia grupė: panašus veikia panašų – augalai, gyvūnai ir daiktai."
+   },
+   {
+    "n": "VII",
+    "t": "Prietaringi menai",
+    "d": "Kaip pamatyti būsimą sutuoktinį, rasti vagį ar tapti nematomu."
+   },
+   {
+    "n": "VIII",
+    "t": "Perkėlimas",
+    "d": "Liga perkeliama į gyvūną, daiktą ar žemę."
+   },
+   {
+    "n": "IX",
+    "t": "Įvairios formulės",
+    "d": "Žiedai, ženklai ir įvairios figūros."
+   },
+   {
+    "n": "X",
+    "t": "Užkeikimai šventybe",
+    "d": "Formulės, kuriose šaukiamasi Dievo, šventųjų ir šventų vardų."
+   },
+   {
+    "n": "XI",
+    "t": "Juodoji magija",
+    "d": "Kenkimas, vagių surišimas ir lobių kasimas. Čia minima tik kaip istorija."
+   },
+   {
+    "n": "XII",
+    "t": "Liaudies medicina",
+    "d": "Gydymo patarimai su žolelėmis ir namų priemonėmis."
+   },
+   {
+    "n": "XIII",
+    "t": "Techniniai receptai",
+    "d": "Praktiški ir keisti receptai."
+   },
+   {
+    "n": "XIV",
+    "t": "Racionalizuojančios formulės",
+    "d": "Pavadinimas reiškia receptus, kuriuose ieškoma „natūralaus“ paaiškinimo."
+   }
+  ],
+  "moonTitle": "Mėnulis, saulė ir ketvirtadienis",
+  "moonLede": "Ar juodųjų knygų burtai paklūsta mėnuliui ir žvaigždėms? Peržiūrėjome apie 1300 Bango rinkinio formulių, kurias pavyko perskaityti kompiuteriu. Atsakymas: kartais, bet rečiau, nei daug kas mano.",
+  "moonFacts": [
+   {
+    "n": "apie 13 %",
+    "t": "formulių nurodo laiko ar gamtos sąlygą: mėnulio fazę, savaitės dieną, šventę, saulėtekį ar tekantį vandenį."
+   },
+   {
+    "n": "apie 11",
+    "t": "formulių nurodo mėnulio fazę, pavyzdžiui, karpas gydyti, kai mėnulis dyla, arba šaknį sodinti iškart po jaunaties."
+   },
+   {
+    "n": "4",
+    "t": "formulės mini zodiako ženklus ir planetas, pavyzdžiui, kulkas lieti „Šaulio ženkle“, kaip buvo galima pasitikrinti almanache."
+   }
+  ],
+  "moonText": "Laiko sąlygų daugiausia tarp prietaringų menų (apie pusė) ir juodosios magijos (apie trečdalis), o rečiausiai – gydomuosiuose užkalbėjimuose. Daugelis formulių piešia ir kosminį vaizdą: liga „skrenda tarp dangaus ir žemės, tarp mėnulio ir saulės“, o blogis išvaromas į mėlynus kalnus, „kur nešviečia nei saulė, nei mėnulis“. Zodiako ženklai atėjo per spausdintus almanachus ir mokytąją Europos tradiciją, o ne iš senojo šiaurės tikėjimo.",
+  "weekTitle": "Formulėse minimos savaitės dienos",
+  "weekNote": "Kiek formulių mini kiekvieną savaitės dieną (įskaitant Didįjį ketvirtadienį ir Didįjį penktadienį). Skaičiai apytiksliai, nes tekstas perskaitytas kompiuteriu. Ar ketvirtadienis susijęs su Toru (norv. Torsdag – Toro diena), šaltiniai nesako.",
+  "weekdays": [
+   "Pirmadienis",
+   "Antradienis",
+   "Trečiadienis",
+   "Ketvirtadienis",
+   "Penktadienis",
+   "Šeštadienis",
+   "Sekmadienis"
+  ],
+  "feastTitle": "Šventės",
+  "feasts": [
+   {
+    "n": "17",
+    "t": "Kūčios ir Kalėdų naktis, be kita ko, norint pamatyti būsimą sutuoktinį"
+   },
+   {
+    "n": "15",
+    "t": "Joninės (jonsok)"
+   },
+   {
+    "n": "apie 20",
+    "t": "Velykos: Didysis ketvirtadienis, Didysis penktadienis ir Velykų diena"
+   },
+   {
+    "n": "16",
+    "t": "„Prieš saulei tekant“"
+   }
+  ],
+  "galleryTitle": "Mitai paveiksluose",
+  "galleryDesc": "XIX a. paveikslai ir piešiniai, kurių autorių teisės nebegalioja.",
+  "capAsgard": "Peteris Nicolai Arbo, „Åsgårdsreien“ (1872). Oskoreia – vaiduokliška kavalkada, Kalėdų metu jojusi per orą.",
+  "capNokken": "Theodoras Kittelsenas, „Nøkken“ (1904). Vandens būtybė, viliojusi žmones į gelmę.",
+  "capYggdrasil": "Olufas Olufsenas Bagge, „Yggdrasil“ (1847). Pasaulio medis šiaurės mitologijoje.",
+  "capThor": "Mårtenas Eskilas Winge, „Toro kova su milžinais“ (1872).",
+  "capVolva": "Lorenzas Frølichas, „Volva, Odinas, Sleipniras ir Helio šuo“ (išleista 1895).",
+  "capDynna": "Dynos akmuo iš Hadelando – XI a. runų akmuo.",
+  "capPrimstav": "Norvegų runų kalendorius (primstav) iš Norvegijos liaudies muziejaus.",
+  "heroArt": "Fone – saulėlydis virš Sørburøy salyno, Frøya. Pasaulio medis Yggdrasilis nupieštas šiam puslapiui.",
+  "navLore": "Šaltiniai",
+  "navBeings": "Būtybės",
+  "navYear": "Metų ratas",
+  "lore": {
+   "title": "Ką sako patys šaltiniai",
+   "lede": "Runų magija nėra vien šiuolaikinė išmonė: ji minima eddiškose giesmėse ir sagose, užrašytose XIII a. Islandijoje. Tai literatūra, o ne liudijimai, ką žmonės iš tikrųjų darė, bet būtent iš jų kilo dauguma vėlesnių tikėjimų. Senąja islandų kalba cituojame trumpai; vertimai ir santraukos – mūsų.",
+   "odin": {
+    "title": "Odinas ant vėjuoto medžio",
+    "text": "„Hávamál“ (Aukščiausiojo kalbos) giesmėje Odinas pasakoja, kaip devynias naktis kabojo ant vėjuoto medžio, sužeistas ietimi ir paaukotas sau pačiam. Jam nedavė nei duonos, nei gėrimo. Pažvelgęs žemyn, jis su šauksmu pakėlė runas. Ši giesmės dalis vadinama „Rúnatal“ – runų skaičiuote.",
+    "quote": "Veit ek, at ek hekk …",
+    "quoteNote": "„Žinau, kad kabojau …“ – 138 posmas (Neckelio numeracija)",
+    "ref": "Hávamál 138–145"
+   },
+   "charms": {
+    "title": "Odino 18 burtų",
+    "lede": "Iškart po runų giesmės Odinas išvardija 18 burtų, kuriuos moka (giesmės dalis „Ljóðatal“). Tai senoviškiausias šiaurės burtų sąrašas. Dalis jų stebėtinai panaši į po 600 metų užrašytus norvegų juodųjų knygų receptus.",
+    "note": "Posmų numeriai pagal Neckelio leidimą (146–163); Bellowso vertime jie vienetu didesni. Kai kurie tyrėjai mano, kad 16–18-ieji burtai pridėti vėliau.",
+    "items": [
+     {
+      "n": 1,
+      "st": 146,
+      "t": "Pagalba nuo bylų, sielvarto ir visų negandų."
+     },
+     {
+      "n": 2,
+      "st": 147,
+      "t": "Gydymas – tiems, kurie nori būti gydytojais.",
+      "link": "Juodosios knygos: gydomieji užkalbėjimai"
+     },
+     {
+      "n": 3,
+      "st": 148,
+      "t": "Atbukina priešų ginklus, kad jie nekirstų.",
+      "link": "Vinjeboka: burtas priešo kardui atbukinti"
+     },
+     {
+      "n": 4,
+      "st": 149,
+      "t": "Nutraukia pančius ir grandines, kai surišamos rankos ir kojos."
+     },
+     {
+      "n": 5,
+      "st": 150,
+      "t": "Sustabdo piktai paleistą strėlę, jei ją pamato skrendančią.",
+      "link": "Juodosios knygos: apsauga nuo šūvio ir kirčio"
+     },
+     {
+      "n": 6,
+      "st": 151,
+      "t": "Kai prakeikimas siunčiamas per gyvo medžio šaknis, jis atsigręžia prieš siuntėją."
+     },
+     {
+      "n": 7,
+      "st": 152,
+      "t": "Užgesina gaisrą salėje, kur sėdi draugai.",
+      "link": "Juodosios knygos: apsauga nuo gaisro"
+     },
+     {
+      "n": 8,
+      "st": 153,
+      "t": "Numalšina neapykantą tarp vado sūnų."
+     },
+     {
+      "n": 9,
+      "st": 154,
+      "t": "Nuramina vėją ir bangas, kad laivas būtų išgelbėtas."
+     },
+     {
+      "n": 10,
+      "st": 155,
+      "t": "Ore skraidančios „tvorų raitelės“ praranda savo pavidalą ir protą."
+     },
+     {
+      "n": 11,
+      "st": 156,
+      "t": "Giedamas po skydais, kad draugai sveiki eitų į mūšį ir grįžtų."
+     },
+     {
+      "n": 12,
+      "st": 157,
+      "t": "Runos, priverčiančios pakaruoklį kalbėti.",
+      "hist": true
+     },
+     {
+      "n": 13,
+      "st": 158,
+      "t": "Jauną karį apšlakstyti vandeniu, kad jis nekristų mūšyje."
+     },
+     {
+      "n": 14,
+      "st": 159,
+      "t": "Žinios apie dievus, elfus ir dievybes."
+     },
+     {
+      "n": 15,
+      "st": 160,
+      "t": "Giesmė, kuri suteikia galią asams, sėkmę elfams ir įžvalgą Odinui."
+     },
+     {
+      "n": 16,
+      "st": 161,
+      "t": "Palenkti moters širdį.",
+      "hist": true
+     },
+     {
+      "n": 17,
+      "st": 162,
+      "t": "Kad mergina neapleistų.",
+      "hist": true
+     },
+     {
+      "n": 18,
+      "st": 163,
+      "t": "Slaptas burtas, atskleidžiamas tik mylimajai ar seseriai."
+     }
+    ],
+    "histTag": "Tik istorija"
+   },
+   "sig": {
+    "title": "Kokios runos kam raižomos",
+    "lede": "„Sigrdrífumál“ giesmėje valkirija Sigrdrifa moko didvyrį Sigurdą, kokias runas kur raižyti. Tai išsamiausias runų magijos aprašas eddiškoje poezijoje.",
+    "note": "Posmai pagal Bellowso numeraciją. Tyrėjai mano, kad dalis posmų (13–17) atėjo iš kitų giesmių.",
+    "rows": [
+     {
+      "name": "Sigrúnar",
+      "lt": "pergalės runos",
+      "for": "Pergalei",
+      "on": "Ant kardo rankenos ir ašmenų; du kartus šaukiamasi Tyro.",
+      "st": 6
+     },
+     {
+      "name": "Ölrúnar",
+      "lt": "alaus runos",
+      "for": "Kad kita moteris neapgautų, nuo nuodų gėrime",
+      "on": "Ant rago ir rankų, ant nagų – „Nauðr“; į taurę dedami porai.",
+      "st": 7
+     },
+     {
+      "name": "Bjargrúnar",
+      "lt": "pagalbos (gimdymo) runos",
+      "for": "Kad vaikas gimtų laimingai",
+      "on": "Ant delnų ir aplink sąnarius; šaukiamasi likimo deivių.",
+      "st": 8
+     },
+     {
+      "name": "Brimrúnar",
+      "lt": "jūros runos",
+      "for": "Laivams apsaugoti",
+      "on": "Ant laivo pirmagalio ir vairo, išdeginamos ant irklų.",
+      "st": 9
+     },
+     {
+      "name": "Límrúnar",
+      "lt": "šakų (gydymo) runos",
+      "for": "Kad taptumėte gydytoju ir gydytumėte žaizdas",
+      "on": "Ant žievės ir medžių, kurių šakos linksta į rytus.",
+      "st": 10
+     },
+     {
+      "name": "Málrúnar",
+      "lt": "kalbos runos",
+      "for": "Kad niekas neatsakytų neapykanta; teismui susirinkime",
+      "on": "Naudojamos susirinkime (tinge).",
+      "st": 11
+     },
+     {
+      "name": "Hugrúnar",
+      "lt": "proto runos",
+      "for": "Kad būtumėte įžvalgiausias iš žmonių",
+      "on": "—",
+      "st": 12
+     }
+    ],
+    "heads": [
+     "Runos",
+     "Lietuviškai",
+     "Kam",
+     "Kur raižomos",
+     "Posmas"
+    ]
+   },
+   "norns": {
+    "title": "Nornos raižo likimą",
+    "text": "„Völuspá“ (Volvos pranašystė) aprašo uosį Yggdrasilį, kuris visada žaliuoja virš Urdos šulinio. Iš salės po medžiu ateina trys daug žinančios mergelės – Urda, Verdandi ir Skuld. Jos raižo ant medžio, nustato įstatymus, renkasi gyvenimus ir nulemia žmonių likimą.",
+    "quote": "Urð héto eina, aðra Verðandi, / — skaro á skíði — Skuld ina þriðio",
+    "quoteNote": "„Vieną vadino Urda, kitą Verdandi, – raižė ant medžio, – Skuld trečiąją“",
+    "ref": "Völuspá 19–20"
+   },
+   "ygg": {
+    "title": "Pasaulio medžio sandara",
+    "text": "Snorris Sturlusonas „Gylfaginning“ (apie 1220 m.) rašo, kad Yggdrasilį laiko trys šaknys. Viena – pas asus, virš Urdos šulinio, kur dievai kasdien teisia. Kita – pas šalčio milžinus, virš Mimiro šulinio. Trečia – virš Niflheimo, kur ją graužia slibinas Nidhogas, o po ja yra šaltinis Hvergelmiras. Šakose tupi erelis su vanagu Vedrfolniru tarp akių, voverė Ratatoskas laksto aukštyn ir žemyn, nešiodama piktus žodžius tarp erelio ir slibino, o keturi elniai skabo lapus. Nornos kasdien laisto medį vandeniu ir moliu iš Urdos šulinio, kad jis nesupūtų.",
+    "ref": "Gylfaginning 15–16"
+   },
+   "egil": {
+    "title": "Egilis ir runų galia",
+    "lede": "„Egilio saga“ – vienas ryškiausių pasakojimų apie runų magiją. Skyrių numeriai skiriasi priklausomai nuo leidimo.",
+    "items": [
+     {
+      "ref": "44 sk.",
+      "t": "Egilis įsidūrė delną, išraižė runas ant rago su nuodingu gėrimu ir patepė jas krauju. Ragas suskilo, gėrimas išsiliejo."
+     },
+     {
+      "ref": "72 sk.",
+      "t": "Ūkininko duktė Helga ilgai sirgo, nes kažkas jai išraižė netinkamas runas. Egilis jas surado, perskaitė, nugramdė ir sudegino. Mergaitė pasveiko."
+     },
+     {
+      "ref": "57 sk.",
+      "t": "Egilis pastatė gėdos stulpą (níðstöng) su arklio galva ir išraižė runomis prakeiksmą karaliui. Čia minima tik kaip istorija."
+     }
+    ],
+    "quote": "Skalat maðr rúnar rísta, / nema ráða vel kunni",
+    "quoteNote": "„Neturi žmogus runų raižyti, jei jų gerai perskaityti nemoka“ – Egilio posmas, 72 sk."
+   },
+   "volva": {
+    "title": "Volva Grenlandijoje",
+    "text": "„Eiriko Raudonojo saga“ (4 sk.) aprašo pranašę Torbjorgą, vadinamą Mažąja volva. Ji vilkėjo apsiaustą su akmenimis, ant galvos – juodo ėriuko kailio gobtuvą, pamuštą balto katino kailiu, rankose laikė lazdą su metaliniu buožgaliu, prie diržo – maišelį su burtų reikmenimis (apsiausto spalva ir kailiai skiriasi vertimuose). Ją pasodino į aukštą krėslą ant pagalvės, prikimštos vištų plunksnų. Ritualui reikėjo giesmių „varðlokkur“; jas mokėjo tik krikščionė Gudrida, kuri iš pradžių nenorėjo giedoti. Moterys susėdo ratu, ir volva išpranašavo, kad badas pasibaigs su pavasariu.",
+    "ref": "Eiríks saga rauða 4"
+   },
+   "seidr": {
+    "title": "Seidas ir galdras",
+    "text": "Snorrio „Ynglinga saga“ pasakoja, kad deivė Freja pirmoji išmokė asus seido (seiðr) – vanų magijos. Odinas jį mokėjo geriausiai iš visų, tačiau seidas laikytas gėdingu vyrams (ergi), todėl jo buvo mokomos žynės. Šaltiniuose skiriamas galdras (galdr) – burtai balsu, giesmėmis – ir seidas, susijęs su transu ir pranašyste.",
+    "ref": "Ynglinga saga 4, 7"
+   },
+   "pdNote": "Senosios islandų kalbos tekstai yra viešasis domenas. Anglų vertimai, kuriuos naudojome tikrindami: H. A. Bellows (1923), J. Sephton (1880), W. C. Green (1893) – irgi viešasis domenas. A. G. Brodeuro „Prozinės Edos“ vertimas (1916) dar saugomas autorių teisių, todėl Snorrio tekstą tik atpasakojame."
+  },
+  "beings": {
+   "title": "Norvegų tautosakos būtybės",
+   "lede": "XIX a. tautosakininkai (A. Faye, P. Chr. Asbjørnsen ir kiti) užrašė, kuo žmonės tikėjo ir kaip saugojosi. Žemiau – santrauka pagal Didžiąją norvegų enciklopediją (SNL) ir Faye „Norske Sagn“ (1833).",
+   "protectLabel": "Apsauga",
+   "whereLabel": "Kur ir kada",
+   "items": [
+    {
+     "name": "Huldra",
+     "where": "Kalnai, miškai, ganyklos",
+     "desc": "Už žmones gražesnė moteris su tuščia nugara ir karvės uodega. Vilioja žmones į kalną („bergtaking“).",
+     "protect": "Jėzaus vardas, „Tėve mūsų“, bažnyčios varpai padėdavo pagrobtajam.",
+     "legend": "Su huldros žmonėmis sugyvenę ūkininkai gaudavo sviesto ir sūrio.",
+     "src": "SNL: hulder"
+    },
+    {
+     "name": "Nøkken",
+     "where": "Upės, ežerai, šuliniai, ypač po saulėlydžio",
+     "desc": "Vandens dvasia, vilioja žmones nuskęsti. Pasirodo kaip barzdotas vyras, arklys, apvirtusi valtis ar paukštis.",
+     "protect": "Ištarus jo vardą, jis netenka galios.",
+     "legend": "Moko griežti smuiku – už didelę kainą.",
+     "src": "SNL: nøkken"
+    },
+    {
+     "name": "Tusser ir požemio žmonės",
+     "where": "Po žeme, šalia žmonių",
+     "desc": "„Nematomieji“: maži, pilki, ūkininkauja ir turi gerai šeriamus gyvulius. Padeda gerbiantiems ir kenkia įžeidusiems.",
+     "protect": "Pagarbus elgesys; nuo vaiko sukeitimo – kryžius virš vaiko arba plienas lopšyje (Faye, 1833).",
+     "legend": "Pavagia vaikus ir palieka savo „pakaitalą“.",
+     "src": "SNL: underjordiske; Faye 1833"
+    },
+    {
+     "name": "Troliai",
+     "where": "Kalnai ir gilūs miškai",
+     "desc": "Bendras vardas pabaisoms; XIX a. pasakose – milžiniški, bjaurūs ir kvaili.",
+     "protect": "Faye: plienas virš žmogaus galvos nutraukia kerus. Viduramžių legenda: troliai mėto akmenis į bažnyčias, bet nepataiko.",
+     "legend": "Gudrus berniukas apgauna trolį.",
+     "src": "SNL: troll; Faye 1833"
+    },
+    {
+     "name": "Draugas",
+     "where": "Pakrantė ir jūra, ypač Šiaurės Norvegijoje",
+     "desc": "Jūroje nuskendusio vyro vaiduoklis, audros ir mirties pranašas, plaukia pusinėje valtyje.",
+     "protect": "Neatsakyti į pasisveikinimą; atsukus nugarą sušukti tą patį žodį; laivo nuolaužas palaidoti, kur jūra nepasieks; mesti peilį per kairį petį.",
+     "legend": "Imtynės su draugu iki potvynio ribos ar aušros.",
+     "src": "nordligefolk.no"
+    },
+    {
+     "name": "Mara",
+     "where": "Naktį lovoje",
+     "desc": "Nakties dvasia, „jojanti“ ant miegančiųjų ir slegianti krūtinę.",
+     "protect": "Plienas po pagalve, „maros šakelė“ (marekvist).",
+     "legend": "Rašytoją Ludvigą Holbergą (1702) Vosse kankino mara; jis dėjo plieną po pagalve ir apvertė batus.",
+     "src": "SNL: mare"
+    },
+    {
+     "name": "Nisse ir gardvord",
+     "where": "Tvartas ir arklidė; ypač Kūčių vakarą",
+     "desc": "Nisse – mažas senukas su raudona kepure, padedantis ūkiui, jei yra pavaišinamas. Gardvord – ūkio įkūrėjas ir sargas, vėliau virtęs nisse.",
+     "protect": "Ne apsauga, o pagarba: Kūčių košė su sviesto akute tvarte. Užmirštas nisse ima krėsti išdaigas.",
+     "legend": "Asbjørnseno pasakojime nisse juokiasi iš jį įžeidusio medžiotojo.",
+     "src": "SNL: nisse"
+    },
+    {
+     "name": "Oskoreia",
+     "where": "Oras; labiausiai bijota Kalėdų metu",
+     "desc": "Neramių mirusiųjų kavalkada, ore joja ugnimi alsuojančiais žirgais.",
+     "protect": "Aštrus plienas virš durų; kryžiai kreida ar derva ant durų, alaus statinių ir arklių; sutikus lauke – atsigulti kryžiumi.",
+     "legend": "Ryte arkliai randami suprakaitavę ir drebantys, tarsi visą naktį būtų jodinėti.",
+     "src": "SNL: oskoreia"
+    },
+    {
+     "name": "Vardøger",
+     "where": "Prieš žmogui ateinant",
+     "desc": "Žmogaus „pirmtakas“: girdėti jo žingsniai ar durys dar prieš jam atvykstant.",
+     "protect": "Nereikia – tai ženklas, ne grėsmė.",
+     "legend": "Antrininkas visada ateina pirmas.",
+     "src": "SNL: vardøger"
+    },
+    {
+     "name": "Vilkolakis (varulv)",
+     "where": "Naktį, dažnai per pilnatį",
+     "desc": "Žmogus, virstantis vilku, dažnai prieš savo valią; tai galėjo būti paveldėta ar užkeikta.",
+     "protect": "SNL apsaugos nemini; atpažinti galima iš žaizdų, kurios lieka žmogui.",
+     "legend": "Vaikai, gimę iš neištikimybės ar su raganavimu, būdavo pasmerkti būti vilkolakiais (berniukai) ar maromis (mergaitės).",
+     "src": "SNL: varulv"
+    }
+   ],
+   "patterns": [
+    "Dažniausiai minima apsauga – plienas: nuo maros, oskoreios, vaiko sukeitimo. Faye mini ir adatas, raktus ar žirkles lopšyje ar kryžmai virš durų.",
+    "Vardo ištarimas atima būtybės galią (nøkken, draugas).",
+    "Daugelyje apsaugų – krikščioniški elementai: kryžius, Jėzaus vardas, „Tėve mūsų“, bažnyčios varpai.",
+    "Šermukšnio, druskos ar duonos kaip apsaugos mūsų patikrintuose šaltiniuose neradome, todėl jų nenurodome."
+   ]
+  },
+  "year": {
+   "title": "Metų ratas ir primstav",
+   "lede": "Norvegų primstav – medinis kalendorius, naudotas maždaug nuo XIV iki XIX a. Dienos pažymėtos įrantomis, šventės – ženklais (pvz., Šv. Olafo kirvis). Pavadinimas greičiausiai kilęs iš lotyniško „primatio lunae“ – mėnulio užsidegimo, jaunaties; senąja norvegų kalba „prim“ reiškė jaunatį. Lazda turėjo vasaros ir žiemos puses.",
+   "rows": [
+    {
+     "date": "Bal. 14",
+     "name": "Sommerdag",
+     "t": "Pirmoji vasaros diena: lazda apverčiama į vasaros pusę. Ženklas – medis su lapu."
+    },
+    {
+     "date": "Geg. 1",
+     "name": "Gauksmesse",
+     "t": "Pietų Norvegijoje tikėta: kiek sniego dienų po šios dienos, tiek jų bus iki Mikkelsmesse."
+    },
+    {
+     "date": "Birž. 24",
+     "name": "Jonsok",
+     "t": "Joninės: laužai nuo piktųjų jėgų, namai puošiami lapais ir gėlėmis, septynios gėlės po pagalve – sapnuoti būsimą sutuoktinį."
+    },
+    {
+     "date": "Liep. 10",
+     "name": "Knut med ljåen",
+     "t": "Šienapjūtės pradžia."
+    },
+    {
+     "date": "Liep. 29",
+     "name": "Olsok",
+     "t": "Šv. Olafo diena. Ženklas – kirvis."
+    },
+    {
+     "date": "Rugp. 24",
+     "name": "Barsok",
+     "t": "Peilio ženklas vėliau suprastas kaip ožių kastravimo laikas."
+    },
+    {
+     "date": "Rugs. 29",
+     "name": "Mikkelsmesse",
+     "t": "Iki šios dienos derlius turi būti nuimtas."
+    },
+    {
+     "date": "Spal. 14",
+     "name": "Vinterdag",
+     "t": "Pirmoji žiemos diena: lazda apverčiama į žiemos pusę. Ženklas – kumštinė pirštinė."
+    },
+    {
+     "date": "Lapkr. 30",
+     "name": "Andreasmesse",
+     "t": "Kabliuko ženklas vėliau suprastas kaip tam tikros žvejybos pradžia."
+    },
+    {
+     "date": "Gruod. 25",
+     "name": "Jul",
+     "t": "Kalėdos. Ženklas – geriamasis ragas, primenantis alaus gėrimą per pagoniškas Jolės aukas. Kalėdų laikas – oskoreios metas."
+    }
+   ],
+   "note": "Šaltiniai: SNL „primstav“, „sankthans“, „oskoreia“. Mėnulio fazių (ny og ne) taisyklių norvegų ūkio darbams dar netikrinome iš norvegiškų šaltinių, todėl jų čia nepateikiame."
+  },
+  "photoCreditTjern": "Nuotrauka: tvenkinys tarp uolų Sørburøy saloje, Frøya (Nordisk Orakel).",
+  "photoCreditSkumring": "Nuotrauka: šiaurės pašvaistė ir laužas Sørburøy saloje, Frøya, 2026 m. spalis (Nordisk Orakel).",
+  "tags": {
+   "senoji": {
+    "label": "Senoji tradicija",
+    "desc": "Užrašyta viduramžiais ar ankstyvaisiais naujaisiais amžiais: Edos ir sagos (XIII a.), runų įrašai, juodųjų knygų rankraščiai iki maždaug 1800 m."
+   },
+   "tautosaka": {
+    "label": "Tautosaka ir legendos",
+    "desc": "XIX a. tautosakininkų iš žmonių lūpų užrašyti užkalbėjimai, sakmės ir papročiai."
+   },
+   "naujoji": {
+    "label": "Naujoji tradicija",
+    "desc": "XX–XXI a. sukurtos praktikos ir aiškinimai: runų būrimas, runų numerologija, šiuolaikinės reikšmės."
+   }
+  },
+  "legendTitle": "Kaip žymime šaltinius",
+  "library": {
+   "title": "Juodųjų knygų biblioteka",
+   "lede": "A. C. Bango rinkinys „Norske Hexeformularer og magiske Opskrifter“ (1901–1902) – 1576 formulės iš norvegų juodųjų knygų ir žmonių lūpų. Prie kiekvienos formulės Bangas nurodė, iš kur ir kada ji užrašyta. Žemiau – atrinktos formulės pagal jo 14 grupių: trumpa originalo ištrauka (senąja danų-norvegų kalba ar tarme) ir mūsų atpasakojimas lietuviškai.",
+   "note": "Formulės pateikiamos kaip kultūros istorija, ne kaip patarimai. Gydymo receptai nėra medicininiai nurodymai. Kenkimo, prievartos ir mirusiųjų kerai rodomi tik kaip istorinis faktas, be instrukcijų.",
+   "origLabel": "Originalas",
+   "ltLabel": "Atpasakojimas",
+   "whenLabel": "Laikas",
+   "premiumNote": "Premium versijoje – visos grupės formulės su pilnu originalu, paaiškinimais ir šaltinio puslapiu.",
+   "source": "Šaltinis: A. C. Bang, Norske Hexeformularer og magiske Opskrifter, Kristiania 1901–1902 (Nasjonalbiblioteket, viešasis domenas). Numeriai – Bango formulių numeriai.",
+   "groups": [
+    {
+     "n": "I",
+     "t": "Odinas ir kumeliuko koja",
+     "d": "Seniausias užkalbėjimų tipas Bango rinkinyje: šventasis joja per tiltą, arklys išsinarina koją, o raitelis ją sugydo žodžiais. Tai ta pati schema kaip garsiajame Merseburgo užkalbėjime iš X a. Vokietijos, kuriame jojo Odinas ir Balderis. Norvegijoje vietoj Odino joja Jėzus.",
+     "items": [
+      {
+       "n": 7,
+       "place": "Strømsø (Drammenas)",
+       "year": "1777",
+       "tag": "senoji",
+       "title": "Nuo išnirimo",
+       "orig": "Jesus red / over breden Bro, / han fik et Vred / i Fole-Led",
+       "lt": "Jėzus jojo per platų tiltą, ir kumeliukas išsinarino koją. Jis nulipo ir pataisė ją dešimčia Dievo pirštų – Tėvo, Sūnaus ir Šventosios Dvasios vardu."
+      },
+      {
+       "n": 23,
+       "place": "Bø (Telemarkas)",
+       "year": "1880",
+       "tag": "tautosaka",
+       "title": "Patempimas",
+       "orig": "Jesus re over Raadals Bro, / vred hass Folaa sig i Fot.",
+       "lt": "Jėzus jojo per Rodalio tiltą, ir jo kumeliukas išsinarino koją. Jėzus pasilenkė ir pataisė: „Iš patempimo – į sąnarį!“ Užrašė Moltke Moe iš žmonių lūpų."
+      },
+      {
+       "n": 22,
+       "place": "Valle (Setesdalis)",
+       "year": "1847",
+       "tag": "tautosaka",
+       "title": "Kad išnirimas gerai sugytų",
+       "orig": "Vor Herre rei / ivi Rønnings Hei",
+       "lt": "Viešpats jojo per Rioningo viržyną, ir koja išslydo iš sąnario. Tegul Dievas duoda, kad koja vėl būtų sveika."
+      }
+     ]
+    },
+    {
+     "n": "II",
+     "t": "Užkalbėjimai",
+     "d": "Liga, skausmas, šaltis ar pavydas išvaromi žodžiais – iš kūno į akmenį, kalną ar vandenį. Kai kurie užkalbėjimai pasakojami: šventieji sutinka ligą ar trolių moterį ir ją išveja.",
+     "items": [
+      {
+       "n": 37,
+       "place": "Valle (Setesdalis)",
+       "year": "1847",
+       "tag": "tautosaka",
+       "title": "Numalšinti skausmą",
+       "orig": "E ska mana Verken / oto Beine i Kjote, / oto Kjote i Haalle",
+       "lt": "Skausmas išvaromas žingsnis po žingsnio: iš kaulo į mėsą, iš mėsos į odą, iš odos – į kelmą ir akmenį, kad jis daugiau nekankintų žmogaus. Po to kalbamas „Tėve mūsų“."
+      },
+      {
+       "n": 103,
+       "place": "Drammenas",
+       "year": "apie 1830",
+       "tag": "tautosaka",
+       "title": "Nuo grybelio (ringorm)",
+       "orig": "Ringorm, Ringorm med alle dine Unger, fra 9 til 8, fra 8 til 7 …",
+       "lt": "Nevalgiusio žmogaus seilėmis ant piršto apvedama aplink ligos vietą pagal saulę ir skaičiuojama atgal nuo devynių iki nulio – tarsi liga mažėtų kartu su skaičiais. Kartojama tris rytus, kas rytą tris kartus."
+      },
+      {
+       "n": 58,
+       "place": "Aurskog",
+       "year": "1813",
+       "tag": "senoji",
+       "title": "Nuo nušalimo",
+       "orig": "Du Vinter, du Vinter, du Vinter! / Jeg maner dig paa Sne og paa Skare",
+       "lt": "Žiema triskart pašaukiama vardu ir išvaroma atgal – į sniegą ir sušalusią plutą, ten, kur jos vieta."
+      },
+      {
+       "n": 114,
+       "place": "Ringerikė",
+       "year": "1883",
+       "tag": "tautosaka",
+       "title": "Nuo „åkast“ (užmesto ligos šūvio)",
+       "orig": "Vor Herre Jesus og Jomfru Maria gjorde aat / for Aakast",
+       "lt": "Jėzus ir Mergelė Marija „gydė“ nuo „åkast“ – ligos, kuri, kaip tikėta, užmetama ar „įšaunama“. Išvardijamos kelios jos rūšys, tarp jų „kraujo åkast“."
+      }
+     ]
+    },
+    {
+     "n": "III",
+     "t": "Pagalbos svečias",
+     "d": "Kenčiantysis sutinka antgamtinę būtybę – dažniausiai Mergelę Mariją ar Jėzų – kuri pasako, kokį vaistą vartoti.",
+     "items": [
+      {
+       "n": 214,
+       "place": "Fron (Gudbrandsdalis)",
+       "year": "apie 1730",
+       "tag": "senoji",
+       "title": "Nuo dantų skausmo",
+       "orig": "Tag Vand i Mund, / sputt i Grund",
+       "lt": "Jobas sėdi ant akmens ir skundžiasi dantimis. Ateina Mergelė Marija ir pataria: „Paimk vandens į burną ir išspjauk į žemę – taip ateis pagalba.“"
+      },
+      {
+       "n": 221,
+       "place": "nenurodyta",
+       "year": "apie 1790",
+       "tag": "senoji",
+       "title": "Patarimas dėl sergančių gyvulių",
+       "orig": "Jeg haver med mig Fæ at føde, / slem Sygdom vil mine Fæ forøde",
+       "lt": "Adomas skundžiasi Jėzui, kad negali miegoti – liga naikina jo gyvulius. Jėzus liepia nukirpti plaukų nuo uodegos ir palaiminti gyvulius nuo galvos iki kojų, kad jų neužpultų jokia liga."
+      },
+      {
+       "n": 233,
+       "place": "Aurskog",
+       "year": "1882",
+       "tag": "tautosaka",
+       "title": "Sviesto malda",
+       "orig": "Ho gamle Mari gik seg Veien fram; / saa mødte ho ei Ku",
+       "lt": "Senoji Marė eina keliu ir sutinka margą karvę, kuri jai pasiskundžia savo negalavimais. Formulės pavadinimas – „Sviesto malda“."
+      }
+     ]
+    },
+    {
+     "n": "IV",
+     "t": "Trys Nornos",
+     "d": "Trys moterys ateina ir suriša ligą. Kartais jos vadinamos šventosiomis, kartais – Saule, Mėnuliu ir Mergele Marija. Pats Bangas šią grupę pavadino „Trys Nornos. Freja-Marija“ – jis matė čia senąjį trijų likimo moterų motyvą krikščioniškais drabužiais.",
+     "items": [
+      {
+       "n": 246,
+       "place": "Aurskog",
+       "year": "1882",
+       "tag": "tautosaka",
+       "title": "Nuo maros",
+       "orig": "Der kom tre Jomfruer vandrende, / den ene var Solen, / den anden var Maanen",
+       "lt": "Atėjo trys mergelės: viena buvo Saulė, kita – Mėnulis, trečia – Mergelė Marija. Jos surišo piktąją marą sidabro ir aukso juostomis taip tvirtai, kaip dvasia surakinta tamsos grandinėmis."
+      },
+      {
+       "n": 247,
+       "place": "Ringerikė",
+       "year": "1885",
+       "tag": "tautosaka",
+       "title": "Nuo vaikų maros",
+       "orig": "Jesus sad paa en blaaa Linde, / vilde denne Barne-Mora binde",
+       "lt": "Jėzus sėdėjo ant mėlynos liepos ir norėjo surišti vaikų marą. Viešpats rišo, Mergelė Marija vyniojo. Tegul viskas vėl būna savo vietoje."
+      },
+      {
+       "n": 256,
+       "place": "Aurskog",
+       "year": "1882",
+       "tag": "tautosaka",
+       "title": "Nuo „suomių šūvio“",
+       "orig": "Der kom 3 Skogsmænd nordenifra",
+       "lt": "Iš šiaurės atėjo trys miško vyrai: vienas gydė nuo „finnskot“, kitas – nuo „galler-skot“, trečias – nuo visų kitų „šūvių“ pasaulyje. Tai ligų, kurias, kaip tikėta, „įšauna“ antgamtinės jėgos, pavadinimai."
+      }
+     ]
+    },
+    {
+     "n": "V",
+     "t": "Raktai: surišti ir užčiaupti",
+     "d": "Žodžiais „užrakinami“ plėšrūnų nasrai, gyvačių geluonys ar priešo burna. Dažnai kalbama išleidžiant gyvulius į ganyklą.",
+     "items": [
+      {
+       "n": 274,
+       "place": "Romedal, Rygge, Ål",
+       "year": "apie 1780–1800",
+       "tag": "senoji",
+       "title": "Užčiaupti lokį ir vilką",
+       "orig": "Jeg klomser dig Bjørn og Bjørneram, / jeg klomser dig Ulv og Ulvetand",
+       "lt": "Ganytojas atsega pantį, išleidžia gyvulius į žalią pievą Jėzaus vardu ir „užčiaupia“ lokį ir jo letenas, vilką ir jo dantis, visus miško plėšrūnus – išskyrus savo bandos šunį."
+      },
+      {
+       "n": 264,
+       "place": "Sunnmørė",
+       "year": "1811",
+       "tag": "senoji",
+       "title": "Piemens giesmė",
+       "orig": "Gjuro mæte / lærte meg gjæte, / Asamøi dyre / lærte meg styre",
+       "lt": "Garbingoji Giuro išmokė ganyti, brangioji Asamøi – vairuoti avis per upelius ir tiltus. Ateik su savo seserimis, su devyniomis rankomis ir raktų juosta, ir surišk kiekvieną žvėrį jo duobėje."
+      },
+      {
+       "n": 307,
+       "place": "Bø (Telemarkas)",
+       "year": "1878",
+       "tag": "tautosaka",
+       "title": "Vapsvų malda",
+       "orig": "Vil du meg stinge, / ska eg deg binde",
+       "lt": "Jei nori mane įgelti – aš tave surišiu trimis vardais: Dievo Tėvo, Sūnaus ir Šventosios Dvasios."
+      }
+     ]
+    },
+    {
+     "n": "VI",
+     "t": "Simpatijos priemonės",
+     "d": "Didžiausia grupė (daugiau nei 500 formulių): panašus veikia panašų. Augalai, gyvūnų dalys, plienas, sidabras ir kryžius apsaugo ūkį, gyvulius ir žmones.",
+     "items": [
+      {
+       "n": 642,
+       "place": "Sundalis (Nordmørė)",
+       "year": "1889",
+       "tag": "tautosaka",
+       "title": "Kad pavyktų Kalėdų alus",
+       "orig": "Man sætter Staal i Bryggekarret.",
+       "lt": "Į alaus virimo kubilą dedamas plieno daiktas. Padeda ir kryžius kubilo dugne. Užrašyta Sundalyje (Nordmørė) – viena iš arčiausiai Frøyos užrašytų formulių Bango rinkinyje."
+      },
+      {
+       "n": 629,
+       "place": "Sundalis (Nordmørė)",
+       "year": "1889",
+       "tag": "tautosaka",
+       "title": "Kai pavydas sugadino pieną",
+       "orig": "… et sikkert Middel at kaste gammelt Sølv i Kjernen",
+       "lt": "Jei pavydi kaimynė „sugadino“ pieną ir nesimuša sviestas, į muštuvę reikia įmesti seno sidabro."
+      },
+      {
+       "n": 416,
+       "place": "Ørskog",
+       "year": "apie 1830",
+       "tag": "tautosaka",
+       "title": "Kad vilkas vengtų bandos",
+       "orig": "Bind det yderste af en Ulverumpe i Bjeldeklaven",
+       "lt": "Vilko uodegos galiuką pririšti prie bandos vedlio varpelio – tada vilkai prie gyvulių nesiartins."
+      },
+      {
+       "n": 885,
+       "place": "Seljord",
+       "year": "1786",
+       "tag": "senoji",
+       "title": "Nuo nøkken",
+       "orig": "Jomfru Maria kasted Staal i Vatten",
+       "lt": "Mergelė Marija įmetė plieno į vandenį: „Tu skęsk, aš plauksiu!“ Plienas – dažniausia apsauga nuo vandens būtybės."
+      }
+     ]
+    },
+    {
+     "n": "VII",
+     "t": "Prietaringi menai",
+     "d": "Kaip sužinoti ateitį: pamatyti būsimą sutuoktinį, nuspėti orą, rasti pavogtą daiktą. Būtent šioje grupėje daugiausia laiko sąlygų – Kalėdų naktis, Joninės, jaunatis.",
+     "items": [
+      {
+       "n": 915,
+       "place": "Fyresdal",
+       "year": "apie 1860",
+       "tag": "tautosaka",
+       "when": "Kūčių vakaras",
+       "title": "Aprengti Kalėdų kėdę",
+       "orig": "Julaften klæder man ud en Stol med sine bedste Klæder",
+       "lt": "Kūčių vakarą kėdė aprengiama geriausiais drabužiais, o pats atsigulama jos šešėlyje – tada sapne pamatysi, ką ištekėsi ar vesi."
+      },
+      {
+       "n": 924,
+       "place": "Ulvikas (Hardangeris)",
+       "year": "1883",
+       "tag": "tautosaka",
+       "when": "Joninių naktis",
+       "title": "Pamatyti mylimąjį sapne",
+       "orig": "St. Hans Aften lægger man sig at sove ude paa Marken med Jonsok-Soleier",
+       "lt": "Joninių vakarą miegama lauke, po galva pasidėjus Joninių purienų. Kitas būdas: pirmą naktį naujame name pakabinti kojinių raištelius virš lovos."
+      },
+      {
+       "n": 932,
+       "place": "Listeris ir Mandalis",
+       "year": "1862",
+       "tag": "tautosaka",
+       "when": "Pirmoji metų jaunatis",
+       "title": "Pamatyti, kas mirs",
+       "orig": "Naar man ser den første Nymaane i Aaret …",
+       "lt": "Pamačius pirmą metų jaunatį, reikia eiti prie lango ir į ją žiūrėti. Tikėta, kad taip galima sužinoti, kas mirs ateinančiais metais. Tai tik istorija.",
+       "hist": true
+      }
+     ]
+    },
+    {
+     "n": "VIII",
+     "t": "Perkėlimas",
+     "d": "Liga perkeliama į daiktą, gyvūną ar žemę, o tas daiktas užkasamas ar išmetamas. Čia ryškiausiai matomas mėnulio vaidmuo.",
+     "items": [
+      {
+       "n": 1003,
+       "place": "nenurodyta",
+       "year": "1790",
+       "tag": "senoji",
+       "when": "Dylantis mėnulis",
+       "title": "Kaip atsikratyti karpų",
+       "orig": "Naar Maanen tager af, skal Vorterne smøres hermed",
+       "lt": "Kai mėnulis dyla, karpos kelis kartus patepamos šviežiai skersto, nesūdyto kiaulės lašinio gabalu, kuris paskui užkasamas žemėje – kartu turi išnykti ir karpos."
+      },
+      {
+       "n": 1020,
+       "place": "Listeris ir Mandalis",
+       "year": "1790 ir 1862",
+       "tag": "senoji",
+       "when": "Jaunatis",
+       "title": "Kaip atsikratyti karpų (2)",
+       "orig": "I den samme Tid, som Maanen tændes …",
+       "lt": "Tuo metu, kai mėnulis „užsidega“ (jaunatis), kiekviena karpa paliečiama žirniu. Žirniai surišami į skudurėlį ir metami atbulomis per galvą."
+      },
+      {
+       "n": 1029,
+       "place": "Rygge",
+       "year": "apie 1780",
+       "tag": "senoji",
+       "when": "Mėnulio šviesa",
+       "title": "Kaip atsikratyti karpų (3)",
+       "orig": "Tag et Sølvbækken, hæng den imod Maanen",
+       "lt": "Sidabrinis dubenėlis pakabinamas prieš mėnulį, kol pasidengia drėgme, ir ta drėgme patrinamos karpos. Įdomu, kad rankraštyje šis receptas užrašytas runomis."
+      }
+     ]
+    },
+    {
+     "n": "IX",
+     "t": "Įvairios formulės",
+     "d": "Ženklai, žiedai, amuletai ir užrašai ant švino ar medžio. Kai kurie amuletai – tikri archeologiniai radiniai su runų įrašais.",
+     "items": [
+      {
+       "n": 1066,
+       "place": "Årdalas (Sognas)",
+       "year": "XIII a.",
+       "tag": "senoji",
+       "title": "Runų amuletas",
+       "orig": "… in nomine patris et fili et …",
+       "lt": "Mažas medžio gabalėlis su skyle, nešiotas ant kaklo, rastas griaunant Årdalio bažnyčią. Ant jo runomis išraižyta lotyniška malda Tėvo ir Sūnaus vardu. Įrašą iššifravo kalbininkas Sophus Bugge."
+      },
+      {
+       "n": 1037,
+       "place": "Moland (Telemarkas)",
+       "year": "apie 1800",
+       "tag": "senoji",
+       "title": "Kaip nuraminti vėją",
+       "orig": "Gak Vinden imøde med det skarpe imod.",
+       "lt": "Ant lėkštės nupiešiamas kryžius su ženklais, į jo vidurį įsmeigiamas peilis, ir einama prieš vėją, atsukus ašmenis į jį – tada vėjas nurimsta. Plg. Odino 9-ąjį burtą iš „Hávamál“, raminantį vėją ir bangas."
+      },
+      {
+       "n": 1088,
+       "place": "Bø (Vesterålenas)",
+       "year": "apie 1770",
+       "tag": "senoji",
+       "title": "Kad namas neužsidegtų",
+       "orig": "Skriv disse Ord paa Bly, indsæt dem i Huset(s) 4 Hjørner",
+       "lt": "Paslaptingi žodžiai, tarp jų trijų jaunuolių iš Danieliaus knygos vardai (Sidrachas, Misachas…), užrašomi ant švino ir įstatomi į keturis namo kampus."
+      }
+     ]
+    },
+    {
+     "n": "X",
+     "t": "Užkeikimai šventybe",
+     "d": "Didžioji kraujo stabdymo, gaisro gesinimo ir apsaugos maldų dalis. Daug jų – iš XVII–XVIII a. rankraščių.",
+     "items": [
+      {
+       "n": 1245,
+       "place": "Listeris ir Mandalis",
+       "year": "1668",
+       "tag": "senoji",
+       "title": "Kraujui sustabdyti",
+       "orig": "Stat Blod / og still Blod! / Saa gjorde Jordan, / da Jesus igjennem for.",
+       "lt": "Sustok, krauje, nurimk! Taip sustojo Jordanas, kai per jį ėjo Jėzus. Viena seniausių datuotų formulių rinkinyje."
+      },
+      {
+       "n": 1266,
+       "place": "Moland (Telemarkas)",
+       "year": "apie 1800",
+       "tag": "senoji",
+       "title": "Gaisrui sustabdyti",
+       "orig": "Staa, du haarde Ildebrand",
+       "lt": "Jėzus keliavo per Siono šalį ir pamatė didelį gaisrą. Sustok, didysis gaisre, kaip Jėzus stovėjo Jordano upėje. Plg. Odino 7-ąjį burtą, gesinantį gaisrą salėje."
+      },
+      {
+       "n": 1233,
+       "place": "Fron (Gudbrandsdalis)",
+       "year": "apie 1730",
+       "tag": "senoji",
+       "title": "Atbukinti kardus",
+       "orig": "det skal ikke paa mig bide / end paa en jordfast Sten",
+       "lt": "Jėzus joja Viešpaties ramybėje ir atbukina visus ištrauktus kardus: nei geležis, nei akmuo manęs nekirs, kaip nekerta į žemę įaugusio akmens. Plg. Odino 3-iąjį burtą ir Vinjebokos kardo atbukinimą."
+      },
+      {
+       "n": 1324,
+       "place": "Eker, Ringerikė, Storelvdalis",
+       "year": "1830–1885",
+       "tag": "tautosaka",
+       "title": "Žvejo malda",
+       "orig": "Jesus paa Landet ved Søen stod, / bad St. Peder kaste ud sin Not",
+       "lt": "Jėzus stovėjo ant kranto ir liepė šventajam Petrui užmesti tinklą: „Žuvų gausi daug – ir didelių, ir mažų.“ Taip ir aš noriu sugauti – tegul ateina daug žuvų."
+      },
+      {
+       "n": 1329,
+       "place": "Sunnmørė",
+       "year": "1810",
+       "tag": "senoji",
+       "title": "Malda prieš kepant duoną",
+       "orig": "Kors aa Markje, / Han Gud velsigne mit Dajes Værkje.",
+       "lt": "Kryžius ant tešlos – tegul Dievas palaimina mano dienos darbą. Kryžius ant kablio – kad niekas iš manęs neatimtų."
+      },
+      {
+       "n": 1333,
+       "place": "Aukštutinis Hallingdalis",
+       "year": "apie 1896",
+       "tag": "tautosaka",
+       "title": "Malda nuo rūko ir blogo oro",
+       "orig": "Skodda, dala, drita, / gaa heim att te Bodno dine.",
+       "lt": "Rūke, eik namo į savo dugną! Moterys sodyboje, karvės pančiuose, arkliai aptvare, o ožkos toli šiaurėje kalnuose."
+      }
+     ]
+    },
+    {
+     "n": "XI",
+     "t": "Juodoji magija",
+     "d": "Kenkimas priešams, vagių „surišimas“ ir atskleidimas, lobių kasimas, piktųjų dvasių šaukimas. Būtent šis skyrius davė juodosioms knygoms vardą, nors sudaro tik mažą jų dalį. Čia – tik istorija, be instrukcijų.",
+     "items": [
+      {
+       "n": 1396,
+       "place": "Tinn, Bø, Rygge, Eker",
+       "year": "apie 1650–1830",
+       "tag": "senoji",
+       "when": "Trys ketvirtadienio naktys",
+       "title": "Pamatyti vagį vandenyje",
+       "orig": "Membra fiat tasit nam cum tempus …",
+       "lt": "Pseudolotyniški žodžiai užrašomi ant popieriaus, kuris tris ketvirtadienio naktis laikomas po akmeniu, o paskui merkiamas į vandenį – tikėta, kad jame pasirodys vagies veidas. Ši formulė paplitusi nuo XVII a. Telemarko iki Vesterålenų.",
+       "hist": true
+      }
+     ]
+    },
+    {
+     "n": "XII",
+     "t": "Liaudies medicina",
+     "d": "Žolininkystė be užkalbėjimų. Kai kurie receptai labai seni. Tai istorija, ne gydymo patarimai.",
+     "items": [
+      {
+       "n": 1471,
+       "place": "Vinje (Telemarkas)",
+       "year": "apie 1320",
+       "tag": "senoji",
+       "title": "Kadagio uogų galia",
+       "orig": "Enæbær VII eller IX fastynes the størckæ menniskens hærnæ",
+       "lt": "Septynios ar devynios kadagio uogos nevalgius „stiprina žmogaus smegenis“, valo krūtinę, skaidrina balsą ir „gina nuo nuodų“. Vienas seniausių rinkinio tekstų – XIV a. viduramžių danų-norvegų kalba. Tai istorija, ne patarimas.",
+       "hist": true
+      }
+     ]
+    },
+    {
+     "n": "XIII",
+     "t": "Techniniai receptai",
+     "d": "Praktiški ir keisti receptai: kaip pagauti žuvį ar paukštį, išimti dėmes, pagaminti negęstančią žvakę.",
+     "items": [
+      {
+       "n": 1550,
+       "place": "nenurodyta",
+       "year": "1790",
+       "tag": "senoji",
+       "title": "Žvakė, kurios neužgesina nei vėjas, nei vanduo",
+       "orig": "Lys at gjøre, som hverken Vind eller Vand kan udslukke.",
+       "lt": "Senas lininis skudurėlis įmirkomas žibale (originale – „petreolo“) ir su vašku suvyniojamas į žvakę, kuri dega net vėjyje ir vandenyje."
+      },
+      {
+       "n": 1526,
+       "place": "Rygge, Eker",
+       "year": "apie 1800–1830",
+       "tag": "senoji",
+       "title": "Pagauti paukštį rankomis",
+       "orig": "Vil man fange Fugle med Haanden …",
+       "lt": "Paukščiams lesti skirtos sėklos išmirkomos degtinėje ir išberiamos ten, kur jie skraido: apsvaigusius paukščius galima pagauti rankomis."
+      }
+     ]
+    },
+    {
+     "n": "XIV",
+     "t": "Racionalizuojančios formulės",
+     "d": "Mažiausia grupė: receptai, kuriuose stebuklas aiškinamas „gamtiškai“ arba žaismingai.",
+     "items": [
+      {
+       "n": 1574,
+       "place": "Aurskog",
+       "year": "1882",
+       "tag": "tautosaka",
+       "title": "Žvejo eilėraštis",
+       "orig": "Aabaar, Aabaar roke, / bit paa mine Kroke!",
+       "lt": "Ešerys, ešerys, kibk ant mano kabliuko! Kibsi – patrauksiu, pakibsi – turėsiu. Pui, pui, pui!"
+      },
+      {
+       "n": 1576,
+       "place": "nenurodyta",
+       "year": "1790",
+       "tag": "senoji",
+       "when": "Saturno įtaka; mėnulis Jautyje, Ožiaragyje ar Mergelėje",
+       "title": "Lobio kasimo laikas",
+       "orig": "… nåar Maanen gaar i Tyren, Stenbukken eller Jomfruen",
+       "lt": "Paskutinė rinkinio formulė: lobį kasti „Saturno įtakoje“ arba kai mėnulis yra Jaučio, Ožiaragio ar Mergelės ženkle. Viena iš nedaugelio formulių su astrologine sąlyga – ji atėjo iš spausdintų almanachų.",
+       "hist": true
+      }
+     ]
+    }
+   ]
+  },
+  "myths": {
+   "title": "Dievai ir mitai",
+   "lede": "Viskas, ką žinome apie šiaurės dievus, užrašyta krikščioniškoje Islandijoje XIII a.: Edos giesmėse (Codex Regius) ir Snorrio Sturlusono „Edoje“ (apie 1220 m.). Tai paskutinis, jau poetinis senojo tikėjimo atspindys, o ne šventraštis. Prie kiekvieno dievo nurodome, kuriame tekste jis pasirodo.",
+   "gods": [
+    {
+     "name": "Odinas",
+     "on": "Óðinn",
+     "t": "Karo, mirusiųjų, poezijos, išminties, runų ir magijos dievas. Vienaakis, su ietimi ir žiedu, su varnais Huginu ir Muninu bei vilkais Geriu ir Frekiu. Paaukojo save ant medžio, kad gautų runas, ir gavo poezijos midaus.",
+     "src": "Völuspá 17; Hávamál; Sigrdrífumál; Gylfaginning"
+    },
+    {
+     "name": "Toras",
+     "on": "Þórr",
+     "t": "Kūjo Mjolniro savininkas, su jėgos diržu, geležinėmis pirštinėmis ir dviem ožiais. Giesmėje „Þrymskviða“ jis, persirengęs nuotaka, atgauna pavogtą kūjį, o „Hymiskviðoje“ – užkabina Pasaulio gyvatę.",
+     "src": "Þrymskviða; Hymiskviða; Hárbarðsljóð; Gylfaginning"
+    },
+    {
+     "name": "Freja",
+     "on": "Freyja",
+     "t": "Vanų deivė su Brisingų vėriniu, važiuojanti katėmis kinkytu vežimu. Pusę kritusiųjų pasiima į savo Folkvangą. „Ynglinga saga“ teigia, kad ji pirmoji išmokė asus seido.",
+     "src": "Grímnismál; Þrymskviða; Lokasenna; Ynglinga saga"
+    },
+    {
+     "name": "Frėjas",
+     "on": "Freyr",
+     "t": "Njordo sūnus, vaisingumo ir derliaus dievas, su laivu Skidbladniru ir šerniu Gulinburstiu. Dėl milžinės Gerdos atidavė savo kardą, todėl Ragnaroke krenta nuo Surto. Frøyos vardas, pasak etimologų, galbūt to paties kamieno kaip Frėjo.",
+     "src": "Skírnismál; Gylfaginning; Völuspá"
+    },
+    {
+     "name": "Friga",
+     "on": "Frigg",
+     "t": "Odino žmona, aukščiausia iš deivių. Prisaikdino visus daiktus nekenkti Balderiui – išskyrus amalą.",
+     "src": "Völuspá; Lokasenna; Gylfaginning 49"
+    },
+    {
+     "name": "Lokis",
+     "on": "Loki",
+     "t": "Gudruolis tarp dievų ir milžinų. Helės, vilko Fenriro ir Pasaulio gyvatės tėvas, Sleipniro motina. „Lokasenna“ jis įžeidinėja dievus, o po Balderio mirties surakinamas iki Ragnaroko.",
+     "src": "Lokasenna; Gylfaginning 34, 42; Baldrs draumar"
+    },
+    {
+     "name": "Tyras",
+     "on": "Týr",
+     "t": "Įkišo ranką į vilko Fenriro nasrus kaip užstatą ir jos neteko. „Sigrdrífumál“ pergalės runas liepia raižyti du kartus šaukiantis Tyro.",
+     "src": "Gylfaginning; Lokasenna; Sigrdrífumál 6"
+    },
+    {
+     "name": "Heimdalas",
+     "on": "Heimdallr",
+     "t": "Dievų sargas prie Bifrösto tilto, su ragu Gjalarhornu. Ragnaroke pučia ragą ir žūsta kovoje su Lokiu.",
+     "src": "Grímnismál; Þrymskviða; Rígsþula"
+    },
+    {
+     "name": "Balderis",
+     "on": "Baldr",
+     "t": "Šviesusis Odino sūnus, nužudytas amalo strėle. Po Ragnaroko jis grįžta į atgimusį pasaulį.",
+     "src": "Völuspá; Baldrs draumar; Gylfaginning 49"
+    },
+    {
+     "name": "Njordas",
+     "on": "Njörðr",
+     "t": "Vanų vėjų ir jūrininkų dievas, gyvenantis Noatūne. Jūros žmonėms – svarbiausias iš dievų.",
+     "src": "Grímnismál; Gylfaginning 23–24"
+    },
+    {
+     "name": "Iduna",
+     "on": "Iðunn",
+     "t": "Saugo obuolius, kurie dievams išlaiko jaunystę. Milžinui Tjaciui ją pagrobus, dievai ima senti.",
+     "src": "Gylfaginning; Skáldskaparmál; Haustlöng"
+    },
+    {
+     "name": "Bragis",
+     "on": "Bragi",
+     "t": "Iškalbos ir poezijos dievas, Idunos vyras. Dauguma tyrėjų jį sieja su IX a. skaldu Bragiu Bodasonu.",
+     "src": "Lokasenna; Gylfaginning; Skáldskaparmál"
+    }
+   ],
+   "worlds": {
+    "title": "Devyni pasauliai – ko šaltiniai nesako",
+    "t": "„Völuspá“ (2 posmas), „Vafþrúðnismál“ (43) ir Snorris mini „devynis pasaulius“, tačiau niekur jų neišvardija. Dažnai pateikiamas sąrašas (Asgardas, Vanaheimas, Alfheimas, Midgardas, Jotunheimas, Muspelheimas, Svartalfaheimas, Niflheimas ir Nidaveliras arba Helė) yra XX a. rekonstrukcija – jį pateikė vertėjas H. A. Bellowsas (1923), pats pažymėjęs, kad devintasis neaiškus."
+   },
+   "ragnarok": {
+    "title": "Ragnarokas",
+    "src": "Völuspá; Gylfaginning 51–53",
+    "steps": [
+     "Treji karo ir giminių nesantaikos metai, po jų – Fimbulo žiema. Vilkai praryja saulę ir mėnulį.",
+     "Ištrūksta vilkas Fenriras, Pasaulio gyvatė ir šuo Garmas. Išplaukia mirusiųjų nagų laivas Naglfaras.",
+     "Ugnies milžinas Surtas joja per Bifröstą, ir tiltas sulūžta. Heimdalas pučia ragą.",
+     "Vigrido lauke Fenriras praryja Odiną, o Vidaras už jį atkeršija. Toras nukauna gyvatę ir, nužengęs devynis žingsnius, krenta. Frėjas krenta nuo Surto, Tyras ir Garmas, Lokis ir Heimdalas nužudo vienas kitą.",
+     "Žemė nugrimzta ir vėl iškyla žalia. Grįžta Balderis ir Hioduras, o Lifas ir Lifthrasiras vėl apgyvendina pasaulį."
+    ],
+    "note": "Posmas apie iš aukštybių ateinantį valdovą yra tik viename rankraštyje (Hauksbók) ir gali būti krikščioniškas priedas."
+   },
+   "havamal": {
+    "title": "Aukščiausiojo kalbos – kasdienė išmintis",
+    "lede": "„Hávamál“ – ne tik runų giesmė. Didžiąją jos dalį sudaro paprasti gyvenimo patarimai keliautojui, svečiui ir draugui. Posmų numeriai pagal Bellowso leidimą; atpasakojimai – mūsų.",
+    "st": [
+     {
+      "n": 1,
+      "on": "Gáttir allar …",
+      "t": "Prieš įeidamas apžiūrėk visas duris – nežinai, kur tavo priešai sėdi."
+     },
+     {
+      "n": 6,
+      "on": "",
+      "t": "Išmintingas, kuris tylus ir atidus, nesulaukia priekaištų. Ištikimas draugas vertas daugiau už didelį protą."
+     },
+     {
+      "n": 9,
+      "on": "",
+      "t": "Laimingas tas, kas gyvas būdamas turi gerą vardą ir savo protą – svetimas patarimas dažnai būna blogas."
+     },
+     {
+      "n": 15,
+      "on": "",
+      "t": "Vado vaikas tebūna santūrus žodžiais, mąslus ir drąsus kovoje. Kiekvienas tebūna linksmas ir giedras iki mirties."
+     },
+     {
+      "n": 21,
+      "on": "",
+      "t": "Banda žino, kada laikas eiti namo iš ganyklos. Neišmintingas niekada nežino savo skrandžio saiko."
+     },
+     {
+      "n": 44,
+      "on": "",
+      "t": "Jei turi draugą, kuriuo pasitiki, dalykis su juo mintimis, keiskis dovanomis ir dažnai jį lankyk."
+     },
+     {
+      "n": 47,
+      "on": "",
+      "t": "Jaunas keliavau vienas ir paklydau. Pasijutau turtingas, kai sutikau kitą – žmogus yra žmogaus džiaugsmas."
+     },
+     {
+      "n": 50,
+      "on": "",
+      "t": "Pušis nudžiūsta, kai jos nesaugo nei žievė, nei spygliai. Taip ir žmogus, kurio niekas nemyli."
+     },
+     {
+      "n": 54,
+      "on": "",
+      "t": "Kiekvienas tebūna vidutiniškai protingas, ne per daug – tie, kas žino saiką, gyvena laimingiausiai."
+     },
+     {
+      "n": 58,
+      "on": "",
+      "t": "Kas nori kito turto ar gyvybės, turi anksti keltis: miegantis retai laimi."
+     },
+     {
+      "n": 76,
+      "on": "Deyr fé, deyja frændr …",
+      "t": "Miršta galvijai, miršta giminės, mirsi ir tu pats. Bet niekada nemiršta geras vardas to, kas jį užsitarnavo."
+     },
+     {
+      "n": 81,
+      "on": "",
+      "t": "Dieną girk vakare, kardą – išbandęs, ledą – perėjęs, alų – išgėręs."
+     }
+    ],
+    "dayLabel": "Šios dienos posmas"
+   }
+  },
+  "people": {
+   "title": "Žmonės, kurie burdavo",
+   "volva": {
+    "title": "Volvos kapas Fyrkate",
+    "tag": "senoji",
+    "t": "Danijoje, Fyrkato žiedinės tvirtovės kapinyne (apie 975–1000 m.), didžiausiame kape palaidota moteris vežimo dėžėje. Su ja rasta metalinė lazda, sidabriniai paukščio kojos amuletai ir maišelis su keliais šimtais drignių sėklų. Tyrėjai šiuos radinius sieja su volvų praktika – tokia, kokią aprašo „Eiriko Raudonojo saga“. Lenkų archeologas Leszekas Gardełas tyrė dešimtis vikingų laikų „burtų lazdų“ – geležinių strypų, kurie anksčiau laikyti kepimo iešmais.",
+    "src": "Fyrkat, Danijos nacionalinis muziejus; L. Gardeła, (Magic) Staffs in the Viking Age, 2016"
+   },
+   "oseberg": {
+    "title": "Osebergas – kas tikra, kas spėjama",
+    "tag": "naujoji",
+    "t": "Osebergo laivo kape (834 m.) palaidotos dvi moterys. Mintis, kad viena jų buvo volva ar šamanė, yra šiuolaikinis spėjimas – tiesioginių įrodymų nėra."
+   },
+   "trials": {
+    "title": "Raganų teismai Norvegijoje",
+    "tag": "senoji",
+    "t": "1560–1700 m. Norvegijoje už raganavimą apkaltinta apie 900 žmonių; mirties bausmė skirta daugiau kaip 50 vyrų ir šiek tiek daugiau nei 280 moterų. Daugiausia teismų vyko 1620–1665 m., paskutinis mirties nuosprendis – 1695 m. Kvæfjorde. Finnmarke nubausti mirtimi 91–92 žmonės (šaltinių skaičiai skiriasi). Viskas prasidėjo po 1617 m. Kūčių audros, kai prie Vardės žuvo 10 valčių ir 40 vyrų: 1621 m. teisme už „sukeltą audrą“ nubausta apie 11 žmonių. Šiaurės Norvegijoje apie penktadalis kaltinamųjų buvo samiai.",
+    "src": "SNL „trolldomsprosessene i Norge“; Smithsonian Magazine"
+   },
+   "trondelag": {
+    "title": "Trøndelage",
+    "tag": "senoji",
+    "t": "Trøndelage 1571–1700 m. teisti 99 žmonės, 19 nubausti mirtimi (tai minimalūs skaičiai). 1614 m. nukirsdintas samis Henrikas Meråkeris. Frøyos ar Hitros bylų mūsų peržiūrėtuose šaltiniuose neradome.",
+    "src": "SNL"
+   },
+   "steilneset": {
+    "title": "Steilnesto memorialas",
+    "tag": "naujoji",
+    "t": "Vardėje 2011 m. atidarytas Peterio Zumthoro ir Louise Bourgeois memorialas: ilgas pastatas su 91 langu, kiekviename – lemputė ir pasakojimas apie vieną nuteistąjį. Primena, kad tai, ką šiandien rodome kaip tautosaką, kadaise žmonėms kainavo gyvybę.",
+    "src": "Norvegijos karališkieji rūmai; UiT architektūros gidas"
+   },
+   "sami": {
+    "title": "Apie samių tradiciją",
+    "tag": "senoji",
+    "t": "Samių būgnai ir noaidi (šamanai) buvo persekiojami tų pačių teismų. Tai gyva tautos kultūra, todėl jos neparduodame ir nepateikiame kaip būrimo – minime tik kaip istoriją."
+   }
+  },
+  "local": {
+   "title": "Froanas ir Frøya",
+   "lede": "Svetainė kuriama Sørburøy saloje, Froano salyne, Frøyos savivaldybėje. Štai ką apie šį kraštą sako šaltiniai.",
+   "items": [
+    {
+     "title": "Guri Kunna",
+     "tag": "tautosaka",
+     "t": "Svarbiausia Trøndelago pakrantės sakmių veikėja, susijusi su Kunos sala Froane. Didžioji norvegų enciklopedija rašo, kad sakmėse ji yra „ir huldra, ir požemio žmonių karalienė, ir jūros deivė, ir kraštovaizdžio kūrėja“. Jos vardu pavadinta Frøyos–Hitros gimnazija.",
+     "src": "SNL „Froan“"
+    },
+    {
+     "title": "Froanas",
+     "tag": "senoji",
+     "t": "Keli šimtai salų, salelių ir šcherų, apie 30 km nuo kranto, 40 km ilgio ruožas nuo Gjæsingeno iki Halteno. Nuo 1979 m. – gamtos rezervatas, garsus paukščiais ir vienomis iš nedaugelio pilkųjų ruonių veisimosi vietų Norvegijoje. 2017 m. gyveno 38 žmonės, daugiausia Sørburøyoje.",
+     "src": "SNL „Froan“"
+    },
+    {
+     "title": "Kulio akmuo",
+     "tag": "senoji",
+     "t": "Netoliese, Smølos saloje, rastas Kulio runų akmuo – vienas svarbiausių Norvegijos runų įrašų: „Toras ir Halvardas pastatė šį akmenį … dvylika žiemų krikščionybė buvo Norvegijoje“. Jo data ginčijama (spėjama nuo X a. vidurio iki 1034 m.). Nuo 2012 m. įrašytas į Norvegijos dokumentinio paveldo registrą.",
+     "src": "NTNU Vitenskapsmuseet"
+    },
+    {
+     "title": "Formulės iš Trøndelago ir Nordmørės",
+     "tag": "tautosaka",
+     "t": "Bango rinkinyje arčiausiai Frøyos užrašytos formulės yra iš Sundalio (Nordmørė, 1889 m.): plienas alaus kubile Kalėdoms, senas sidabras sviesto muštuvėje nuo pavydo. Iš „Trondheimo vyskupijos“ (1889 m.) – paprotys naują arklį įvesti į trobą prie pietų stalo ir pavaišinti, kad jis gerai augtų."
+    }
+   ]
+  },
+  "poems": [
+   {
+    "rune": "fehu",
+    "oe": {
+     "name": "feoh",
+     "line": "Feoh byþ frōfur fira gehwylcum",
+     "lt": "Turtas guodžia kiekvieną, bet žmogus turi dosniai juo dalytis, jei nori sulaukti gero Dievo teismo."
+    },
+    "no": {
+     "name": "fé",
+     "line": "Fé vældr frænda róge",
+     "lt": "Turtas sukelia giminių nesantaiką; vilkas auga miške."
+    },
+    "is": {
+     "name": "fé",
+     "line": "Fé er frænda róg ok flæðar viti ok grafseiðs gata",
+     "lt": "Turtas – giminių vaidai, jūros ugnis (auksas) ir gyvatės kelias."
+    }
+   },
+   {
+    "rune": "uruz",
+    "oe": {
+     "name": "ur",
+     "line": "Ur byþ anmod ond oferhyrned",
+     "lt": "Tauras narsus ir ilgaragis, pavojingas žvėris, kovojantis ragais, išdidus pelkių klajūnas."
+    },
+    "no": {
+     "name": "úr",
+     "line": "Ùr er af illu jarne",
+     "lt": "Šlakas – iš blogos geležies; šiaurės elnias dažnai lekia per sušalusį sniegą."
+    },
+    "is": {
+     "name": "úr",
+     "line": "Úr er skýja grátr ok skára þverrir ok hirðis hatr",
+     "lt": "Dulksna – debesų verksmas, žvyro dildytoja ir piemens neapykanta."
+    }
+   },
+   {
+    "rune": "thurisaz",
+    "oe": {
+     "name": "þorn",
+     "line": "Ðorn byþ ðearle scearp",
+     "lt": "Erškėtis labai aštrus – skausminga jį griebti bet kuriam kariui ir žiauru gulėti tarp jo."
+    },
+    "no": {
+     "name": "þurs",
+     "line": "Þurs vældr kvinna kvillu",
+     "lt": "Milžinas siunčia moterims ligą; nedaugelį džiugina nelaimė."
+    },
+    "is": {
+     "name": "þurs",
+     "line": "Þurs er kvenna kvöl ok kletta búi ok varðrúnar verr",
+     "lt": "Milžinas – moterų kančia, uolų gyventojas ir milžinės vyras."
+    }
+   },
+   {
+    "rune": "ansuz",
+    "oe": {
+     "name": "os",
+     "line": "Os byþ ordfruma ælere spræce",
+     "lt": "Burna (arba dievas) – visos kalbos šaltinis, išminties atrama, paguoda išmintingiems."
+    },
+    "no": {
+     "name": "óss",
+     "line": "Óss er flæstra færða",
+     "lt": "Upės žiotys – daugumos kelionių kelias, o kardų – makštys."
+    },
+    "is": {
+     "name": "óss",
+     "line": "Óss er aldingautr ok ásgarðs jöfurr ok valhallar vísi",
+     "lt": "Asas – senasis Gautas (Odinas), Asgardo valdovas ir Valhalos vadas."
+    }
+   },
+   {
+    "rune": "raidho",
+    "oe": {
+     "name": "rad",
+     "line": "Rad byþ on recyde rinca gehwylcum",
+     "lt": "Jojimas atrodo lengvas kariams viduje, bet sunkus tam, kuris ilgas mylias sėdi ant stipraus žirgo."
+    },
+    "no": {
+     "name": "reið",
+     "line": "Ræið kveða rossom væsta",
+     "lt": "Sakoma, kad jojimas arkliams sunkiausias; Reginas nukalė geriausią kardą."
+    },
+    "is": {
+     "name": "reið",
+     "line": "Reið er sitjandi sæla ok snúðig ferð ok jórs erfiði",
+     "lt": "Jojimas – raitelio malonumas, greita kelionė ir žirgo vargas."
+    }
+   },
+   {
+    "rune": "kaunan",
+    "oe": {
+     "name": "cen",
+     "line": "Cen byþ cwicera gehwam, cuþ on fyre",
+     "lt": "Deglą gyvieji pažįsta iš ugnies – šviesų, spindintį, labiausiai degantį ten, kur ilsisi kilmingieji."
+    },
+    "no": {
+     "name": "kaun",
+     "line": "Kaun er barna bǫlvan",
+     "lt": "Votis vaikams pražūtinga; mirtis išbalina lavoną."
+    },
+    "is": {
+     "name": "kaun",
+     "line": "Kaun er barna böl ok bardaga för ok holdfúa hús",
+     "lt": "Votis – vaikų nelaimė, mūšio rykštė ir pūvančios mėsos namai."
+    }
+   },
+   {
+    "rune": "gebo",
+    "oe": {
+     "name": "gyfu",
+     "line": "Gyfu gumena byþ gleng and herenys",
+     "lt": "Dovanojimas suteikia žmonėms garbės ir šlovės ir paremia vargšus, kurie kitaip nieko neturi."
+    }
+   },
+   {
+    "rune": "wunjo",
+    "oe": {
+     "name": "wynn",
+     "line": "Wynn ne bruceþ ðe can weana lyt",
+     "lt": "Džiaugsmas priklauso tam, kas mažai pažįsta kančios ir liūdesio ir turi gerovę, palaimą bei tvirtus namus."
+    }
+   },
+   {
+    "rune": "hagalaz",
+    "oe": {
+     "name": "hægl",
+     "line": "Hægl byþ hwitust corna; hwyrft hit of heofones lyfte",
+     "lt": "Kruša – baltiausias grūdas, krintantis iš dangaus; vėjas jį sūkuriuoja, o paskui jis virsta vandeniu."
+    },
+    "no": {
+     "name": "hagall",
+     "line": "Hagall er kaldastr korna",
+     "lt": "Kruša – šalčiausias grūdas; Kristus sukūrė senąjį pasaulį."
+    },
+    "is": {
+     "name": "hagall",
+     "line": "Hagall er kaldakorn ok krapadrífa ok snáka sótt",
+     "lt": "Kruša – šaltas grūdas, šlapdribos pūga ir gyvačių liga."
+    }
+   },
+   {
+    "rune": "naudiz",
+    "oe": {
+     "name": "nyd",
+     "line": "Nyd byþ nearu on breostan",
+     "lt": "Vargas spaudžia širdį, bet dažnai padeda ir net išgelbsti, jei į jį laiku atsižvelgiama."
+    },
+    "no": {
+     "name": "nauðr",
+     "line": "Nauðr gerer næppa koste",
+     "lt": "Būtinybė palieka mažai pasirinkimo; nuogą žmogų kanda šaltis."
+    },
+    "is": {
+     "name": "nauð",
+     "line": "Nauð er Þýjar þrá ok þungr kostr ok vássamlig verk",
+     "lt": "Vargas – tarnaitės ilgesys, sunki dalia ir varginantis darbas."
+    }
+   },
+   {
+    "rune": "isaz",
+    "oe": {
+     "name": "is",
+     "line": "Is byþ oferceald, ungemetum slidor",
+     "lt": "Ledas be galo šaltas ir slidus, žiba skaidrus kaip brangakmeniai – šalčio grindys, gražios pažiūrėti."
+    },
+    "no": {
+     "name": "íss",
+     "line": "Ís kǫllum brú bræiða",
+     "lt": "Ledą vadiname plačiu tiltu; aklą reikia per jį vesti."
+    },
+    "is": {
+     "name": "íss",
+     "line": "Íss er árbörkr ok unnar þak ok feigra manna fár",
+     "lt": "Ledas – upių žievė, bangų stogas ir pasmerktųjų pražūtis."
+    }
+   },
+   {
+    "rune": "jera",
+    "oe": {
+     "name": "ger",
+     "line": "Ger byþ gumena hiht, ðonne God læteþ",
+     "lt": "Metai (derlius) – žmonių viltis, kai Dievas leidžia žemei duoti šviesių vaisių turtingiems ir vargšams."
+    },
+    "no": {
+     "name": "ár",
+     "line": "Ár er gumna góðe",
+     "lt": "Geri metai – žmonėms gėris; sakau, kad Frodis buvo dosnus."
+    },
+    "is": {
+     "name": "ár",
+     "line": "Ár er gumna góði ok gott sumar ok algróinn akr",
+     "lt": "Geri metai – žmonių gėris, gera vasara ir pilnai užaugęs laukas."
+    }
+   },
+   {
+    "rune": "eihwaz",
+    "oe": {
+     "name": "eoh",
+     "line": "Eoh byþ utan unsmeþe treow",
+     "lt": "Kukmedis – šiurkštus iš išorės medis, tvirtai įsišaknijęs žemėje, ugnies sargas ir džiaugsmas sodyboje."
+    }
+   },
+   {
+    "rune": "perthro",
+    "oe": {
+     "name": "peorð",
+     "line": "Peorð byþ symble plega and hlehter",
+     "lt": "Peorð – visada žaidimas ir juokas tarp išdidžiųjų, kur kariai drauge linksmai sėdi alaus salėje. (Žodžio reikšmė nežinoma.)"
+    },
+    "note": "Senosios anglų poemos tekste yra spraga, o žodžio „peorð“ reikšmė nežinoma."
+   },
+   {
+    "rune": "algiz",
+    "oe": {
+     "name": "eolh",
+     "line": "Eolh-secg eard hæfþ oftust on fenne",
+     "lt": "Briedžio viksva dažniausiai auga pelkėje, vandenyje, ir skaudžiai sužeidžia – pakraujuoja kiekvienas, kas ją griebia."
+    },
+    "no": {
+     "name": "ýr",
+     "line": "Ýr er vetrgrønstr viða",
+     "lt": "Kukmedis – žaliausias žiemą iš medžių; degdamas jis spragsi."
+    },
+    "is": {
+     "name": "ýr",
+     "line": "Ýr er bendr bogi ok brotgjarnt járn ok fífu fárbauti",
+     "lt": "Kukmedis – įlenktas lankas, trapi geležis ir strėlės milžinas."
+    },
+    "note": "Skandinavų poemose – runa ýr, kuri pagal formą kilo iš algiz, bet turi kitą vardą."
+   },
+   {
+    "rune": "sowilo",
+    "oe": {
+     "name": "sigel",
+     "line": "Sigel semannum symble biþ on hihte",
+     "lt": "Saulė jūreiviams visada – viltis, kol jūros žirgas (laivas) parneša juos į krantą."
+    },
+    "no": {
+     "name": "sól",
+     "line": "Sól er landa ljóme",
+     "lt": "Saulė – kraštų šviesa; lenkiuosi prieš šventąjį teismą."
+    },
+    "is": {
+     "name": "sól",
+     "line": "Sól er skýja skjöldr ok skínandi röðull ok ísa aldrtregi",
+     "lt": "Saulė – debesų skydas, spindintis spindulys ir ledo naikintoja."
+    }
+   },
+   {
+    "rune": "tiwaz",
+    "oe": {
+     "name": "tir",
+     "line": "Tir biþ tacna sum, healdeð trywa wel",
+     "lt": "Tiras – kelrodis ženklas, ištikimas kilmingiesiems, niekada nepaklystantis nakties rūke."
+    },
+    "no": {
+     "name": "týr",
+     "line": "Týr er æinendr ása",
+     "lt": "Tyras – vienarankis iš asų; kalvis dažnai turi pūsti dumples."
+    },
+    "is": {
+     "name": "týr",
+     "line": "Týr er einhendr áss ok úlfs leifar ok hofa hilmir",
+     "lt": "Tyras – vienarankis dievas, vilko likučiai ir šventyklų valdovas."
+    }
+   },
+   {
+    "rune": "berkanan",
+    "oe": {
+     "name": "beorc",
+     "line": "Beorc byþ bleda leas, bereþ efne swa ðeah",
+     "lt": "Beržas neneša vaisių, bet leidžia atžalas; jis gražus šakomis, aukštas, lapuotas, siekiantis dangų."
+    },
+    "no": {
+     "name": "bjarkan",
+     "line": "Bjarkan er laufgrønstr líma",
+     "lt": "Beržo šakelės lapai žaliausi; Lokis apgaule atnešė sėkmę."
+    },
+    "is": {
+     "name": "bjarkan",
+     "line": "Bjarkan er laufgat lim ok lítit tré ok ungsamligr viðr",
+     "lt": "Beržas – lapuota šaka, mažas medis ir jaunas miškas."
+    }
+   },
+   {
+    "rune": "ehwaz",
+    "oe": {
+     "name": "eh",
+     "line": "Eh byþ for eorlum æþelinga wyn",
+     "lt": "Žirgas – kilmingųjų džiaugsmas, išdidus kanopomis, paguoda neramiam, kai apie jį kalbasi vyrai."
+    }
+   },
+   {
+    "rune": "mannaz",
+    "oe": {
+     "name": "man",
+     "line": "Man byþ on myrgþe his magan leof",
+     "lt": "Žmogus džiaugsme mielas savo giminei, bet kiekvienas turės palikti kitą, kai Viešpats atiduos vargšą kūną žemei."
+    },
+    "no": {
+     "name": "maðr",
+     "line": "Maðr er moldar auki",
+     "lt": "Žmogus – žemės priedas; didis vanago nagas."
+    },
+    "is": {
+     "name": "maðr",
+     "line": "Maðr er manns gaman ok moldar auki ok skipa skreytir",
+     "lt": "Žmogus – žmogaus džiaugsmas, žemės priedas ir laivų puošėjas."
+    }
+   },
+   {
+    "rune": "laguz",
+    "oe": {
+     "name": "lagu",
+     "line": "Lagu byþ leodum langsum geþuht",
+     "lt": "Jūra atrodo begalinė žmonėms, plaukiantiems siūbuojančiu laivu – bangos juos gąsdina, o jūros žirgas nepaklūsta kamanoms."
+    },
+    "no": {
+     "name": "lǫgr",
+     "line": "Lǫgr er, fællr ór fjalle",
+     "lt": "Krioklys – iš kalno krintantis vanduo; o brangūs daiktai – iš aukso."
+    },
+    "is": {
+     "name": "lögr",
+     "line": "Lögr er vellanda vatn ok víðr ketill ok glömmungr grund",
+     "lt": "Vanduo – verdantis šaltinis, platus katilas ir žuvų žemė."
+    }
+   },
+   {
+    "rune": "ingwaz",
+    "oe": {
+     "name": "ing",
+     "line": "Ing wæs ærest mid East-Denum",
+     "lt": "Ingas pirmiausia buvo matytas tarp rytų danų, kol išvyko per jūrą, o vežimas nuriedėjo paskui; taip didvyrį pavadino herdingai."
+    }
+   },
+   {
+    "rune": "dagaz",
+    "oe": {
+     "name": "dæg",
+     "line": "Dæg byþ drihtnes sond, deore mannum",
+     "lt": "Diena – Viešpaties siunčiama, brangi žmonėms, Kūrėjo šviesa, džiaugsmas ir viltis turtingiems ir vargšams."
+    }
+   },
+   {
+    "rune": "othala",
+    "oe": {
+     "name": "eþel",
+     "line": "Eþel byþ oferleof æghwylcum men",
+     "lt": "Tėvonija labai brangi kiekvienam, kas joje gali džiaugtis teisingumu ir dora gerovėje."
+    }
+   }
+  ],
+  "poemsTitle": "Runų poemose",
+  "poemOE": "Senosios anglų kalbos poema",
+  "poemNO": "Norvegų poema",
+  "poemIS": "Islandų poema",
+  "navMyths": "Mitai",
+  "navPeople": "Žmonės",
+  "navLocal": "Froanas",
+  "cal": {
+   "title": "Šiandien pagal mėnulį ir primstav",
+   "moonLabel": "Mėnulis dabar",
+   "phases": [
+    "Jaunatis",
+    "Augantis pjautuvas",
+    "Priešpilnis",
+    "Augantis mėnulis",
+    "Pilnatis",
+    "Dylantis mėnulis",
+    "Delčia",
+    "Dylantis pjautuvas"
+   ],
+   "age": "{d} d. po jaunaties",
+   "nextLabel": "Artimiausia primstav šventė",
+   "inDays": "po {d} d.",
+   "today": "šiandien",
+   "formulasLabel": "Ką šioje mėnulio fazėje darydavo juodųjų knygų žmonės",
+   "none": "Šiai fazei Bango rinkinyje formulių su mėnulio sąlyga neradome.",
+   "note": "Mėnulio fazė apskaičiuojama astronomiškai (vidutinis 29,53 d. mėnulio ciklas), tikslumas – apie parą. Formulės – istorija, ne patarimai.",
+   "formulas": {
+    "waxing": [
+     {
+      "n": 1020,
+      "t": "Kai mėnulis „užsidega“, kiekviena karpa paliečiama žirniu, žirniai surišami ir metami atbulomis per galvą (1790, 1862)."
+     },
+     {
+      "n": 981,
+      "t": "Šaknis sodinama iškart po jaunaties ir iškasama likus 2–3 dienoms iki kitos jaunaties (apie 1800)."
+     },
+     {
+      "n": 699,
+      "t": "Galvijams vaistas duodamas kas trečią rytą jaunaties pradžioje ir tęsiama visą mėnulio ciklą (XVIII a.)."
+     },
+     {
+      "n": 956,
+      "t": "Burtų lazdelė pjaunama pirmąjį ketvirtadienio rytą per jaunatį, prieš saulėtekį (XVIII a.)."
+     }
+    ],
+    "full": [
+     {
+      "n": 958,
+      "t": "Burtų lazdelė imama per pilnatį, kai mėnulis neturi „įkarpos“ (apie 1770)."
+     },
+     {
+      "n": 1509,
+      "t": "Spalio pilnaties metu galvijams duodama „gera taurelė“ nuo kraujo ligos (XVIII–XIX a.)."
+     }
+    ],
+    "waning": [
+     {
+      "n": 1003,
+      "t": "Kai mėnulis dyla, karpos patepamos šviežiu nesūdytu lašiniu, kuris paskui užkasamas (1790)."
+     }
+    ]
+   }
+  },
+  "tagHist": "Istorija",
+  "navMore": "Daugiau",
+  "dKast": "Užduokite klausimą ir ištraukite 1, 3 arba 9 runas.",
+  "dRuner": "Visos 24 vyresniojo futarko runos: reikšmės ir senosios runų poemos.",
+  "dVerksted": "Jūsų vardas runomis, šifruotos runos, vardo runa ir runų kalendorius.",
+  "dSvartebok": "Norvegų juodųjų knygų užkalbėjimai ir ką jie sako apie mėnulį.",
+  "dMetai": "Šiandienos mėnulio fazė, primstav šventės ir metų papročiai.",
+  "dMitai": "Dievai, devyni pasauliai, Ragnarokas ir dienos „Hávamál“ posmas.",
+  "dButybes": "Huldra, nykas, troliai, nisė ir kitos norvegų sakmių būtybės.",
+  "dSaltiniai": "Ką apie runas ir burtus sako Edos, sagos ir runų įrašai.",
+  "dZmones": "Volvos, raganų teismai Norvegijoje ir samių tradicija.",
+  "dFroan": "Froano salyno sakmės, Guri Kunna ir Kulio runų akmuo.",
+  "step1": "Užduokite klausimą (nebūtina)",
+  "step2": "Pasirinkite, kiek runų traukti",
+  "step3": "Traukite runas",
+  "exploreTitle": "Ką dar rasite",
+  "exploreLede": "Būrimas – tik pradžia. Kiekviename skyriuje pažymėta, kas kilę iš senosios tradicijos, kas iš tautosakos, o kas yra naujoji tradicija.",
+  "pagerPrev": "Ankstesnis",
+  "pagerNext": "Toliau",
+  "themeLabel": "Spalvos",
+  "theme_auto": "Kaip įrenginyje",
+  "theme_light": "Šviesios",
+  "theme_dark": "Tamsios",
+  "legendOpen": "Ką reiškia ženklai?"
+ },
+ "spreads": {
+  "en": {
+   "label": "Dienos runa",
+   "desc": "Viena runa kaip dienos tema.",
+   "pos": [
+    "Dienos tema"
+   ]
+  },
+  "tre": {
+   "label": "Nornos (3)",
+   "desc": "Trys runos, pavadintos Nornų vardais iš „Volvos pranašystės“ (Völuspá): Urda, Verdandi ir Skuld. Pats išdėstymas yra šiuolaikinis paprotys.",
+   "pos": [
+    "Urda · tai, kas buvo",
+    "Verdandi · tai, kas vyksta dabar",
+    "Skuld · tai, kas bus"
+   ]
+  },
+  "ni": {
+   "label": "Devynių runų metimas",
+   "desc": "Devynios runos metamos ant audeklo. Skaitomos tik ženklu į viršų nukritusios runos, ir kuo arčiau centro, tuo svarbesnės. Tai šiuolaikinė praktika.",
+   "zones": [
+    "Vidinis ratas · esmė",
+    "Vidurinis ratas · įtaka",
+    "Išorinis ratas · fonas"
+   ]
+  }
+ },
+ "aettir": [
+  "1-oji ætt · ᚠ–ᚹ",
+  "2-oji ætt · ᚺ–ᛊ",
+  "3-ioji ætt · ᛏ–ᛟ"
+ ],
+ "runes": [
+  {
+   "name": "Fehu",
+   "lit": "Galvijai, turtas",
+   "hist": "Senosios skandinavų kalbos runų poemoje vartojamas pavadinimas fé, senosios anglų – feoh.",
+   "up": "Gerovė, vertybės, dėl kurių dirbote, tai, kuo galima dalytis.",
+   "rev": "Netektis, nerimas dėl pinigų, vertybės, slystančios iš rankų."
+  },
+  {
+   "name": "Uruz",
+   "lit": "Tauras (nepatikima rekonstrukcija)",
+   "hist": "Senosios anglų runų poemoje sakoma tauras, islandiškoje – lietus arba šlapdriba.",
+   "up": "Pirmapradė jėga, sveikata, ištvermė.",
+   "rev": "Susilpnėjusi jėga, netinkamai panaudota jėga."
+  },
+  {
+   "name": "Thurisaz",
+   "lit": "Milžinas, jotunas (nepatikima rekonstrukcija)",
+   "hist": "Senosios skandinavų kalbos poemose sakoma þurs (jotunas), senosios anglų – þorn (erškėtis).",
+   "up": "Pasipriešinimas, su kuriuo tenka susitikti, apsauga, slenkstis.",
+   "rev": "Neapgalvotas veiksmas, konfliktas, kurį patys sustiprinate."
+  },
+  {
+   "name": "Ansuz",
+   "lit": "Dievas, asas",
+   "hist": "Islandiškoje poemoje sakoma óss (asai), senosios anglų – ós.",
+   "up": "Žodžiai, patarimas, įžvalga iš išmintingesnio žmogaus.",
+   "rev": "Nesusipratimai, blogi patarimai, likti neišgirstam."
+  },
+  {
+   "name": "Raidho",
+   "lit": "Jojimas, kelionė",
+   "hist": "Senąja skandinavų kalba reið, senąja anglų – rád.",
+   "up": "Kelionė, judėjimas, tinkamas ritmas.",
+   "rev": "Vėlavimas, bloga kryptis, kelionė, kurią geriau atidėti."
+  },
+  {
+   "name": "Kaunan",
+   "lit": "Votis, žaizda (nepatikima rekonstrukcija)",
+   "hist": "Islandiškoje poemoje sakoma kaun (žaizda), senosios anglų – cén (deglas).",
+   "up": "Šviesa tamsoje, žinios, kūrybinė kibirkštis.",
+   "rev": "Tai, kas skauda, įžvalga, kurios vengiate."
+  },
+  {
+   "name": "Gebo",
+   "lit": "Dovana",
+   "hist": "Randama tik senosios anglų runų poemoje (gyfu), jaunesniajame futarke jos nėra.",
+   "up": "Dovana, abipusiškumas, geras bendradarbiavimas.",
+   "rev": null
+  },
+  {
+   "name": "Wunjo",
+   "lit": "Džiaugsmas",
+   "hist": "Randama tik senosios anglų runų poemoje (wynn).",
+   "up": "Džiaugsmas, bendruomenė, kai kažkas stoja į savo vietą.",
+   "rev": "Nepasitenkinimas, izoliacija, džiaugsmas, kuris neateina."
+  },
+  {
+   "name": "Hagalaz",
+   "lit": "Kruša",
+   "hist": "Senąja skandinavų kalba hagall, senąja anglų hægl.",
+   "up": "Išorinis sutrikdymas, kuris apvalo, audra, kuri praeina.",
+   "rev": null
+  },
+  {
+   "name": "Naudiz",
+   "lit": "Nepriteklius, prievarta",
+   "hist": "Senąja skandinavų kalba nauð, senąja anglų nýd.",
+   "up": "Poreikis, apribojimas, kantrybė spaudimo sąlygomis.",
+   "rev": null
+  },
+  {
+   "name": "Isaz",
+   "lit": "Ledas",
+   "hist": "Senąja skandinavų kalba íss, senąja anglų ís.",
+   "up": "Sustingimas, pauzė, aiškumas, kai viskas užšąla.",
+   "rev": null
+  },
+  {
+   "name": "Jera",
+   "lit": "Metai, geras derlius",
+   "hist": "Islandiškoje poemoje sakoma ár (geri metai), senosios anglų – gér.",
+   "up": "Derliaus nuėmimas, rezultatai, ateinantys savo laiku.",
+   "rev": null
+  },
+  {
+   "name": "Eihwaz",
+   "lit": "Kukmedis (nepatikima rekonstrukcija)",
+   "hist": "Randama tik senosios anglų runų poemoje (eoh). Ir pavadinimas, ir garso reikšmė yra ginčijami.",
+   "up": "Ištvermė, ryšys tarp seno ir naujo.",
+   "rev": null
+  },
+  {
+   "name": "Perthro",
+   "lit": "Nežinoma reikšmė",
+   "hist": "Senąja anglų kalba peorð. Joks šaltinis tikrai nepasako, ką šis pavadinimas reiškia.",
+   "up": "Nežinomybė, atsitiktinumas, kažkas paslėpto, kas išryškėja.",
+   "rev": "Paslaptys, kurios slegia, atsitiktinumai, kurie eina prieš jus."
+  },
+  {
+   "name": "Algiz",
+   "lit": "Briedis (nepatikima rekonstrukcija)",
+   "hist": "Pirminis pavadinimas nežinomas; išliko tik iškreipta senosios anglų forma (eolhx). Šią runą SS naudojo kaip „Lebensrune“.",
+   "up": "Apsauga, budrumas, ribų nustatymas.",
+   "rev": "Pažeidžiamumas, įspėjimo praleidimas."
+  },
+  {
+   "name": "Sowilo",
+   "lit": "Saulė",
+   "hist": "Senąja skandinavų kalba sól, senąja anglų sigel. Dviguba sowilo buvo naudojama kaip SS ženklas.",
+   "up": "Saulė, jėga, sėkmė, aiškumas.",
+   "rev": null
+  },
+  {
+   "name": "Tiwaz",
+   "lit": "Dievas Tyras",
+   "hist": "Senąja skandinavų kalba týr; islandiškoji poema jį vadina vienarančiu dievu.",
+   "up": "Teisingumas, drąsa, aukojimasis dėl to, kas teisinga.",
+   "rev": "Neteisybė, nusivylimas, kova, kuri ne jūsų."
+  },
+  {
+   "name": "Berkanan",
+   "lit": "Beržas",
+   "hist": "Senąja skandinavų kalba bjarkan, senąja anglų beorc.",
+   "up": "Augimas, nauja pradžia, rūpestis.",
+   "rev": "Sąstingis, nerimas dėl šeimos."
+  },
+  {
+   "name": "Ehwaz",
+   "lit": "Arklys",
+   "hist": "Randama tik senosios anglų runų poemoje (eh).",
+   "up": "Bendradarbiavimas, pasitikėjimas, judėjimas į priekį.",
+   "rev": "Nepasitikėjimas, neramumas, nesubalansuota partnerystė."
+  },
+  {
+   "name": "Mannaz",
+   "lit": "Žmogus",
+   "hist": "Senąja skandinavų kalba maðr, senąja anglų mann.",
+   "up": "Jūs patys tarp kitų, bendruomenė, savimonė.",
+   "rev": "Izoliacija, savęs apgaudinėjimas, kitų atstūmimas."
+  },
+  {
+   "name": "Laguz",
+   "lit": "Vanduo (nepatikima rekonstrukcija)",
+   "hist": "Senąja skandinavų kalba lögr, senąja anglų lagu (jūra).",
+   "up": "Intuicija, tėkmė, jausmai.",
+   "rev": "Sumaištis, paklydimas jausmuose."
+  },
+  {
+   "name": "Ingwaz",
+   "lit": "Dievas Ingas",
+   "hist": "Randama tik senosios anglų runų poemoje (ing).",
+   "up": "Užbaigimas, vidinis augimas, poilsis prieš kažką naujo.",
+   "rev": null
+  },
+  {
+   "name": "Dagaz",
+   "lit": "Diena",
+   "hist": "Randama tik senosios anglų runų poemoje (dæg).",
+   "up": "Proveržis, aušra, nauja fazė.",
+   "rev": null
+  },
+  {
+   "name": "Othala",
+   "lit": "Paveldas, protėvių žemė",
+   "hist": "Randama tik senosios anglų runų poemoje (éþel, nuosavybė). Runa buvo naudojama SS ženkluose ir šiandien ją naudoja ekstremistai.",
+   "up": "Namai, paveldas, šaknys, tai, kas išlieka.",
+   "rev": "Ginčas dėl paveldo, bešaknystė, seni modeliai, kurie riša."
+  }
+ ]
+}

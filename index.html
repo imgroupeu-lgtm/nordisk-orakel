@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Nordisk Orakel Runer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Archivo:wdth,wght@100..125,500..700&family=Noto+Sans+Runic&display=swap">
+<style>
+/* Layout: a winter-night museum. Dark-first ink background, Yggdrasil drawn in gilt line under the hero,
+   runes carved and painted in red ochre (runestones were painted, Runforum Uppsala). One column of chapters:
+   cast → reading → premium → rune workshop → the 24 runes → black books (Bang's 14 groups, moon & Thursday) → sources. */
+:root{
+  --night:#0d1215; --deep:#121a1e; --panel:#172126; --bone:#e9e3d4; --muted:#a2aaa6; --line:#2a363b;
+  --gilt:#c9a65a; --ochre:#d4623f; --moss:#a3b47f; --stone:#5b6462; --stone-dk:#343c3d; --linen:#1b2428; --thread:rgba(233,227,212,.045);
+  --carve-hi:rgba(255,255,255,.14); --carve-lo:rgba(0,0,0,.6); --shadow:rgba(0,0,0,.45);
+  --display:"Cormorant Garamond", "Garamond", Georgia, serif;
+  --body:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --label:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --rune:"Noto Sans Runic", "Segoe UI Historic", "Segoe UI Symbol", serif;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --night:#e8e9e4; --deep:#f1f1ed; --panel:#fafaf7; --bone:#1a2023; --muted:#596265; --line:#cdd1cb;
+  --gilt:#86671f; --ochre:#a6371d; --moss:#55663a; --stone:#8a908e; --stone-dk:#5c6264; --linen:#f7f5ef; --thread:rgba(26,32,35,.05);
+  --carve-hi:rgba(255,255,255,.4); --carve-lo:rgba(0,0,0,.4); --shadow:rgba(0,0,0,.15); color-scheme:light}}
+:root[data-theme="light"]{
+  --night:#e8e9e4; --deep:#f1f1ed; --panel:#fafaf7; --bone:#1a2023; --muted:#596265; --line:#cdd1cb;
+  --gilt:#86671f; --ochre:#a6371d; --moss:#55663a; --stone:#8a908e; --stone-dk:#5c6264; --linen:#f7f5ef; --thread:rgba(26,32,35,.05);
+  --carve-hi:rgba(255,255,255,.4); --carve-lo:rgba(0,0,0,.4); --shadow:rgba(0,0,0,.15); color-scheme:light}
+
+body{overflow-x:hidden;background:var(--night);color:var(--bone);font-family:var(--body);font-size:18px;line-height:1.62}
+.wrap{max-width:1120px;margin:0 auto;padding-block:0 72px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit;text-decoration-color:var(--gilt);text-underline-offset:3px}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:3px}
+p{margin:0}
+.label{font-family:var(--label);font-stretch:118%;font-weight:600;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gilt)}
+h1,h2,h3{font-family:var(--display);font-weight:600;margin:0;text-wrap:balance;letter-spacing:.005em}
+h2{font-size:clamp(36px,5vw,58px);line-height:1}
+h3{font-size:26px;line-height:1.15}
+.lede{color:var(--muted);max-width:62ch;font-size:19px}
+.hint{font-size:15px;color:var(--muted)}
+section{scroll-margin-top:20px}
+
+/* top bar */
+.top{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding-block:20px;border-bottom:1px solid var(--line)}
+.mark{display:flex;align-items:baseline;gap:12px;font-family:var(--display);font-weight:600;font-size:22px;letter-spacing:.06em}
+.mark .r{font-family:var(--rune);color:var(--ochre);font-size:15px;letter-spacing:.25em}
+nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+nav a{font-family:var(--label);font-stretch:112%;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--bone)}
+select{font-size:15px;padding:7px 10px;border:1px solid var(--line);border-radius:2px;background:var(--deep);max-width:100%}
+
+/* hero with Yggdrasil */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:24px;align-items:center;min-height:540px;padding-block:44px 24px}
+.hero .copy{position:relative;z-index:1;display:grid;gap:18px}
+.hero h1{font-size:clamp(58px,9.5vw,124px);line-height:.88;font-weight:600}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--gilt)}
+.tree{position:relative;align-self:stretch;min-height:420px;margin:0}
+.tree canvas{position:absolute;inset:0;width:100%;height:100%}
+.tree figcaption{position:absolute;right:0;bottom:0;font-size:12px;color:var(--muted);font-style:italic}
+.ask{display:grid;gap:14px;margin-top:6px}
+.ask input[type=text]{width:100%;box-sizing:border-box;padding:12px 0 10px;border:0;border-bottom:1px solid var(--gilt);background:transparent;font-style:italic;font-size:21px}
+.ask input::placeholder{color:var(--muted)}
+.seg{display:flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:2px;width:max-content;max-width:100%}
+.seg button{padding:9px 16px;border:0;border-right:1px solid var(--line);background:transparent;cursor:pointer;font-family:var(--label);font-stretch:108%;font-weight:600;font-size:13px;letter-spacing:.06em}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--gilt);color:var(--night)}
+.actions{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.cast-btn{font-family:var(--label);font-stretch:118%;font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:14px;padding:14px 26px;border:1px solid var(--ochre);border-radius:2px;background:var(--ochre);color:#fff;cursor:pointer}
+.cast-btn:hover{filter:brightness(1.08)}
+.link-btn{background:none;border:0;padding:4px 0;cursor:pointer;text-decoration:underline;text-decoration-color:var(--gilt);text-underline-offset:4px;font-size:16px}
+label.tog{display:flex;gap:8px;align-items:center;font-size:16px;color:var(--muted)}
+
+/* the cloth */
+.linen{background-color:var(--linen);border:1px solid var(--line);border-radius:3px;
+  background-image:repeating-linear-gradient(0deg,var(--thread) 0 1px,transparent 1px 4px),repeating-linear-gradient(90deg,var(--thread) 0 1px,transparent 1px 4px)}
+.caption{font-size:14px;font-style:italic;color:var(--muted);max-width:76ch;margin-top:10px}
+.strip{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(20px,5vw,60px);padding:clamp(28px,5vw,48px) 16px}
+.slot{display:grid;gap:8px;justify-items:center;text-align:center;width:min(160px,40vw)}
+.slot .pos{font-family:var(--label);font-stretch:108%;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);min-height:2.8em;text-wrap:balance}
+.slot .nm{font-family:var(--display);font-size:22px;font-weight:600;min-height:1.3em}
+.revtag{font-size:13px;color:var(--ochre);min-height:1.3em}
+.stone{width:94px;max-width:100%;aspect-ratio:5/6;border:0;padding:0;cursor:pointer;display:grid;place-items:center;position:relative;
+  border-radius:47% 41% 44% 49% / 39% 45% 53% 51%;
+  background:radial-gradient(130% 100% at 28% 20%,var(--stone) 0%,var(--stone-dk) 92%);
+  box-shadow:inset 0 -4px 0 rgba(0,0,0,.25),inset 0 2px 0 rgba(255,255,255,.1),0 8px 14px var(--shadow)}
+.stone::after{content:"";position:absolute;inset:0;border-radius:inherit;opacity:.45;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.stone .g{font-family:var(--rune);font-size:46px;line-height:1;color:var(--ochre);text-shadow:0 1px 0 var(--carve-hi),0 -1px 0 var(--carve-lo);transition:transform .4s}
+.stone.rev .g{transform:rotate(180deg)}
+.stone.hidden .g,.stone.down .g{opacity:0}
+.stone.down{background:var(--stone-dk);cursor:default}
+.stone.land{animation:land .55s cubic-bezier(.2,.8,.3,1.15) both}
+@keyframes land{from{transform:translateY(-22px) rotate(-9deg)}to{transform:none}}
+.round .stone.land{animation-name:landc}
+@keyframes landc{from{transform:translate(-50%,-80%) rotate(-12deg)}to{transform:translate(-50%,-50%)}}
+.round{position:relative;width:min(100%,520px);aspect-ratio:1;margin:clamp(18px,4vw,34px) auto;border-radius:50%}
+.round .ring{position:absolute;border:1px dashed color-mix(in srgb,var(--muted) 40%,transparent);border-radius:50%;pointer-events:none}
+.round .stone{position:absolute;width:15%;transform:translate(-50%,-50%)}
+.round .stone .g{font-size:clamp(20px,5.4vw,34px)}
+.round .n{position:absolute;transform:translate(-50%,0);font-family:var(--label);font-size:11px;font-weight:700;color:var(--muted);pointer-events:none}
+.legend{display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:center;padding:0 16px 22px}
+.legend span{font-size:14px;color:var(--muted)}
+.legend b{font-family:var(--label);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--bone);margin-right:6px}
+
+/* reading sheet */
+.sheet{margin-top:36px}
+.sheet .head{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;justify-content:space-between;padding-bottom:12px;border-bottom:1px solid var(--gilt)}
+.q{font-style:italic;color:var(--muted)}
+.m{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.m .gl{font-family:var(--rune);font-size:54px;line-height:1;color:var(--ochre);text-align:center}
+.m .gl.rev{transform:rotate(180deg)}
+.m h3 small{font-family:var(--body);font-weight:400;font-size:15px;color:var(--muted);margin-left:8px}
+.m .r{color:var(--ochre);font-style:italic}
+.m .pos{font-family:var(--label);font-stretch:108%;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px 28px;margin-top:10px}
+.tag{display:block;font-family:var(--label);font-stretch:118%;font-weight:700;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:3px}
+.tag.mod{color:var(--ochre)} .tag.his{color:var(--moss)}
+.empty{padding:22px 0;color:var(--muted)}
+
+/* chapters */
+.chapter{padding-block:clamp(56px,8vw,96px) 0;display:grid;gap:26px}
+.chapter > header{display:grid;gap:12px;max-width:72ch}
+.rule{display:flex;align-items:center;gap:14px;color:var(--gilt)}
+.rule::after{content:"";flex:1;height:1px;background:var(--line)}
+.premium{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:24px;display:grid;gap:14px;align-content:start;min-width:0}
+.chip{justify-self:start;font-family:var(--label);font-stretch:118%;font-weight:700;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);border:1px solid var(--gilt);border-radius:2px;padding:3px 8px}
+.chip.modern{color:var(--ochre);border-color:var(--ochre)}
+.chip.hist{color:var(--moss);border-color:var(--moss)}
+.btn{font-family:var(--label);font-stretch:112%;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:12.5px;padding:11px 18px;border:1px solid var(--bone);border-radius:2px;background:var(--bone);color:var(--night);cursor:pointer}
+.btn.ghost{background:transparent;color:var(--bone)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btns{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ai-out{display:grid;gap:8px;max-width:68ch}
+.ai-out:empty{display:none}
+.ai-out h4{font-family:var(--display);font-weight:600;font-size:22px;margin:12px 0 0;color:var(--gilt)}
+.drop{display:flex;flex-wrap:wrap;align-items:center;gap:10px;border:1px dashed var(--muted);border-radius:3px;padding:14px;cursor:pointer;color:var(--muted);font-size:15px;min-width:0}
+.drop.over{border-color:var(--gilt)}
+.drop input{max-width:100%;min-width:0;font-size:14px}
+#preview{max-height:300px;width:auto;border-radius:3px;border:1px solid var(--line);justify-self:start}
+.recrow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
+.recrow .pl{grid-column:1/-1;font-family:var(--label);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.conf{font-size:13px;border-radius:2px;padding:1px 8px;border:1px solid var(--line);color:var(--muted)}
+.conf.low{border-color:var(--ochre);color:var(--ochre)}
+
+/* figures (public-domain art), hidden until the image loads */
+figure.art{margin:0;display:grid;gap:8px}
+figure.art img{width:100%;height:auto;display:block;border-radius:2px;background:var(--deep)}
+figure.art figcaption{font-size:14px;color:var(--muted);font-style:italic}
+figure.art figcaption small{display:block;font-style:normal;font-size:12px;opacity:.85;margin-top:2px}
+.gallery{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:22px}
+.gallery .wide{grid-column:span 8}.gallery .tall{grid-column:span 4}.gallery .half{grid-column:span 6}
+[data-img][hidden]{display:none!important}
+
+/* workshop */
+.tabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--line)}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:12px 18px 10px;cursor:pointer;font-family:var(--display);font-size:22px;font-weight:600;color:var(--muted)}
+.tabs button[aria-selected="true"]{color:var(--bone);border-bottom-color:var(--gilt)}
+.tabs small{display:block;font-family:var(--label);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.tabs .h{color:var(--moss)} .tabs .mo{color:var(--ochre)} .tabs .c{color:var(--moss)}
+.bench{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(20px,4vw,48px);align-items:start;padding-top:22px}
+.namein{width:100%;box-sizing:border-box;padding:12px 0 8px;border:0;border-bottom:1px solid var(--gilt);background:transparent;font-family:var(--display);font-weight:600;font-size:34px;letter-spacing:.02em}
+.namein::placeholder{color:var(--muted);font-weight:500}
+.panel-text{display:grid;gap:12px;min-width:0}
+.carving{min-height:170px;display:grid;align-content:center;gap:16px;padding:28px;border-radius:3px;background:radial-gradient(140% 120% at 20% 10%,var(--stone) 0%,var(--stone-dk) 95%);overflow:hidden;color:#eee6d6}
+.carving .out{font-family:var(--rune);font-size:clamp(34px,6vw,58px);line-height:1.2;color:#e0714d;text-shadow:0 1px 0 rgba(255,255,255,.14),0 -1px 0 rgba(0,0,0,.6);overflow-wrap:anywhere;letter-spacing:.08em}
+.carving .empty{color:#eee6d6;opacity:.75;padding:0}
+.pairs{display:flex;flex-wrap:wrap;gap:6px}
+.pairs span{display:grid;justify-items:center;min-width:28px;padding:3px 6px;border-radius:2px;background:rgba(0,0,0,.22);font-size:12px;font-family:var(--label)}
+.pairs span b{font-family:var(--rune);font-weight:400;font-size:18px}
+.twigs{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:flex-end}
+.twigs svg{width:30px;height:64px;overflow:visible}
+.twigs svg line{stroke:#e0714d;stroke-width:3;stroke-linecap:round}
+.twigs .gap{width:14px}
+.code{font-family:var(--label);font-size:13px;letter-spacing:.06em;opacity:.9}
+.numtable{width:100%;border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums}
+.numtable td,.numtable th{padding:5px 8px;border-bottom:1px solid rgba(255,255,255,.12);text-align:left}
+.numtable th{font-family:var(--label);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;opacity:.8}
+.numtable .rn{font-family:var(--rune);font-size:20px;color:#e0714d}
+.result{display:flex;gap:18px;align-items:center}
+.result .big{font-family:var(--rune);font-size:84px;line-height:1;color:#e0714d}
+.result h3{color:#eee6d6}
+.calgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px}
+.calgrid .k{display:grid;gap:6px;padding:16px;border-radius:3px;background:rgba(0,0,0,.2)}
+.calgrid .k .big{font-family:var(--rune);font-size:56px;line-height:1;color:#e0714d}
+.yearin{width:120px;padding:8px 10px;border:1px solid var(--line);border-radius:2px;background:var(--deep);font-variant-numeric:tabular-nums}
+
+/* the 24 runes */
+.aett{display:grid;grid-template-columns:140px minmax(0,1fr);gap:16px;align-items:center;padding:14px 0;border-top:1px solid var(--line)}
+.tiles{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px}
+.tiles button{display:grid;gap:2px;justify-items:center;padding:10px 2px 8px;border:1px solid transparent;border-radius:3px;background:transparent;cursor:pointer}
+.tiles button:hover{background:var(--panel)}
+.tiles button[aria-pressed="true"]{background:var(--panel);border-color:var(--gilt)}
+.tiles .g{font-family:var(--rune);font-size:34px;line-height:1.1;color:var(--ochre)}
+.tiles .t{font-family:var(--label);font-stretch:100%;font-size:12px;font-weight:600}
+.detail{display:grid;grid-template-columns:150px minmax(0,1fr);gap:clamp(18px,4vw,40px);padding:28px;background:var(--panel);border:1px solid var(--line);border-radius:3px;margin-top:10px}
+.detail .big{font-family:var(--rune);font-size:120px;line-height:1;color:var(--ochre);text-align:center}
+.detail h3{font-size:40px}
+.detail .pg{font-style:italic;color:var(--muted)}
+.detail .sym{font-size:15px;color:var(--muted);font-style:italic}
+
+/* black books */
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:0;border-top:1px solid var(--gilt)}
+.group{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 12px;padding:16px 14px 16px 0;border-bottom:1px solid var(--line)}
+.group .n{font-family:var(--display);font-size:22px;font-weight:600;color:var(--gilt);grid-row:span 2}
+.group h4{margin:0;font-family:var(--display);font-size:21px;font-weight:600;line-height:1.2}
+.group p{font-size:15px;color:var(--muted)}
+.group.dark .n{color:var(--ochre)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border-top:1px solid var(--gilt);border-bottom:1px solid var(--line)}
+.fact{padding:22px 20px 22px 0;display:grid;gap:6px;align-content:start}
+.fact .n{font-family:var(--display);font-weight:600;font-size:clamp(40px,6vw,62px);line-height:.95;color:var(--gilt);font-variant-numeric:tabular-nums}
+.fact .t{font-size:16px;color:var(--muted);max-width:32ch}
+.moon{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,48px);align-items:start}
+.chart svg{width:100%;height:auto;display:block}
+.chart text{font-family:var(--label);font-size:13px;fill:var(--muted)}
+.chart .val{fill:var(--bone);font-weight:700}
+.feasts{display:grid;gap:0}
+.feasts div{display:grid;grid-template-columns:90px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.feasts b{font-family:var(--display);font-size:30px;font-weight:600;color:var(--gilt);font-variant-numeric:tabular-nums}
+.cosmic{font-family:var(--display);font-size:clamp(24px,3vw,32px);line-height:1.3;font-style:italic;color:var(--bone);max-width:44ch;border-left:2px solid var(--gilt);padding-left:20px}
+
+
+/* sources, beings, year */
+.lore{display:grid;gap:clamp(40px,6vw,72px)}
+.duo{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(22px,4vw,48px);align-items:start}
+.blk{display:grid;gap:12px;min-width:0}
+.ref{font-family:var(--label);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.on{padding:24px 26px;border:1px solid var(--line);border-radius:3px;background:var(--panel);display:grid;gap:10px}
+.on q{quotes:none;font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(26px,3.4vw,36px);line-height:1.25;color:var(--gilt)}
+.on p{font-size:15px;color:var(--muted)}
+.charms{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.charm{background:var(--night);padding:16px;display:grid;gap:6px;align-content:start}
+.charm .n{display:flex;justify-content:space-between;align-items:baseline}
+.charm .n b{font-family:var(--display);font-size:30px;font-weight:600;color:var(--gilt);line-height:1}
+.charm .n span{font-family:var(--label);font-size:10.5px;letter-spacing:.14em;color:var(--muted)}
+.charm p{font-size:15.5px;line-height:1.45}
+.charm .link{font-size:13px;color:var(--moss)}
+.charm .hist{font-family:var(--label);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ochre)}
+.tbl{overflow-x:auto}
+.tbl table{width:100%;border-collapse:collapse;font-size:15.5px;min-width:620px}
+.tbl th{font-family:var(--label);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-align:left;padding:8px 10px;border-bottom:1px solid var(--gilt)}
+.tbl td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl .onm{font-family:var(--display);font-style:italic;font-size:21px;color:var(--gilt);white-space:nowrap}
+.egil{display:grid;gap:0}
+.egil div{display:grid;grid-template-columns:70px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.egil b{font-family:var(--label);font-size:11px;letter-spacing:.14em;color:var(--gilt);padding-top:4px}
+.beings{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.being{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:20px;display:grid;gap:8px;align-content:start}
+.being h3{font-size:28px}
+.being .where{font-family:var(--label);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt)}
+.being .leg{font-style:italic;color:var(--muted);font-size:15px}
+.being .src{font-size:12px;color:var(--muted)}
+.patterns{display:grid;gap:10px;margin:0;padding-left:20px;max-width:75ch}
+.yearlist{display:grid;border-top:1px solid var(--gilt)}
+.yearlist div{display:grid;grid-template-columns:90px 170px minmax(0,1fr);gap:14px;padding:13px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.yearlist .d{font-family:var(--label);font-size:12px;letter-spacing:.1em;color:var(--gilt);font-variant-numeric:tabular-nums}
+.yearlist .nm{font-family:var(--display);font-size:22px;font-weight:600}
+@media (max-width:860px){.duo{grid-template-columns:1fr}.yearlist div{grid-template-columns:80px minmax(0,1fr)}.yearlist div span:last-child{grid-column:1/-1}}
+
+/* photo bands: the user's own drone photos from Sørburøy. Always dark, whatever the theme. */
+.band{position:relative;isolation:isolate;margin-inline:calc(50% - 50vw);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  --bone:#ece6d6; --muted:#b8bdb6; --gilt:#d9b766; --ochre:#e8805e; --line:rgba(236,230,214,.18); --panel:rgba(14,19,22,.72); --deep:rgba(10,14,16,.6); --night:#0d1215; --linen:rgba(18,25,28,.82); --moss:#b6c592; color:var(--bone); color-scheme:dark}
+.band::before{content:"";position:absolute;inset:0;z-index:-2;background-size:cover;background-position:var(--pos,center);background-image:var(--img)}
+.band::after{content:"";position:absolute;inset:0;z-index:-1;background:var(--veil,linear-gradient(180deg,rgba(9,13,15,.55),rgba(9,13,15,.88)))}
+.band > .in{max-width:1120px;margin:0 auto;padding-block:clamp(48px,7vw,88px)}
+.band.hero-band{--img:url("img/sorburoy-solnedgang.jpg");--pos:center 40%;--veil:linear-gradient(90deg,rgba(9,13,15,.86) 0%,rgba(9,13,15,.55) 55%,rgba(9,13,15,.25) 100%),linear-gradient(180deg,rgba(9,13,15,0) 60%,var(--night-page) 100%)}
+.band.hero-band > .in{padding-block:0}
+.band .top{border-bottom-color:rgba(236,230,214,.18)}
+.band.tjern{--img:url("img/sorburoy-tjern.jpg");--pos:center 35%;--veil:linear-gradient(180deg,rgba(9,13,15,.82),rgba(9,13,15,.93))}
+.band.skumring{--img:url("img/sorburoy-nordlys.jpg");--pos:center 35%;--veil:linear-gradient(180deg,rgba(9,13,15,.25),rgba(9,13,15,.88) 45%,rgba(9,13,15,.95))}
+.band.berg{--img:url("img/sorburoy-berg.jpg");--veil:linear-gradient(180deg,rgba(9,13,15,.86),rgba(9,13,15,.92))}
+.photo-credit{font-size:12px;color:var(--muted);font-style:italic;margin-top:18px}
+:root{--night-page:var(--night)}
+
+/* provenance badges: old tradition / folklore / new tradition */
+.tg{display:inline-flex;align-items:center;gap:6px;font-family:var(--label);font-stretch:110%;font-weight:700;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:3px 8px;border-radius:2px;border:1px solid currentColor;white-space:nowrap;vertical-align:middle}
+.tg::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.tg.senoji{color:var(--gilt)} .tg.tautosaka{color:var(--moss)} .tg.naujoji{color:var(--ochre)}
+.tg.naujoji::before{border-radius:0;transform:rotate(45deg)}
+.tg.tautosaka::before{border-radius:1px}
+.legendbar{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 24px;padding:18px 0;border-bottom:1px solid var(--line);margin-bottom:8px}
+.legendbar div{display:grid;gap:6px;align-content:start}
+.legendbar p{font-size:14px;color:var(--muted)}
+.legendbar .ttl{font-family:var(--label);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);grid-column:1/-1}
+.blkhead{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+/* library */
+.lib{display:grid;gap:0;border-top:1px solid var(--gilt)}
+.lgrp{border-bottom:1px solid var(--line)}
+.lgrp > summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:18px 0}
+.lgrp > summary::-webkit-details-marker{display:none}
+.lgrp > summary .n{font-family:var(--display);font-size:30px;font-weight:600;color:var(--gilt)}
+.lgrp > summary h4{margin:0;font-family:var(--display);font-size:25px;font-weight:600}
+.lgrp > summary p{grid-column:2/-1;font-size:15.5px;color:var(--muted);max-width:75ch;margin-top:4px}
+.lgrp > summary .cnt{font-family:var(--label);font-size:11px;letter-spacing:.12em;color:var(--muted)}
+.lgrp[open] > summary .cnt{color:var(--gilt)}
+.fitems{display:grid;gap:14px;padding:0 0 22px 68px}
+.fitem{display:grid;gap:8px;padding:16px 18px;background:var(--panel);border:1px solid var(--line);border-radius:3px}
+.fitem .top2{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;justify-content:space-between}
+.fitem h5{margin:0;font-family:var(--display);font-size:21px;font-weight:600}
+.fitem .meta{font-family:var(--label);font-size:11px;letter-spacing:.08em;color:var(--muted)}
+.fitem .orig{font-family:var(--display);font-style:italic;font-size:19px;line-height:1.35;color:var(--gilt);border-left:2px solid var(--line);padding-left:12px}
+.fitem .when{font-size:13px;color:var(--ochre)}
+.fitem .hist{font-family:var(--label);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ochre)}
+@media (max-width:640px){.fitems{padding-left:0}.lgrp > summary{grid-template-columns:44px minmax(0,1fr)}.lgrp > summary .cnt{display:none}}
+/* poems in rune detail */
+.poems{display:grid;gap:10px;margin-top:6px}
+.poem{display:grid;grid-template-columns:150px minmax(0,1fr);gap:4px 14px;padding:10px 0;border-top:1px solid var(--line)}
+.poem .w{font-family:var(--label);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+.poem .w b{display:block;font-family:var(--display);font-size:20px;letter-spacing:0;text-transform:none;color:var(--bone);font-weight:600}
+.poem .l{font-family:var(--display);font-style:italic;font-size:19px;color:var(--gilt)}
+@media (max-width:640px){.poem{grid-template-columns:1fr}}
+/* calendar */
+.calnow{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-bottom:28px}
+.calnow .k{display:grid;gap:8px;padding:20px;border:1px solid var(--line);border-radius:3px;background:var(--panel);align-content:start}
+.calnow .moonimg{width:84px;height:84px}
+.calnow .big2{font-family:var(--display);font-size:30px;font-weight:600;line-height:1.1}
+.calnow ul{margin:0;padding-left:18px;display:grid;gap:8px;font-size:15.5px}
+/* myths */
+.gods{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.god{background:var(--night);padding:18px;display:grid;gap:6px;align-content:start}
+.god h4{margin:0;font-family:var(--display);font-size:26px;font-weight:600}
+.god h4 small{font-style:italic;font-weight:500;font-size:17px;color:var(--gilt);margin-left:6px}
+.god .src{font-size:12px;color:var(--muted)}
+.rag{counter-reset:r;display:grid;gap:0;margin:0;padding:0;list-style:none}
+.rag li{counter-increment:r;display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.rag li::before{content:counter(r);font-family:var(--display);font-size:26px;color:var(--ochre);font-weight:600}
+.dayst{padding:26px;border:1px solid var(--gilt);border-radius:3px;display:grid;gap:10px;background:var(--panel)}
+.dayst .q2{font-family:var(--display);font-size:clamp(24px,3vw,32px);line-height:1.3}
+.hav{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.hav div{display:grid;grid-template-columns:40px minmax(0,1fr);gap:8px;font-size:15.5px;padding:10px 0;border-top:1px solid var(--line)}
+.hav b{font-family:var(--display);font-size:20px;color:var(--gilt)}
+.cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.pcard{display:grid;gap:10px;padding:22px;border:1px solid var(--line);border-radius:3px;background:var(--panel);align-content:start}
+.pcard h3{font-size:25px}
+.pcard .src{font-size:12px;color:var(--muted)}
+.band.froan{--img:url("img/froan-salyne.jpg");--pos:center 50%;--veil:linear-gradient(180deg,rgba(9,13,15,.5),rgba(9,13,15,.9) 40%,rgba(9,13,15,.95))}
+/* page views: one section group visible at a time */
+[data-view]:not(.on){display:none!important}
+.topband{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;--img:none;--veil:rgba(10,14,16,.92);backdrop-filter:blur(6px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:#0a0e10}
+.topband > .in{padding-block:0}
+.topband .top{border-bottom:0;padding-block:12px}
+nav a[aria-current="page"]{color:var(--gilt)}
+.view-first{margin-top:0!important}
+.band.tjern > .in, .band.skumring > .in{padding-top:clamp(28px,4vw,48px)}
+footer{margin-top:clamp(56px,8vw,96px);padding-top:20px;border-top:1px solid var(--gilt);display:grid;gap:12px;font-size:15px;color:var(--muted)}
+footer ul{margin:0;padding-left:18px;display:grid;gap:4px}
+footer h3{color:var(--bone);font-size:22px}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .tree{order:-1;min-height:280px}
+  .bench,.moon{grid-template-columns:1fr}
+  .aett{grid-template-columns:1fr;gap:8px}
+  .tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .detail{grid-template-columns:1fr}.detail .big{font-size:90px;text-align:left}
+  nav{gap:4px 14px}
+  .gallery .wide,.gallery .tall,.gallery .half{grid-column:span 12}
+}
+@media (prefers-reduced-motion:reduce){.stone.land{animation:none}.stone .g{transition:none}}
+/* ---- v9: reading & usability pass ----
+   Visible primary navigation (5) + a labelled "More" panel with one-line descriptions (NN/g: hidden nav lowers discovery;
+   fewer, clearer choices). Sentence case instead of spaced capitals for anything people must read. Every control is
+   at least 44px tall. Body text kept to ~70 characters per line. A numbered 1-2-3 path on the home page, a
+   "what else is here" grid, and previous/next links so no page is a dead end. */
+#mainnav{display:flex;flex-wrap:wrap;align-items:center;gap:2px 4px}
+#mainnav > a, .more > summary{font-family:var(--label);font-stretch:100%;font-size:15px;font-weight:600;letter-spacing:.01em;text-transform:none;text-decoration:none;color:var(--muted);display:inline-flex;align-items:center;min-height:44px;padding:0 10px;border-radius:3px;cursor:pointer}
+#mainnav > a:hover, .more > summary:hover{color:var(--bone);background:rgba(236,230,214,.06)}
+#mainnav > a[aria-current="page"], .more.cur > summary{color:var(--bone);box-shadow:inset 0 -2px 0 var(--gilt)}
+.more{position:relative}
+.more > summary{list-style:none}
+.more > summary::-webkit-details-marker{display:none}
+.more > summary::after{content:"";width:7px;height:7px;margin-left:8px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
+.more[open] > summary::after{transform:translateY(2px) rotate(-135deg)}
+.morepanel{position:absolute;top:calc(100% + 8px);left:0;z-index:30;width:min(340px,calc(100vw - 32px));display:grid;padding:6px;background:#121a1e;border:1px solid rgba(236,230,214,.18);border-radius:4px;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.morepanel a{display:grid;gap:2px;padding:10px 12px;border-radius:3px;text-decoration:none;min-height:44px}
+.morepanel a:hover,.morepanel a[aria-current="page"]{background:rgba(236,230,214,.07)}
+.morepanel b{font-family:var(--label);font-size:15px;font-weight:600;color:var(--bone)}
+.morepanel span{font-size:14px;line-height:1.4;color:var(--muted);font-weight:400}
+.morepanel a[aria-current="page"] b{color:var(--gilt)}
+.tools{display:flex;gap:8px;align-items:center}
+.themebtn{min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:3px;background:transparent;cursor:pointer;font-family:var(--label);font-size:14px;color:var(--muted);white-space:nowrap}
+.themebtn:hover{color:var(--bone)}
+#lang{min-height:44px}
+.topband .top{gap:8px 20px}
+@media (max-width:860px){
+  .topband .top{display:grid;grid-template-columns:minmax(0,1fr) auto;padding-block:8px}
+  .topband .mark{font-size:19px}
+  .topband .mark .r{display:none}
+  #mainnav{grid-column:1/-1;grid-row:2;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-6px;padding-right:8px}
+  #mainnav::-webkit-scrollbar{display:none}
+  #mainnav > a, .more > summary{white-space:nowrap;font-size:14.5px;padding:0 9px}
+  .more{position:static}
+  .morepanel{position:fixed;top:100%;left:16px;right:16px;width:auto;margin-top:4px;max-height:70vh;overflow:auto}
+  .tools select{max-width:120px}
+}
+/* readable text: sentence case and real sizes for anything longer than a word or two */
+.cast-btn,.btn{text-transform:none;letter-spacing:.02em;font-size:16px;min-height:48px}
+.cast-btn{font-size:17px;padding:14px 30px}
+.seg button{min-height:44px;font-size:14.5px;letter-spacing:.01em}
+.link-btn,label.tog{min-height:44px}
+.hint{font-size:16px}
+.tg{font-size:11px;letter-spacing:.08em}
+.label{font-size:12.5px;letter-spacing:.14em}
+.lede{max-width:64ch}
+.chapter p, .band p{max-width:72ch}
+.lgrp > summary{min-height:44px}
+.tabs button{min-height:48px}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:3px;border-radius:2px}
+/* the 1-2-3 path on the home page */
+.step{display:flex;align-items:center;gap:10px;font-family:var(--label);font-size:14.5px;font-weight:600;color:var(--bone);margin-top:6px}
+.step .sn{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;border:1px solid var(--gilt);color:var(--gilt);font-size:13px;flex:none}
+.ask{gap:10px}
+.ask input[type=text]{font-size:19px}
+@media (max-width:860px){
+  .tree{display:none}
+  .hero{padding-block:28px 20px}
+  .hero h1{font-size:clamp(46px,13vw,64px)}
+}
+/* "what else is here" */
+.explore{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:20px}
+.explore a{display:grid;grid-template-columns:44px minmax(0,1fr);gap:2px 12px;align-content:start;padding:18px;border:1px solid var(--line);border-radius:4px;background:var(--panel);text-decoration:none;transition:border-color .2s,transform .2s}
+.explore a:hover{border-color:var(--gilt);transform:translateY(-2px)}
+.explore .g{grid-row:span 2;font-family:var(--rune);font-size:30px;line-height:1;color:var(--ochre)}
+.explore b{font-family:var(--display);font-size:23px;font-weight:600;line-height:1.15}
+.explore span:not(.g){font-size:15.5px;line-height:1.45;color:var(--muted)}
+/* previous / next */
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:clamp(40px,6vw,72px)}
+.pager a{display:grid;gap:2px;padding:16px 18px;border:1px solid var(--line);border-radius:4px;text-decoration:none;font-family:var(--display);font-size:23px;font-weight:600;color:var(--bone);text-transform:none;letter-spacing:0;min-height:44px}
+.pager a:hover{border-color:var(--gilt)}
+.pager .nx{text-align:right;grid-column:2}
+.pager small{font-family:var(--label);font-size:13px;font-weight:600;color:var(--muted)}
+.pager .nx small::after{content:" →"} .pager .pv small::before{content:"← "}
+@media (prefers-reduced-motion:reduce){.explore a{transition:none}.explore a:hover{transform:none}}
+
+/* compact source legend */
+details.legendbar{display:block;padding:10px 0;margin-bottom:8px}
+details.legendbar > summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;min-height:44px}
+details.legendbar > summary::-webkit-details-marker{display:none}
+details.legendbar .ttl{grid-column:auto}
+details.legendbar .lgb{display:flex;flex-wrap:wrap;gap:6px}
+details.legendbar .why{font-size:15px;color:var(--muted);text-decoration:underline;text-decoration-color:var(--gilt);text-underline-offset:3px}
+details.legendbar[open] .why{display:none}
+details.legendbar .lgd{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 24px;padding:10px 0 8px}
+details.legendbar .lgd div{display:grid;gap:6px;align-content:start}
+@media (max-width:860px){.hero{grid-template-columns:minmax(0,1fr)}}
+.seg{width:auto;justify-self:start}
+.themebtn{width:44px;padding:0;display:inline-grid;place-items:center}
+#mainnav > a, .more > summary{padding:0 8px}
+
+.band{display:block}
+.band > .in{width:100%;box-sizing:border-box}
+.morepanel a{text-transform:none;letter-spacing:0;font-family:var(--body)}
+.pager a{font-family:var(--display)}
+</style>
+
+<div class="wrap">
+  <header class="band topband"><div class="in">
+  <div class="top">
+    <div class="mark">Nordisk Orakel <span class="r" aria-hidden="true">ᚱᚢᚾᛟᛉ</span></div>
+    <nav aria-label="Navigation" id="mainnav">
+      <a href="#kast" data-t="navCast"></a><a href="#runer" data-t="navRunes"></a><a href="#verksted" data-t="navTools"></a><a href="#svartebok" data-t="navBooks"></a><a href="#metai" data-t="navYear"></a>
+      <details class="more" id="more"><summary><span data-t="navMore"></span></summary>
+        <div class="morepanel">
+          <a href="#mitai"><b data-t="navMyths"></b><span data-t="dMitai"></span></a>
+          <a href="#butybes"><b data-t="navBeings"></b><span data-t="dButybes"></span></a>
+          <a href="#saltiniai"><b data-t="navLore"></b><span data-t="dSaltiniai"></span></a>
+          <a href="#zmones"><b data-t="navPeople"></b><span data-t="dZmones"></span></a>
+          <a href="#froan"><b data-t="navLocal"></b><span data-t="dFroan"></span></a>
+        </div>
+      </details>
+    </nav>
+    <div class="tools"><button class="themebtn" id="themeBtn" type="button"></button><select id="lang" aria-label="Language / Språk / Kalba"></select></div>
+  </div>
+  </div></header>
+
+  <div class="band hero-band" data-view="kast"><div class="in">
+  <section class="hero" id="v-kast">
+    <div class="copy">
+      <div class="label" data-t="eyebrow"></div>
+      <h1 id="heroTitle"></h1>
+      <p class="lede" data-t="lede"></p>
+      <div class="ask">
+        <div class="step"><span class="sn">1</span><label for="q" data-t="step1"></label></div>
+        <input type="text" id="q" data-t-ph="questionPlaceholder" data-t-aria="questionLabel">
+        <div class="step"><span class="sn">2</span><span data-t="step2"></span></div>
+        <div class="seg" id="spreads" role="group"></div>
+        <p class="hint" id="spreadDesc"></p>
+        <div class="step"><span class="sn">3</span><span data-t="step3"></span></div>
+        <div class="actions">
+          <button class="cast-btn" id="draw" data-t="drawBtn"></button>
+          <button class="link-btn" id="flipall" data-t="revealAll"></button>
+          <label class="tog"><input type="checkbox" id="rev" checked> <span data-t="reversedToggle"></span></label>
+        </div>
+      </div>
+    </div>
+    <figure class="tree" aria-hidden="true"><canvas id="ygg"></canvas><figcaption data-t="heroArt"></figcaption></figure>
+  </section>
+  </div></div>
+
+  <details class="legendbar" id="tagLegend"></details>
+
+  <section aria-live="polite" data-view="kast">
+    <div class="linen" id="table"></div>
+    <p class="caption" data-t="clothCaption"></p>
+  </section>
+
+  <section class="sheet" data-view="kast">
+    <div class="head"><h3 data-t="meaningsTitle"></h3><span class="q" id="qShow"></span></div>
+    <div id="meanings"></div>
+  </section>
+
+  <section class="chapter" data-view="kast">
+    <p class="hint" id="aiNote" data-t="aiNote" hidden></p>
+    <div class="premium">
+      <div class="card">
+        <span class="chip" data-t="premiumChip"></span>
+        <h3 data-t="aiTitle"></h3>
+        <p class="hint" data-t="aiDesc"></p>
+        <div class="btns"><button class="btn" id="aiBtn" data-t="aiBtn"></button><button class="btn ghost" id="aiStop" data-t="stop" hidden></button></div>
+        <div class="ai-out" id="aiOut" aria-live="polite"></div>
+      </div>
+      <div class="card">
+        <span class="chip" data-t="premiumChip"></span>
+        <h3 data-t="photoTitle"></h3>
+        <p class="hint" data-t="photoDesc"></p>
+        <label class="drop" id="drop" for="photo"><span data-t="dropLabel"></span> <input type="file" id="photo" accept="image/jpeg,image/png,image/webp"></label>
+        <select id="photoSpread" data-t-aria="spreadOnPhoto"></select>
+        <img id="preview" data-t-alt="previewAlt" hidden>
+        <div class="btns"><button class="btn" id="recBtn" data-t="recBtn" disabled></button><span class="hint" id="recStatus"></span></div>
+        <div id="recRows"></div>
+        <div class="btns"><button class="btn" id="photoInterp" data-t="photoInterp" hidden></button><button class="btn ghost" id="photoStop" data-t="stop" hidden></button></div>
+        <div class="ai-out" id="photoOut" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" data-view="kast">
+    <header><h2 data-t="exploreTitle"></h2><p class="lede" data-t="exploreLede"></p></header>
+    <div class="explore" id="explore"></div>
+  </section>
+
+  <section class="chapter" id="v-verksted" data-view="verksted">
+    <header><div class="rule label" data-t="navTools"></div><h2 data-t="toolsTitle"></h2><p class="lede" data-t="toolsDesc"></p></header>
+    <input class="namein" id="nameIn" maxlength="40" data-t-ph="namePlaceholder" data-t-aria="nameLabel" autocomplete="off">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div id="bench"></div>
+  </section>
+
+  <div class="band berg" data-view="runer"><div class="in">
+  <section class="chapter" id="v-runer" style="padding-top:0">
+    <header><div class="rule label" data-t="navRunes"></div><h2 data-t="refTitle"></h2><p class="lede" data-t="refDesc"></p></header>
+    <figure class="art" data-img="dynna" hidden style="max-width:420px"></figure>
+    <div id="aettir"></div>
+    <div id="refDetail"></div>
+  </section>
+  </div></div>
+
+  <section class="chapter" id="v-saltiniai" data-view="saltiniai"><div id="lore"></div></section>
+
+  <section class="chapter" id="v-mitai" data-view="mitai"><div id="myths"></div></section>
+
+  <div class="band tjern" data-view="butybes"><div class="in"><section id="v-butybes"><div id="beings"></div><p class="photo-credit" data-t="photoCreditTjern"></p></section></div></div>
+
+  <section class="chapter" id="v-svartebok" data-view="svartebok">
+    <header><div class="rule label" data-t="navBooks"></div><h2 data-t="booksTitle"></h2><p class="lede" data-t="booksDesc"></p></header>
+    <div class="facts" id="facts"></div>
+    <div id="library"></div>
+
+    <header style="margin-top:24px"><h2 data-t="moonTitle"></h2><p class="lede" data-t="moonLede"></p></header>
+    <div class="facts" id="moonFacts"></div>
+    <div class="moon">
+      <div class="chart"><h3 data-t="weekTitle" style="margin-bottom:12px"></h3><div id="weekChart"></div><p class="hint" data-t="weekNote" style="margin-top:10px"></p></div>
+      <figure class="art" data-img="thor" hidden></figure>
+    </div>
+    <p class="cosmic" id="cosmic"></p>
+    <div class="moon">
+      <div><h3 data-t="feastTitle" style="margin-bottom:8px"></h3><div class="feasts" id="feasts"></div></div>
+      <p data-t="moonText"></p>
+    </div>
+    <p class="hint" data-t="booksNote"></p>
+  </section>
+
+  <div class="band skumring" data-view="metai"><div class="in"><section id="v-metai" style="padding-top:clamp(80px,12vw,160px)"><div id="year"></div><p class="photo-credit" data-t="photoCreditSkumring"></p></section></div></div>
+
+  <section class="chapter" id="v-zmones" data-view="zmones"><div id="people"></div></section>
+
+  <div class="band froan" data-view="froan"><div class="in"><section id="v-froan" style="padding-top:clamp(100px,14vw,200px)"><div id="local"></div><p class="photo-credit">Froano salynas iš drono, 2026 m. vasara.</p></section></div></div>
+
+  <nav class="pager" id="pager" aria-label="Pager"></nav>
+
+  <footer>
+    <p data-t="footer"></p>
+    <h3 data-t="srcTitle"></h3>
+    <p data-t="sourcesNote"></p>
+    <ul>
+      <li><a href="https://www.nb.no/items/1994a3ddbed624be42e2ce42e7c8dc3a" target="_blank" rel="noopener">A. C. Bang, Norske Hexeformularer og magiske Opskrifter (1901), Nasjonalbiblioteket</a></li>
+      <li><a href="https://snl.no/svartebok" target="_blank" rel="noopener">Store norske leksikon: svartebok</a> · <a href="https://snl.no/futhark" target="_blank" rel="noopener">futhark</a> · <a href="https://snl.no/primstav" target="_blank" rel="noopener">primstav</a></li>
+      <li><a href="https://www.runforum.nordiska.uu.se/blog/cryptic-runes" target="_blank" rel="noopener">Runforum, Uppsala universitet: cryptic runes</a> · <a href="https://www.runforum.nordiska.uu.se/blog/bite-me-runestones" target="_blank" rel="noopener">painted runestones</a></li>
+      <li><a href="https://www.arild-hauge.com/PDF/Lonnruner-Kryptografi_i_runeinnskrifter_fra_vikingtid_og_middelalder-K.Jonas_Nordby.pdf" target="_blank" rel="noopener">K. Jonas Nordby, Lønnruner (masteroppgave)</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Runic_calendar" target="_blank" rel="noopener">Runic calendar</a> · <a href="https://en.wikipedia.org/wiki/Medieval_runes" target="_blank" rel="noopener">Medieval runes</a> · <a href="https://en.wikipedia.org/wiki/Younger_Futhark" target="_blank" rel="noopener">Younger Futhark</a> · <a href="https://en.wikipedia.org/wiki/Uthark_theory" target="_blank" rel="noopener">Uthark theory</a></li>
+      <li><a href="https://pressto.amu.edu.pl/index.php/fsp/article/view/50070" target="_blank" rel="noopener">Taglianetti (2025), The Architecture of Magic</a></li>
+    </ul>
+    <div id="credits"></div>
+  </footer>
+</div>
+
+<script>
+const LANGS=[["no","Norsk"],["sv","Svenska"],["da","Dansk"],["fi","Suomi"],["lt","Lietuvių"],["lv","Latviešu"],["et","Eesti"],["pl","Polski"],["de","Deutsch"],["en","English"]];
+const RUNES=[
+ ["ᚠ","fehu",0],["ᚢ","ūruz",0],["ᚦ","þurisaz",0],["ᚨ","ansuz",0],["ᚱ","raidō",0],["ᚲ","kaunan",0],["ᚷ","gebō",1],["ᚹ","wunjō",0],
+ ["ᚺ","hagalaz",1],["ᚾ","naudiz",1],["ᛁ","īsaz",1],["ᛃ","jēra",1],["ᛇ","eihwaz",1],["ᛈ","perþō",0],["ᛉ","algiz",0],["ᛊ","sōwilō",1],
+ ["ᛏ","tīwaz",0],["ᛒ","berkanan",0],["ᛖ","ehwaz",0],["ᛗ","mannaz",0],["ᛚ","laguz",0],["ᛜ","ingwaz",1],["ᛞ","dagaz",1],["ᛟ","ōþalan",0]
+].map(([g,pg,sym],id)=>({id,g,pg,sym:!!sym,aett:Math.floor(id/8)}));
+/* Agrell's "uthark" values: fehu moved last (Hauge, Agrell's numerology system). Keyed by rune id above. */
+const AGRELL=[24,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23,22];
+const SPREAD_META={en:{n:1},tre:{n:3},ni:{n:9,cast:true}};
+/* Public-domain / CC artworks and photos, verified on Wikimedia Commons 2026-10-26. Files live in img/; each figure stays hidden until its file loads. */
+const IMAGES={
+ asgard:{file:"img/asgardsreien.jpg",cap:"capAsgard",credit:"Peter Nicolai Arbo (1831–1892). Nasjonalmuseet, NG.M.00258. Public domain.",src:"https://commons.wikimedia.org/wiki/File:Peter_Nicolai_Arbo_-_The_wild_Hunt_of_Odin_-_NG.M.00258_-_National_Museum_of_Art,_Architecture_and_Design.jpg"},
+ yggdrasil:{file:"img/yggdrasil.jpg",cap:"capYggdrasil",credit:"Oluf Olufsen Bagge, Northern Antiquities (1847). Public domain.",src:"https://commons.wikimedia.org/wiki/File:Yggdrasil.jpg"},
+ nokken:{file:"img/nokken.jpg",cap:"capNokken",credit:"Theodor Kittelsen (1857–1914). Nasjonalmuseet, NG.M.00863. Public domain.",src:"https://commons.wikimedia.org/wiki/File:Theodor_Kittelsen_-_The_Water_Sprite_-_NG.M.00863_-_National_Museum_of_Art,_Architecture_and_Design.jpg"},
+ volva:{file:"img/volva.jpg",cap:"capVolva",credit:"Lorenz Frølich (1820–1908). Public domain.",src:"https://commons.wikimedia.org/wiki/File:V%C3%B6lva,_Odin,_Sleipnir_and_Helhound_by_Fr%C3%B8lich.jpg"},
+ thor:{file:"img/thor.jpg",cap:"capThor",credit:"Mårten Eskil Winge (1825–1896). Nationalmuseum, Stockholm. Public domain.",src:"https://commons.wikimedia.org/wiki/File:M%C3%A5rten_Eskil_Winge_-_Tor%27s_Fight_with_the_Giants_-_Google_Art_Project.jpg"},
+ dynna:{file:"img/dynna.jpg",cap:"capDynna",credit:"Foto: Kulturhistorisk museum, Oslo. CC BY-SA 4.0.",src:"https://commons.wikimedia.org/wiki/File:Dynnasteinen_-_black_white_simple.jpg"},
+ primstav:{file:"img/primstav.jpg",cap:"capPrimstav",credit:"Foto: Anne-Lise Reinsfelt / Norsk Folkemuseum. CC BY-SA 4.0.",src:"https://commons.wikimedia.org/wiki/File:Primstav_NF.1987-0532_a.jpg"}
+};
+
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]));
+const fill=(s,o)=>String(s).replace(/\{(\w+)\}/g,(m,k)=>k in o?o[k]:m);
+let L=null, lang="no", current="tre", drawn=[], refSel=0, animate=false, tab="name", script="elder", cipherRev=true, calYear=new Date().getFullYear();
+const cache={};
+let FB=null; /* build language (Lithuanian) used where a translation is not done yet */
+const T=k=>(L&&L.ui[k])||(FB&&FB.ui[k])||k;
+const R=id=>({...RUNES[id],...L.runes[id]});
+const rnd=()=>crypto.getRandomValues(new Uint32Array(1))[0]/4294967296;
+
+/* ---------- scripts: name → runes ---------- */
+const ELDER={a:"ᚨ",b:"ᛒ",c:"ᚲ",d:"ᛞ",e:"ᛖ",f:"ᚠ",g:"ᚷ",h:"ᚺ",i:"ᛁ",j:"ᛃ",k:"ᚲ",l:"ᛚ",m:"ᛗ",n:"ᚾ",o:"ᛟ",p:"ᛈ",q:"ᚲ",r:"ᚱ",s:"ᛊ",t:"ᛏ",u:"ᚢ",v:"ᚹ",w:"ᚹ",x:"ᚲᛊ",y:"ᛁ",z:"ᛉ","æ":"ᛖ","ø":"ᛟ","ö":"ᛟ","å":"ᛟ","œ":"ᛟ","þ":"ᚦ","ð":"ᛞ","ß":"ᛊᛊ"};
+const YOUNGER={a:"ᛅ","æ":"ᛅ",b:"ᛒ",p:"ᛒ",c:"ᚴ",k:"ᚴ",g:"ᚴ",q:"ᚴ",d:"ᛏ",t:"ᛏ","ð":"ᚦ","þ":"ᚦ",e:"ᛁ",i:"ᛁ",j:"ᛁ",f:"ᚠ",h:"ᚼ",l:"ᛚ",m:"ᛘ",n:"ᚾ",o:"ᚬ","å":"ᚬ",u:"ᚢ",v:"ᚢ",w:"ᚢ",y:"ᚢ","ø":"ᚢ","ö":"ᚢ",r:"ᚱ",s:"ᛋ",z:"ᛋ",x:"ᚴᛋ","ß":"ᛋ"};
+const MEDIEVAL={a:"ᛆ",b:"ᛒ",c:"ᚴ",d:"ᛑ",e:"ᛂ",f:"ᚠ",g:"ᚵ",h:"ᚼ",i:"ᛁ",j:"ᛁ",k:"ᚴ",l:"ᛚ",m:"ᛘ",n:"ᚾ",o:"ᚮ",p:"ᛔ",q:"ᚴ",r:"ᚱ",s:"ᛋ",t:"ᛏ",u:"ᚢ",v:"ᚡ",w:"ᚡ",x:"ᛪ",y:"ᚤ",z:"ᛋ","æ":"ᛅ","ø":"ᚯ","ö":"ᚯ","å":"ᚮ","þ":"ᚦ","ð":"ᚧ","ß":"ᛋᛋ"};
+const SCRIPTS={elder:{map:ELDER,ng:"ᛜ",collapse:false},younger:{map:YOUNGER,ng:null,collapse:true},medieval:{map:MEDIEVAL,ng:null,collapse:false}};
+function normWord(w,map){let s=w.replace(/[^\p{L}]/gu,"");return [...s].map(ch=>map[ch]?ch:ch.normalize("NFD").replace(/\p{M}/gu,"")).join("")}
+function transliterate(text,key){
+  const {map,ng,collapse}=SCRIPTS[key], out=[], pairs=[];
+  text.toLowerCase().split(/\s+/).filter(Boolean).forEach(w=>{
+    const s=normWord(w,map); let i=0, word="";
+    while(i<s.length){
+      const two=s.slice(i,i+2);
+      if(two==="th"){word+="ᚦ";pairs.push(["th","ᚦ"]);i+=2;continue}
+      if(ng&&two==="ng"){word+=ng;pairs.push(["ng",ng]);i+=2;continue}
+      const r=map[s[i]]; if(r){ if(!(collapse&&word.endsWith(r))) word+=r; pairs.push([s[i],r]); }
+      i++;
+    }
+    if(word){ if(out.length) out.push("᛫"); out.push(word); }
+  });
+  return {text:out.join(""),pairs};
+}
+
+/* ---------- cipher runes (Younger Futhark ættir) ---------- */
+const AETTIR=[["ᚠ","ᚢ","ᚦ","ᚬ","ᚱ","ᚴ"],["ᚼ","ᚾ","ᛁ","ᛅ","ᛋ"],["ᛏ","ᛒ","ᛘ","ᛚ","ᛦ"]];
+function cipherOf(r){for(let a=0;a<3;a++){const p=AETTIR[a].indexOf(r);if(p>=0)return {aett:cipherRev?3-a:a+1,pos:p+1}}return null}
+function twigSVG(aett,pos){
+  const lines=[`<line x1="15" y1="4" x2="15" y2="60"/>`];
+  for(let i=0;i<aett;i++){const y=12+i*9;lines.push(`<line x1="15" y1="${y+8}" x2="3" y2="${y}"/>`)}
+  for(let i=0;i<pos;i++){const y=12+i*8;lines.push(`<line x1="15" y1="${y+8}" x2="27" y2="${y}"/>`)}
+  return `<svg viewBox="0 0 30 64" role="img" aria-label="${aett}:${pos}">${lines.join("")}</svg>`;
+}
+
+/* ---------- workshop ---------- */
+const TABS=[["name","tabName","tagHistoric","h"],["cipher","tabCipher","tagHistoric","h"],["num","tabNum","tagModern","mo"],["cal","tabCal","tagCalendar","c"]];
+function renderTabs(){
+  $("tabs").innerHTML=TABS.map(([k,l,t,c])=>`<button role="tab" id="tab-${k}" aria-selected="${k===tab}" data-k="${k}"><small class="${c}">${esc(T(t))}</small>${esc(T(l))}</button>`).join("");
+  $("tabs").querySelectorAll("button").forEach(b=>b.onclick=()=>{tab=b.dataset.k;renderTabs();renderBench()});
+}
+function nameVal(){return $("nameIn").value.trim()}
+function renderBench(){
+  const v=nameVal(), b=$("bench");
+  if(tab==="name"){
+    const r=transliterate(v,script), seen=new Set();
+    const note={elder:"scriptElderNote",younger:"scriptYoungerNote",medieval:"scriptMedievalNote"}[script];
+    b.innerHTML=`<div class="bench"><div class="panel-text">
+        <div class="seg" role="group">${["elder","younger","medieval"].map(s=>`<button data-s="${s}" aria-pressed="${s===script}">${esc(T("script"+s[0].toUpperCase()+s.slice(1)))}</button>`).join("")}</div>
+        <p class="hint">${esc(T(note))}</p><p class="hint">${esc(T("nameNote"))}</p>
+        <div class="btns"><button class="btn ghost" id="nameCopy" ${r.text?"":"disabled"}>${esc(T("nameCopy"))}</button><span class="hint" id="nameMsg" aria-live="polite"></span></div></div>
+      <div class="carving">${r.text?`<div class="out" id="nameOut">${r.text}</div><div class="pairs">${r.pairs.filter(([l])=>!seen.has(l)&&seen.add(l)).map(([l,g])=>`<span><b>${g}</b>${esc(l.toUpperCase())}</span>`).join("")}</div>`:`<p class="empty">${esc(T("nameEmpty"))}</p>`}</div></div>`;
+    b.querySelectorAll("[data-s]").forEach(x=>x.onclick=()=>{script=x.dataset.s;renderBench()});
+    const c=$("nameCopy"); if(c) c.onclick=async()=>{try{await navigator.clipboard.writeText(r.text);$("nameMsg").textContent=T("nameCopied")}catch(e){const rg=document.createRange();rg.selectNodeContents($("nameOut"));const s=getSelection();s.removeAllRanges();s.addRange(rg)}};
+  }
+  else if(tab==="cipher"){
+    const r=transliterate(v,"younger");
+    const words=r.text.split("᛫").filter(Boolean);
+    const body=words.map(w=>[...w].map(ch=>{const c=cipherOf(ch);return c?twigSVG(c.aett,c.pos):""}).join("")).join('<span class="gap"></span>');
+    const codes=words.map(w=>[...w].map(ch=>{const c=cipherOf(ch);return c?`${c.aett}:${c.pos}`:"?"}).join(" ")).join("  ·  ");
+    b.innerHTML=`<div class="bench"><div class="panel-text"><p>${esc(T("cipherDesc"))}</p>
+        <label class="tog"><input type="checkbox" id="cipRev" ${cipherRev?"checked":""}> ${esc(T("cipherReverse"))}</label></div>
+      <div class="carving">${r.text?`<div class="out" style="font-size:32px">${r.text}</div><div class="twigs">${body}</div><div class="code"><span class="label" style="color:inherit">${esc(T("cipherCode"))}</span> ${esc(codes)}</div>`:`<p class="empty">${esc(T("cipherEmpty"))}</p>`}</div></div>`;
+    $("cipRev").onchange=e=>{cipherRev=e.target.checked;renderBench()};
+  }
+  else if(tab==="num"){
+    const r=transliterate(v,"elder"), ids=[...r.text.replace(/᛫/g,"")].map(ch=>RUNES.findIndex(x=>x.g===ch)).filter(i=>i>=0);
+    let inner=`<p class="empty">${esc(T("numEmpty"))}</p>`;
+    if(ids.length){
+      const sum=ids.reduce((t,i)=>t+AGRELL[i],0), rest=sum%24, val=rest===0?24:rest, res=AGRELL.indexOf(val), rr=R(res);
+      inner=`<div class="result"><div class="big">${rr.g}</div><div><div class="label" style="color:inherit;opacity:.8">${esc(T("numResult"))}</div><h3>${esc(rr.name)}</h3><p>${esc(rr.lit)}</p></div></div>
+        <table class="numtable"><thead><tr><th>Rune</th><th></th><th>Agrell</th></tr></thead><tbody>${ids.map(i=>`<tr><td class="rn">${RUNES[i].g}</td><td>${esc(L.runes[i].name)}</td><td>${AGRELL[i]}</td></tr>`).join("")}
+        <tr><td></td><td><b>${esc(T("numSum"))}</b></td><td><b>${sum}</b></td></tr></tbody></table>
+        <p class="code">${esc(fill(T("numReduce"),{sum,r:rest}))} ${rest===0?esc(T("numZero")):""} → ${val} = ${rr.g} ${esc(rr.name)}</p>`;
+    }
+    b.innerHTML=`<div class="bench"><div class="panel-text"><span class="chip modern">${esc(T("tagModern"))}</span><p>${esc(T("numDesc"))}</p></div><div class="carving">${inner}</div></div>`;
+  }
+  else{
+    const y=calYear, g=(y%19)+1, GOLD=["ᚠ","ᚢ","ᚦ","ᚬ","ᚱ","ᚴ","ᚼ","ᚾ","ᛁ","ᛅ","ᛋ","ᛏ","ᛒ","ᛘ","ᛚ","ᛦ","ᛮ","ᛯ","ᛰ"], W7=GOLD.slice(0,7);
+    const w=new Date(Date.UTC(y,0,1)).getUTCDay(), Ls=(7-w)%7, leap=(y%4===0&&y%100!==0)||y%400===0;
+    const now=new Date(), doy=Math.floor((Date.UTC(now.getFullYear(),now.getMonth(),now.getDate())-Date.UTC(now.getFullYear(),0,1))/864e5)+1;
+    b.innerHTML=`<div class="bench"><div class="panel-text"><figure class="art" data-img="primstav" hidden></figure><p>${esc(T("calDesc"))}</p>
+        <label class="tog">${esc(T("calYear"))} <input class="yearin" id="calY" type="number" min="1000" max="3000" value="${y}"></label><p class="hint">${esc(T("calNote"))}</p></div>
+      <div class="carving"><div class="calgrid">
+        <div class="k"><span class="label" style="color:inherit;opacity:.8">${esc(T("calGolden"))}</span><span class="big">${GOLD[g-1]}</span><p>${esc(fill(T("calGoldenText"),{y,g}))}</p></div>
+        <div class="k"><span class="label" style="color:inherit;opacity:.8">${esc(T("calSunday"))}</span><span class="big">${W7[Ls]}</span><p>${esc(fill(T("calSundayText"),{y,r:W7[Ls]}))}${leap?" "+esc(fill(T("calLeap"),{y,r:W7[(Ls+6)%7]})):""}</p></div>
+        <div class="k"><span class="label" style="color:inherit;opacity:.8">${esc(T("calToday"))}</span><span class="big">${W7[(doy-1)%7]}</span><p>${esc(fill(T("calTodayText"),{d:doy,r:W7[(doy-1)%7]}))}</p></div>
+      </div></div></div>`;
+    $("calY").onchange=e=>{const n=parseInt(e.target.value,10);if(n>=1000&&n<=3000){calYear=n;renderBench()}};
+    hydrateFigures(b);
+  }
+}
+$("nameIn").oninput=()=>renderBench();
+
+
+/* ---------- sources, beings, year ---------- */
+const U=k=>(L.ui[k]&&typeof L.ui[k]==="object")?L.ui[k]:FB.ui[k];
+function quoteBlock(q,note,ref){return `<div class="on"><q lang="non">${esc(q)}</q><p>${esc(note)}</p><span class="ref">${esc(ref)}</span></div>`}
+function renderLore(){
+  const o=U("lore"); if(!o) return;
+  const c=o.charms, g=o.sig;
+  $("lore").innerHTML=`<header style="display:grid;gap:12px;max-width:72ch"><div class="rule label">${esc(T("navLore"))}</div><h2>${esc(o.title)}</h2><p class="lede">${esc(o.lede)}</p></header>
+  <div class="lore">
+   <div class="duo"><div class="blk"><div class="blkhead"><h3>${esc(o.odin.title)}</h3>${badge("senoji")}</div><p>${esc(o.odin.text)}</p></div>${quoteBlock(o.odin.quote,o.odin.quoteNote,o.odin.ref)}</div>
+   <div class="blk"><div class="blkhead"><h3>${esc(c.title)}</h3>${badge("senoji")}</div><p class="lede">${esc(c.lede)}</p>
+     <div class="charms">${c.items.map(i=>`<div class="charm"><div class="n"><b>${i.n}</b><span>${i.st}</span></div><p>${esc(i.t)}</p>${i.link?`<span class="link">↔ ${esc(i.link)}</span>`:""}${i.hist?`<span class="hist">${esc(c.histTag)}</span>`:""}</div>`).join("")}</div>
+     <p class="hint">${esc(c.note)}</p></div>
+   <div class="blk"><div class="blkhead"><h3>${esc(g.title)}</h3>${badge("senoji")}</div><p class="lede">${esc(g.lede)}</p>
+     <div class="tbl"><table><thead><tr>${(g.heads||[]).map(h=>`<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${g.rows.map(r=>`<tr><td class="onm">${esc(r.name)}</td><td>${esc(r.lt)}</td><td>${esc(r.for)}</td><td>${esc(r.on)}</td><td class="ref">${r.st}</td></tr>`).join("")}</tbody></table></div>
+     <p class="hint">${esc(g.note)}</p></div>
+   <div class="duo"><div class="blk"><div class="blkhead"><h3>${esc(o.norns.title)}</h3>${badge("senoji")}</div><p>${esc(o.norns.text)}</p></div>${quoteBlock(o.norns.quote,o.norns.quoteNote,o.norns.ref)}</div>
+   <div class="duo"><div class="blk"><div class="blkhead"><h3>${esc(o.ygg.title)}</h3>${badge("senoji")}</div><p>${esc(o.ygg.text)}</p><span class="ref">${esc(o.ygg.ref)}</span></div><figure class="art" data-img="yggdrasil" hidden></figure></div>
+   <div class="duo"><div class="blk"><div class="blkhead"><h3>${esc(o.egil.title)}</h3>${badge("senoji")}</div><p class="hint">${esc(o.egil.lede)}</p><div class="egil">${o.egil.items.map(i=>`<div><b>${esc(i.ref)}</b><span>${esc(i.t)}</span></div>`).join("")}</div></div>${quoteBlock(o.egil.quote,o.egil.quoteNote,"Egils saga")}</div>
+   <div class="duo"><div class="blk"><div class="blkhead"><h3>${esc(o.volva.title)}</h3>${badge("senoji")}</div><p>${esc(o.volva.text)}</p><span class="ref">${esc(o.volva.ref)}</span></div><div class="blk"><figure class="art" data-img="volva" hidden></figure><div class="blkhead"><h3>${esc(o.seidr.title)}</h3>${badge("senoji")}</div><p>${esc(o.seidr.text)}</p><span class="ref">${esc(o.seidr.ref)}</span></div></div>
+   <p class="hint">${esc(o.pdNote)}</p>
+  </div>`;
+}
+function renderBeings(){
+  const o=U("beings"); if(!o) return;
+  $("beings").innerHTML=`<header style="display:grid;gap:12px;max-width:72ch;margin-bottom:24px"><div class="rule label">${esc(T("navBeings"))}</div><h2>${esc(o.title)}</h2><p class="lede">${esc(o.lede)}</p></header>
+   <div class="beings">${o.items.map(b=>`<div class="being"><div class="blkhead"><span class="where">${esc(b.where)}</span>${badge("tautosaka")}</div><h3>${esc(b.name)}</h3><p>${esc(b.desc)}</p><p><span class="tag his">${esc(o.protectLabel)}</span>${esc(b.protect)}</p><p class="leg">${esc(b.legend)}</p><span class="src">${esc(b.src)}</span></div>`).join("")}</div>
+   <figure class="art" data-img="nokken" hidden style="margin-top:24px"></figure>
+   <ul class="patterns" style="margin-top:24px">${o.patterns.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>`;
+}
+function renderYear(){
+  const o=U("year"); if(!o) return;
+  $("year").innerHTML=`<header style="display:grid;gap:12px;max-width:72ch;margin-bottom:24px"><div class="rule label">${esc(T("navYear"))}</div><h2>${esc(o.title)}</h2><p class="lede">${esc(o.lede)}</p></header>
+   ${renderCal()}
+   <figure class="art" data-img="primstav" hidden style="margin-bottom:20px"></figure>
+   <div class="yearlist">${o.rows.map(r=>`<div><span class="d">${esc(r.date)}</span><span class="nm">${esc(r.name)}</span><span>${esc(r.t)} ${badge(r.tag||"tautosaka")}</span></div>`).join("")}</div>
+   <figure class="art" data-img="asgard" hidden style="margin-top:24px"></figure>
+   <p class="hint" style="margin-top:14px">${esc(o.note)}</p>`;
+}
+
+/* ---------- provenance badges ---------- */
+const TAGS=()=>U("tags")||{};
+const badge=k=>{const t=TAGS()[k];return t?`<span class="tg ${k}" title="${esc(t.desc)}">${esc(t.label)}</span>`:""};
+/* the legend stays one line; the explanations open on demand */
+function renderLegend(){const t=TAGS(),ks=["senoji","tautosaka","naujoji"].filter(k=>t[k]);$("tagLegend").innerHTML=`<summary><span class="ttl">${esc(T("legendTitle"))}</span><span class="lgb">${ks.map(badge).join("")}</span><span class="why">${esc(T("legendOpen"))}</span></summary><div class="lgd">${ks.map(k=>`<div>${badge(k)}<p>${esc(t[k].desc)}</p></div>`).join("")}</div>`}
+
+/* ---------- black-book library ---------- */
+function renderLibrary(){
+  const o=U("library"); if(!o) return;
+  $("library").innerHTML=`<header style="display:grid;gap:12px;max-width:72ch;margin:12px 0 18px"><h2>${esc(o.title)}</h2><p class="lede">${esc(o.lede)}</p><p class="hint">${esc(o.note)}</p></header>
+   <div class="lib">${o.groups.map((g,gi)=>`<details class="lgrp" ${gi===0?"open":""}><summary><span class="n">${esc(g.n)}</span><h4>${esc(g.t)}</h4><span class="cnt">${g.items.length} ▾</span><p>${esc(g.d)}</p></summary>
+     <div class="fitems">${g.items.map(i=>`<article class="fitem"><div class="top2"><h5>${esc(i.title)}</h5>${badge(i.tag)}</div>
+       <div class="meta">Nr. ${i.n} · ${esc(i.place)} · ${esc(i.year)}</div>
+       ${i.when?`<div class="when">◐ ${esc(i.when)}</div>`:""}
+       <div class="orig" lang="no">${esc(i.orig)}</div><p>${esc(i.lt)}</p>${i.hist?`<span class="hist">${esc(T("tagHist"))}</span>`:""}</article>`).join("")}</div></details>`).join("")}</div>
+   <p class="hint" style="margin-top:14px">${esc(o.premiumNote)}</p><p class="hint">${esc(o.source)}</p>`;
+}
+
+/* ---------- moon & primstav today ---------- */
+function moonAge(d=new Date()){const ref=Date.UTC(2000,0,6,18,14);const syn=29.530588853;let a=((d.getTime()-ref)/864e5)%syn;if(a<0)a+=syn;return a}
+function moonSVG(age){/* lit limb on the right while waxing, on the left while waning; the terminator is a half-ellipse */
+  const f=(age/29.530588853)%1, ill=(1-Math.cos(2*Math.PI*f))/2, rx=Math.abs(40*(1-2*ill)), wax=f<.5, s1=wax?1:0, s2=((ill>.5)===wax)?1:0;
+  return `<svg class="moonimg" viewBox="-42 -42 84 84" role="img" aria-label="${Math.round(ill*100)}%"><circle r="40" fill="#1a2226" stroke="var(--line)"/><path d="M0,-40 A40,40 0 0,${s1} 0,40 A${rx.toFixed(2)},40 0 0,${s2} 0,-40Z" fill="#ece6d6" opacity=".92"/></svg>`}
+const PRIM=[[3,14],[4,1],[5,24],[6,10],[6,29],[7,24],[8,29],[9,14],[10,30],[11,25]]; /* month index (0-based), day for each year.rows entry */
+function renderCal(){
+  const c=U("cal"), y=U("year"); if(!c||!y) return;
+  const age=moonAge(), idx=Math.floor(((age/29.530588853)*8)+.5)%8, phase=c.phases[idx];
+  const kind=age<1.5||age>28?"waxing":age<13.3?"waxing":age<16.3?"full":"waning";
+  const now=new Date(), t0=Date.UTC(now.getFullYear(),now.getMonth(),now.getDate());
+  let best=null; PRIM.forEach(([m,d],i)=>{let t=Date.UTC(now.getFullYear(),m,d);if(t<t0)t=Date.UTC(now.getFullYear()+1,m,d);const dd=Math.round((t-t0)/864e5);if(!best||dd<best.dd)best={dd,i}});
+  const row=y.rows[best.i], fs=(c.formulas[kind]||[]);
+  return `<div class="calnow">
+    <div class="k"><span class="label">${esc(c.moonLabel)}</span>${moonSVG(age)}<span class="big2">${esc(phase)}</span><span class="hint">${esc(fill(c.age,{d:Math.round(age)}))}</span></div>
+    <div class="k"><span class="label">${esc(c.nextLabel)}</span><span class="big2">${esc(row.name)}</span><span class="hint">${esc(row.date)} · ${best.dd===0?esc(c.today):esc(fill(c.inDays,{d:best.dd}))}</span><p>${esc(row.t)}</p></div>
+    <div class="k"><span class="label">${esc(c.formulasLabel)}</span>${fs.length?`<ul>${fs.map(f=>`<li>${esc(f.t)} <span class="hint">(Bang Nr. ${f.n})</span></li>`).join("")}</ul>`:`<p>${esc(c.none)}</p>`}${badge("senoji")}</div>
+  </div><p class="hint" style="margin:-14px 0 24px">${esc(c.note)}</p>`;
+}
+
+/* ---------- myths, people, local ---------- */
+function dayStanza(st){const d=new Date();const k=(d.getFullYear()*372+d.getMonth()*31+d.getDate())%st.length;return st[k]}
+function renderMyths(){
+  const o=U("myths"); if(!o) return; const h=o.havamal, ds=dayStanza(h.st);
+  $("myths").innerHTML=`<header style="display:grid;gap:12px;max-width:72ch"><div class="rule label">${esc(T("navMyths"))}</div><div class="blkhead"><h2>${esc(o.title)}</h2>${badge("senoji")}</div><p class="lede">${esc(o.lede)}</p></header>
+   <div class="lore" style="margin-top:26px">
+    <div class="gods">${o.gods.map(g=>`<div class="god"><h4>${esc(g.name)}<small>${esc(g.on)}</small></h4><p>${esc(g.t)}</p><span class="src">${esc(g.src)}</span></div>`).join("")}</div>
+    <div class="duo"><div class="blk"><div class="blkhead"><h3>${esc(o.ragnarok.title)}</h3>${badge("senoji")}</div><ol class="rag">${o.ragnarok.steps.map(s=>`<li><span>${esc(s)}</span></li>`).join("")}</ol><p class="hint">${esc(o.ragnarok.note)}</p><span class="ref">${esc(o.ragnarok.src)}</span></div>
+      <div class="blk"><figure class="art" data-img="thor" hidden></figure><div class="pcard"><div class="blkhead"><h3>${esc(o.worlds.title)}</h3>${badge("naujoji")}</div><p>${esc(o.worlds.t)}</p></div></div></div>
+    <div class="blk"><div class="blkhead"><h3>${esc(h.title)}</h3>${badge("senoji")}</div><p class="lede">${esc(h.lede)}</p>
+      <div class="dayst"><span class="label">${esc(h.dayLabel)} · ${ds.n}</span>${ds.on?`<span class="orig" style="font-family:var(--display);font-style:italic;color:var(--gilt);font-size:20px">${esc(ds.on)}</span>`:""}<span class="q2">${esc(ds.t)}</span></div>
+      <div class="hav">${h.st.map(s=>`<div><b>${s.n}</b><span>${esc(s.t)}</span></div>`).join("")}</div></div>
+   </div>`;
+}
+function renderPeople(){
+  const o=U("people"); if(!o) return; const ks=["volva","oseberg","trials","trondelag","steilneset","sami"];
+  $("people").innerHTML=`<header style="display:grid;gap:12px;max-width:72ch;margin-bottom:24px"><div class="rule label">${esc(T("navPeople"))}</div><h2>${esc(o.title)}</h2></header>
+   <div class="cards3">${ks.map(k=>{const c=o[k];return c?`<div class="pcard"><div class="blkhead"><h3>${esc(c.title)}</h3>${badge(c.tag)}</div><p>${esc(c.t)}</p>${c.src?`<span class="src">${esc(c.src)}</span>`:""}</div>`:""}).join("")}</div>`;
+}
+function renderLocal(){
+  const o=U("local"); if(!o) return;
+  $("local").innerHTML=`<header style="display:grid;gap:12px;max-width:72ch;margin-bottom:24px"><div class="rule label">${esc(T("navLocal"))}</div><h2>${esc(o.title)}</h2><p class="lede">${esc(o.lede)}</p></header>
+   <div class="cards3">${o.items.map(c=>`<div class="pcard"><div class="blkhead"><h3>${esc(c.title)}</h3>${badge(c.tag)}</div><p>${esc(c.t)}</p>${c.src?`<span class="src">${esc(c.src)}</span>`:""}</div>`).join("")}</div>`;
+}
+
+/* ---------- figures ---------- */
+function hydrateFigures(root=document){
+  root.querySelectorAll("figure[data-img]").forEach(f=>{
+    const im=IMAGES[f.dataset.img]; if(!im) return;
+    if(!f.dataset.ready){
+      f.innerHTML=`<img alt="" loading="lazy"><figcaption><span></span><small><a href="${im.src}" target="_blank" rel="noopener">${esc(im.credit)}</a></small></figcaption>`;
+      const img=f.querySelector("img");
+      img.onload=()=>{f.hidden=false;const s=f.closest("[data-img-section]");if(s)s.hidden=false;};
+      img.onerror=()=>{f.hidden=true};
+      img.src=im.file; f.dataset.ready="1";
+    }
+    f.querySelector("figcaption span").textContent=T(im.cap);
+    f.querySelector("img").alt=T(im.cap);
+  });
+}
+function renderCredits(){
+  $("credits").innerHTML=`<p class="hint">${Object.values(IMAGES).map(im=>`<a href="${im.src}" target="_blank" rel="noopener">${esc(im.credit)}</a>`).join(" · ")}</p>`;
+}
+
+/* ---------- i18n ---------- */
+function applyStatic(){
+  document.documentElement.lang=lang==="no"?"nb":lang;
+  document.querySelectorAll("[data-t]").forEach(el=>el.textContent=T(el.dataset.t));
+  document.querySelectorAll("[data-t-ph]").forEach(el=>el.placeholder=T(el.dataset.tPh));
+  document.querySelectorAll("[data-t-aria]").forEach(el=>el.setAttribute("aria-label",T(el.dataset.tAria)));
+  document.querySelectorAll("[data-t-alt]").forEach(el=>el.alt=T(el.dataset.tAlt));
+  const words=T("heroTitle").split(" ");
+  $("heroTitle").innerHTML=words.length>1?`${esc(words.slice(0,-1).join(" "))} <em>${esc(words.at(-1))}</em>`:`<em>${esc(words[0])}</em>`;
+  $("facts").innerHTML=(L.ui.booksFacts||FB.ui.booksFacts||[]).map(f=>`<div class="fact"><div class="n">${esc(f.n)}</div><div class="t">${esc(f.t)}</div></div>`).join("");
+  $("moonFacts").innerHTML=(L.ui.moonFacts||FB.ui.moonFacts||[]).map(f=>`<div class="fact"><div class="n">${esc(f.n)}</div><div class="t">${esc(f.t)}</div></div>`).join("");
+  if($("groups")) $("groups").innerHTML=(L.ui.booksGroups||FB.ui.booksGroups||[]).map(g=>`<div class="group ${g.n==="XI"?"dark":""}"><div class="n">${esc(g.n)}</div><h4>${esc(g.t)}</h4><p>${esc(g.d)}</p></div>`).join("");
+  $("feasts").innerHTML=(L.ui.feasts||FB.ui.feasts||[]).map(f=>`<div><b>${esc(f.n)}</b><span>${esc(f.t)}</span></div>`).join("");
+  const qs=[...T("moonText").matchAll(/[«„“"]([^«»„“”"]+)[»“”"]/g)].map(x=>x[1]);
+  $("cosmic").textContent=qs.length>=2?`«${qs[0]}» … «${qs[1]}»`:"";
+  /* each section renders on its own, so one failing section never blanks the others */
+  [renderWeek,renderLegend,renderLore,renderMyths,renderLibrary,renderBeings,renderYear,renderPeople,renderLocal,renderExplore,hydrateFigures,renderCredits].forEach(f=>{try{f()}catch(e){console.error(f.name,e)}});
+  renderPager();
+}
+function renderWeek(){
+  const vals=[5,3,3,52,24,23,29], days=L.ui.weekdays||FB.ui.weekdays||["Mon","Tue","Wed","Thu","Fri","Sat","Sun"], W=560, rowH=34, lab=110, max=52;
+  const bars=vals.map((v,i)=>{const w=Math.max(2,(W-lab-50)*v/max), y=i*rowH;
+    return `<text x="0" y="${y+21}">${esc(days[i])}</text><rect x="${lab}" y="${y+6}" width="${w}" height="20" rx="1" fill="${i===3?"var(--ochre)":"var(--gilt)"}" opacity="${i===3?1:.55}"/><text class="val" x="${lab+w+8}" y="${y+21}">${v}</text>`}).join("");
+  $("weekChart").innerHTML=`<svg viewBox="0 0 ${W} ${rowH*7}" role="img" aria-label="${esc(T("weekTitle"))}">${bars}</svg>`;
+}
+async function loadLang(code){
+  if(!cache[code]){const r=await fetch(`lang/${code}.json`); if(!r.ok) throw new Error("lang "+code); cache[code]=await r.json();}
+  return cache[code];
+}
+async function setLang(code){
+  try{ if(!FB) FB=await loadLang("lt"); L=await loadLang(code); lang=code; }catch(e){ if(code!=="no") return setLang("no"); return; }
+  try{localStorage.setItem("orakel-lang",lang)}catch(e){}
+  $("lang").value=lang;
+  applyStatic(); applyTheme(); renderSpreadButtons(); fillPhotoSpread(); renderRef(); renderTabs(); renderBench();
+  if(drawn.length){ drawn.forEach((d,i)=>{ if(!SPREAD_META[current].cast) d.pos=L.spreads[current].pos[i]; }); render(); } else draw(true);
+  if(recRunes.length) renderRec();
+  $("aiOut").innerHTML=""; $("photoOut").innerHTML="";
+}
+
+/* ---------- Yggdrasil (drawn for this page) ---------- */
+function drawTree(){
+  const cv=$("ygg"), box=cv.parentElement.getBoundingClientRect(), dpr=Math.min(2,window.devicePixelRatio||1);
+  if(!box.width) return;
+  cv.width=box.width*dpr; cv.height=box.height*dpr; const c=cv.getContext("2d"); c.setTransform(dpr,0,0,dpr,0,0);
+  const cs=getComputedStyle(cv), gilt=cs.getPropertyValue("--gilt").trim(), muted=cs.getPropertyValue("--muted").trim(), ochre=cs.getPropertyValue("--ochre").trim();
+  const W=box.width, H=box.height; c.clearRect(0,0,W,H);
+  let seed=20261026; const rand=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};
+  c.fillStyle=muted; for(let i=0;i<90;i++){c.globalAlpha=.15+rand()*.45;c.beginPath();c.arc(rand()*W,rand()*H*.62,rand()*1.3+.2,0,7);c.fill()} c.globalAlpha=1;
+  const baseX=W*.52, baseY=H*.78;
+  c.strokeStyle=gilt; c.lineCap="round";
+  function branch(x,y,len,ang,depth,w){
+    if(depth===0||len<4) return;
+    const x2=x+Math.cos(ang)*len, y2=y+Math.sin(ang)*len;
+    c.lineWidth=w; c.globalAlpha=.35+depth*.07;
+    c.beginPath(); c.moveTo(x,y); c.quadraticCurveTo((x+x2)/2+(rand()-.5)*len*.25,(y+y2)/2,x2,y2); c.stroke();
+    const n=depth>5?2:3;
+    for(let i=0;i<n;i++){const spread=(i-(n-1)/2)*(.42+rand()*.18);branch(x2,y2,len*(.7+rand()*.12),ang+spread+(rand()-.5)*.2,depth-1,w*.68)}
+    if(depth<=2){c.globalAlpha=.55;c.fillStyle=gilt;c.beginPath();c.arc(x2,y2,1.2,0,7);c.fill()}
+  }
+  branch(baseX,baseY,H*.2,-Math.PI/2,8,Math.max(5,W*.012));
+  const wells=[[-1,.98],[0,1.0],[1,.98]].map(([k,f])=>[baseX+k*W*.26,H*.95*f]);
+  c.globalAlpha=.6;
+  wells.forEach(([wx,wy],i)=>{
+    c.lineWidth=2; c.beginPath(); c.moveTo(baseX+(i-1)*6,baseY);
+    c.bezierCurveTo(baseX+(i-1)*W*.06,baseY+H*.06,wx-(i-1)*20,wy-H*.08,wx,wy-10); c.stroke();
+    c.lineWidth=1.2; c.beginPath(); c.ellipse(wx,wy,W*.05,H*.016,0,0,7); c.stroke();
+  });
+  c.globalAlpha=1; c.fillStyle=ochre; c.font=`${Math.round(W*.05)}px "Noto Sans Runic"`; c.textAlign="center";
+  c.fillText(transliterate("urd verdandi skuld","elder").text.replace(/᛫/g," ᛫ "),baseX,H*.995);
+}
+let rt; addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(drawTree,150)});
+matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",drawTree);
+new MutationObserver(drawTree).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+
+/* ---------- drawing runes ---------- */
+function renderSpreadButtons(){
+  $("spreads").innerHTML=Object.keys(SPREAD_META).map(k=>`<button type="button" data-k="${k}" aria-pressed="${k===current}">${esc(L.spreads[k].label)}</button>`).join("");
+  $("spreads").querySelectorAll("button").forEach(b=>b.onclick=()=>{current=b.dataset.k;renderSpreadButtons();draw(false)});
+  $("spreadDesc").textContent=L.spreads[current].desc;
+}
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const r=crypto.getRandomValues(new Uint32Array(1))[0]%(i+1);[a[i],a[r]]=[a[r],a[i]]}return a}
+const zoneOf=d=>d<1/3?0:d<2/3?1:2;
+function castPositions(n){const pts=[];for(let t=0;pts.length<n&&t<5000;t++){const d=Math.sqrt(rnd())*0.84,a=rnd()*Math.PI*2,x=50+Math.cos(a)*d*50,y=50+Math.sin(a)*d*50;if(pts.every(p=>Math.hypot(p.x-x,p.y-y)>16))pts.push({x,y,d,zone:zoneOf(d)})}return pts}
+function draw(reveal){
+  const meta=SPREAD_META[current], useRev=$("rev").checked, pick=shuffle(RUNES).slice(0,meta.n);
+  if(meta.cast){const pts=castPositions(meta.n);let up;do{up=pick.map(()=>rnd()<0.5)}while(!up.some(Boolean));
+    drawn=pick.map((r,i)=>({id:r.id,faceUp:up[i],reversed:useRev&&up[i]&&!r.sym&&rnd()<0.5,open:!!reveal,...pts[i]}));}
+  else drawn=pick.map((r,i)=>({id:r.id,faceUp:true,reversed:useRev&&!r.sym&&rnd()<0.5,open:!!reveal,pos:L.spreads[current].pos[i]}));
+  animate=!reveal; render(); animate=false;
+}
+function stoneHTML(d,i,style=""){
+  const r=R(d.id), cls=["stone",d.open&&!d.faceUp?"down":"",!d.open?"hidden":"",d.open&&d.faceUp&&d.reversed?"rev":"",animate?"land":""].filter(Boolean).join(" ");
+  const label=!d.open?fill(T("revealStone"),{n:i+1}):!d.faceUp?fill(T("faceDownN"),{n:i+1}):`${r.name}${d.reversed?" ("+T("reversedWord")+")":""}`;
+  return `<button class="${cls}" data-i="${i}" style="${style}animation-delay:${i*70}ms" aria-label="${esc(label)}"><span class="g" aria-hidden="true">${r.g}</span></button>`;
+}
+function render(){
+  const meta=SPREAD_META[current], t=$("table");
+  if(meta.cast){const z=L.spreads.ni.zones;
+    t.innerHTML=`<div class="round" role="group" aria-label="${esc(L.spreads.ni.label)}"><div class="ring" style="inset:33.3%"></div><div class="ring" style="inset:16.6%"></div><div class="ring" style="inset:0"></div>
+      ${drawn.map((d,i)=>stoneHTML(d,i,`left:${d.x}%;top:${d.y}%;`)).join("")}${drawn.map((d,i)=>`<span class="n" style="left:${d.x}%;top:calc(${d.y}% + 8.5%)">${i+1}</span>`).join("")}</div>
+      <div class="legend">${z.map(s=>{const [a,b]=s.split(" · ");return `<span><b>${esc(a)}</b>${esc(b||"")}</span>`}).join("")}</div>`;}
+  else t.innerHTML=`<div class="strip">${drawn.map((d,i)=>`<div class="slot"><div class="pos">${esc(d.pos)}</div>${stoneHTML(d,i)}<div class="nm">${d.open?esc(R(d.id).name):""}</div><div class="revtag">${d.open&&d.reversed?esc(T("reversedTag")):""}</div></div>`).join("")}</div>`;
+  t.querySelectorAll(".stone").forEach(b=>b.onclick=()=>{drawn[+b.dataset.i].open=true;render()});
+  renderMeanings();
+}
+function meaningHTML(d,posText,n){
+  const r=R(d.id);
+  return `<div class="m"><div class="gl ${d.reversed?"rev":""}" aria-hidden="true">${r.g}</div><div><div class="pos">${n}. ${esc(posText)}</div>
+   <h3>${esc(r.name)}${d.reversed?` <span class="r">· ${esc(T("reversedWord"))}</span>`:""}<small>${esc(r.pg)} · ${esc(r.lit)}</small></h3>
+   <div class="two"><p>${badge("naujoji")} ${esc(d.reversed&&r.rev?r.rev:r.up)}</p><p class="hint">${badge("senoji")} ${esc(r.hist)}</p></div></div></div>`;
+}
+function renderMeanings(){
+  const q=$("q").value.trim(), meta=SPREAD_META[current];
+  $("qShow").textContent=q?`${T("questionPrefix")}: «${q}»`:"";
+  if(!drawn.some(d=>d.open)){ $("meanings").innerHTML=`<p class="empty">${esc(T("revealHint"))}</p>`; return; }
+  let html="";
+  if(meta.cast){const order=drawn.map((d,i)=>({d,i})).filter(o=>o.d.open&&o.d.faceUp).sort((a,b)=>a.d.d-b.d.d), down=drawn.filter(d=>d.open&&!d.faceUp).length;
+    html=order.map(o=>meaningHTML(o.d,L.spreads.ni.zones[o.d.zone],o.i+1)).join(""); if(down) html+=`<p class="empty">${esc(fill(T("faceDownNote"),{n:down}))}</p>`;}
+  else html=drawn.map((d,i)=>d.open?meaningHTML(d,d.pos,i+1):"").join("");
+  $("meanings").innerHTML=html;
+}
+
+/* ---------- the 24 runes ---------- */
+function poemsHTML(id){const P=U("poems");if(!P)return "";const p=P[id];if(!p)return "";
+  const W=[["oe","poemOE"],["no","poemNO"],["is","poemIS"]];
+  return `<div class="poems"><span class="label">${esc(T("poemsTitle"))}</span>${W.filter(([k])=>p[k]).map(([k,l])=>`<div class="poem"><div class="w">${esc(T(l))}<b>${esc(p[k].name)}</b></div><div><div class="l" lang="${k==="oe"?"ang":"non"}">${esc(p[k].line)} …</div><p>${esc(p[k].lt)}</p></div></div>`).join("")}${p.note?`<p class="hint">${esc(p.note)}</p>`:""}</div>`}
+function renderRef(){
+  $("aettir").innerHTML=L.aettir.map((a,ai)=>`<div class="aett"><div class="label">${esc(a)}</div><div class="tiles">${RUNES.filter(r=>r.aett===ai).map(r=>`<button type="button" data-id="${r.id}" aria-pressed="${r.id===refSel}"><span class="g" aria-hidden="true">${r.g}</span><span class="t">${esc(L.runes[r.id].name)}</span></button>`).join("")}</div></div>`).join("");
+  $("aettir").querySelectorAll("button").forEach(b=>b.onclick=()=>{refSel=+b.dataset.id;renderRef()});
+  const r=R(refSel);
+  $("refDetail").innerHTML=`<div class="detail"><div class="big" aria-hidden="true">${r.g}</div><div style="display:grid;gap:12px;min-width:0">
+    <div><h3>${esc(r.name)}</h3><p class="pg">${esc(r.pg)} · ${esc(r.lit)}</p></div>
+    <p>${badge("senoji")} ${esc(r.hist)}</p>${poemsHTML(refSel)}
+    <p>${badge("naujoji")} <b>${esc(T("readingLabel"))}:</b> ${esc(r.up)}</p>
+    ${r.rev?`<p>${badge("naujoji")} <b>${esc(T("reversedTag"))}:</b> ${esc(r.rev)}</p>`:`<p class="sym">${esc(T("symNote"))}</p>`}</div></div>`;
+}
+
+/* ---------- AI ---------- */
+function md(t){return esc(t).split(/\n{2,}/).map(b=>b.split("\n").map(line=>{const h=line.match(/^#{1,4}\s+(.*)$/);if(h)return `<h4>${h[1]}</h4>`;return line.trim()?`<p>${line.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>")}</p>`:""}).join("")).join("")}
+const copyFor=code=>(L.ui.errors&&L.ui.errors[code])||L.ui.errors.generic;
+function describe(list,cast){return list.map((d,i)=>{const r=RUNES[d.id];if(!d.faceUp)return `${i+1}. face down — not read`;
+  const where=cast?`Ring: ${["inner (core of the matter)","middle (surrounding influences)","outer (background, distant influences)"][d.zone]}`:`Position: ${d.pos}`;
+  return `${i+1}. ${where} — Rune: ${r.g} ${r.pg}${d.reversed?" — REVERSED":""}${r.sym?" (symmetric, cannot be reversed)":""}`}).join("\n")}
+function interpPrompt(list,question,label,cast){
+  const heads=T("aiHeads"), crisis=lang==="no"?"recommend contacting Mental Helse's helpline 116 123 or the emergency number 113":"recommend contacting the local emergency number (112 in Europe) or a local crisis helpline";
+  return `You are a thoughtful reader of the Elder Futhark runes. Write the whole answer in ${T("aiLanguage")}.
+Interpret this rune reading as a whole.
+
+Layout: ${label}
+Question: ${question||"(none given — give a general reading)"}
+Runes:
+${describe(list,cast)}
+
+Structure the answer with exactly these headings, each on its own line starting with "## ":
+${heads.map(h=>"## "+h).join("\n")}
+
+Rules:
+- Anchor each rune in its reconstructed name and literal meaning (e.g. fehu = cattle/wealth). Be honest that divinatory meanings are modern; do not claim Norse people read runes this way.
+- ${cast?"Runes near the centre weigh most; outer runes are background. Ignore face-down runes.":"Explain each rune through its position."} Explain how the runes relate to each other.
+- Write reflectively and respectfully, addressing the reader directly. No promises about outcomes.
+- Never give spells, rituals, curses or instructions to harm or control anyone.
+- If the question concerns health, law or money, briefly remind that runes do not replace professionals.
+- If the question suggests a crisis, self-harm, suicidal thoughts or violence: do not interpret the runes. Answer warmly and briefly and ${crisis}.
+- About 250–400 words. No introduction about yourself.`;
+}
+const samplePromise=(window.claude&&window.claude.use)?window.claude.use("sample").catch(()=>null):Promise.resolve(null);
+const getSample=()=>samplePromise;
+let imagesOK=false;
+async function runInterp(list,question,label,cast,out,btn,stop){
+  const s=await getSample(); if(!s){out.innerHTML=md(copyFor("sampling_disabled"));return}
+  const ctl=new AbortController(); stop.hidden=false; stop.onclick=()=>ctl.abort(); btn.disabled=true; out.innerHTML=`<p>${esc(T("interpreting"))}</p>`;
+  try{ await s(interpPrompt(list,question,label,cast),{signal:ctl.signal,onText:({text})=>{out.innerHTML=md(text)}}); }
+  catch(e){ if(e.code==="cancelled"){ if(!e.text) out.innerHTML=""; } else out.innerHTML=(e.text?md(e.text):"")+md(copyFor(e.code)); }
+  finally{btn.disabled=false;stop.hidden=true}
+}
+$("aiBtn").onclick=()=>{drawn.forEach(d=>d.open=true);render();const cast=!!SPREAD_META[current].cast;runInterp(cast?drawn.slice().sort((a,b)=>a.d-b.d):drawn,$("q").value.trim(),L.spreads[current].label,cast,$("aiOut"),$("aiBtn"),$("aiStop"))};
+
+/* ---------- photo ---------- */
+const ps=$("photoSpread"); let photoFile=null, recRunes=[];
+function fillPhotoSpread(){const v=ps.value||"tre";ps.innerHTML=Object.keys(SPREAD_META).map(k=>`<option value="${k}">${esc(L.spreads[k].label)}</option>`).join("")+`<option value="fri">${esc(T("freeSpread"))}</option>`;ps.value=v}
+function setPhoto(f){if(!f)return;photoFile=f;const img=$("preview");img.src=URL.createObjectURL(f);img.hidden=false;$("recBtn").disabled=!imagesOK;recRunes=[];$("recRows").innerHTML="";$("photoInterp").hidden=true;$("photoOut").innerHTML="";$("recStatus").textContent=imagesOK?T("photoReady"):copyFor("images_unavailable")}
+$("photo").onchange=e=>setPhoto(e.target.files[0]);
+const drop=$("drop");
+drop.addEventListener("dragover",e=>{e.preventDefault();drop.classList.add("over")});
+drop.addEventListener("dragleave",()=>drop.classList.remove("over"));
+drop.addEventListener("drop",e=>{e.preventDefault();drop.classList.remove("over");const f=e.dataTransfer.files[0];if(f&&f.type.startsWith("image/"))setPhoto(f)});
+function posFor(i,n){if(ps.value==="ni")return L.spreads.ni.zones[recRunes[i]?.zone??1];const m=SPREAD_META[ps.value];return m&&m.n===n?L.spreads[ps.value].pos[i]:fill(T("runeN"),{n:i+1})}
+function renderRec(){
+  const opts=`<option value="">${esc(T("chooseRune"))}</option>`+RUNES.map(r=>`<option value="${r.id}">${r.g} ${esc(L.runes[r.id].name)}</option>`).join("");
+  $("recRows").innerHTML=recRunes.map((c,i)=>`<div class="recrow"><span class="pl">${i+1}. ${esc(posFor(i,recRunes.length))}</span><select id="rc${i}" aria-label="${esc(fill(T("runeN"),{n:i+1}))}">${opts}</select>
+    <label class="tog"><input type="checkbox" id="rr${i}" ${c.reversed?"checked":""} ${c.id!=null&&RUNES[c.id].sym?"disabled":""}> ${esc(T("reversedTag"))}</label>
+    <span class="conf ${c.confidence==="low"||c.id==null?"low":""}">${esc(c.id==null?T("notRecognized"):c.confidence==="high"?T("confHigh"):c.confidence==="medium"?T("confMedium"):T("confLow"))}</span></div>`).join("");
+  recRunes.forEach((c,i)=>{const s=$("rc"+i);if(c.id!=null)s.value=String(c.id);s.onchange=()=>{c.id=s.value===""?null:+s.value;c.confidence="high";if(c.id!=null&&RUNES[c.id].sym)c.reversed=false;renderRec()};$("rr"+i).onchange=e=>{c.reversed=e.target.checked}});
+  $("photoInterp").hidden=!recRunes.length; $("photoInterp").disabled=recRunes.some(c=>c.id==null);
+}
+ps.onchange=()=>{if(recRunes.length)renderRec()};
+$("recBtn").onclick=async()=>{
+  const s=await getSample(); if(!s||!photoFile) return;
+  const btn=$("recBtn"); btn.disabled=true; $("recStatus").textContent=T("looking");
+  const m=SPREAD_META[ps.value], idList=RUNES.map(r=>`${r.id}: ${r.g} ${r.pg}`).join("\n");
+  const prompt=`This is a photo of physical rune stones or rune tiles (Elder Futhark) on a surface.
+Identify every stone whose carved symbol is visible (face up). Ignore stones lying blank side up.
+${m&&!m.cast?`The person says the layout has ${m.n} runes. Order them left to right, then top to bottom.`:""}${ps.value==="ni"?"This is a nine-rune cast: for each visible rune estimate how far it lies from the centre of the cast: \"inner\", \"middle\" or \"outer\". Order from the centre outwards.":""}${!m?"The layout is unknown; order left to right, then top to bottom.":""}
+A rune is reversed if its symbol is upside down from the viewer's point of view. These runes look the same both ways and are never reversed: gebo, hagalaz, naudiz, isaz, jera, eihwaz, sowilo, ingwaz, dagaz.
+Use ONLY these ids:
+${idList}
+Reply with only JSON in this shape:
+{"runes":[{"id":0,"reversed":false,"confidence":"high","ring":"inner"}],"faceDown":0,"note":"one short sentence in ${T("aiLanguage")} about anything uncertain, or empty"}
+Use "id": null for a rune you cannot identify. "confidence" is "high", "medium" or "low". "ring" only for a nine-rune cast.`;
+  try{const r=await s.json(prompt,{images:[photoFile]});const arr=Array.isArray(r&&r.runes)?r.runes:[];
+    recRunes=arr.map(c=>{const id=Number.isInteger(c.id)&&c.id>=0&&c.id<24?c.id:null;return {id,reversed:!!c.reversed&&!(id!=null&&RUNES[id].sym),confidence:["high","medium","low"].includes(c.confidence)?c.confidence:"low",zone:{inner:0,middle:1,outer:2}[c.ring]??1}});
+    $("recStatus").textContent=recRunes.length?[fill(T("found"),{n:recRunes.length}),r.note||""].filter(Boolean).join(" "):T("noneFound"); renderRec();}
+  catch(e){$("recStatus").textContent=copyFor(e.code)} finally{btn.disabled=false}
+};
+$("photoInterp").onclick=()=>{const cast=ps.value==="ni";const list=recRunes.map((c,i)=>({id:c.id,faceUp:true,reversed:c.reversed,zone:c.zone,pos:posFor(i,recRunes.length)}));const label=SPREAD_META[ps.value]?L.spreads[ps.value].label:T("freeSpread");runInterp(list,$("q").value.trim(),label,cast,$("photoOut"),$("photoInterp"),$("photoStop"))};
+
+/* ---------- page router (bare #tokens) ---------- */
+const VIEWS=["kast","verksted","runer","saltiniai","mitai","svartebok","butybes","metai","zmones","froan"];
+/* reading order of the pages; used by the "what else" grid and the next/previous links */
+const ORDER=[["kast","navCast","dKast"],["runer","navRunes","dRuner"],["verksted","navTools","dVerksted"],["svartebok","navBooks","dSvartebok"],["metai","navYear","dMetai"],["mitai","navMyths","dMitai"],["butybes","navBeings","dButybes"],["saltiniai","navLore","dSaltiniai"],["zmones","navPeople","dZmones"],["froan","navLocal","dFroan"]];
+const GLYPH={kast:"ᚨ",runer:"ᚠ",verksted:"ᚱ",svartebok:"ᚦ",metai:"ᛃ",mitai:"ᛟ",butybes:"ᚦ",saltiniai:"ᚲ",zmones:"ᛗ",froan:"ᛚ"};
+function renderExplore(){
+  $("explore").innerHTML=ORDER.slice(1).map(([v,n,d])=>`<a href="#${v}"><span class="g" aria-hidden="true">${GLYPH[v]}</span><b>${esc(T(n))}</b><span>${esc(T(d))}</span></a>`).join("");
+}
+function renderPager(v){
+  v=v||document.querySelector("[data-view].on")?.dataset.view||"kast";
+  const i=ORDER.findIndex(o=>o[0]===v); if(i<0) return;
+  const pv=ORDER[i-1], nx=ORDER[i+1];
+  $("pager").innerHTML=(pv?`<a class="pv" href="#${pv[0]}"><small>${esc(T("pagerPrev"))}</small>${esc(T(pv[1]))}</a>`:"<span></span>")+(nx?`<a class="nx" href="#${nx[0]}"><small>${esc(T("pagerNext"))}</small>${esc(T(nx[1]))}</a>`:"");
+}
+/* theme: follows the device unless the visitor picks one; light reads best for long text */
+const THEMES=["auto","light","dark"]; let theme="auto";
+try{const t=localStorage.getItem("orakel-theme");if(THEMES.includes(t))theme=t}catch(e){}
+function applyTheme(){
+  if(theme==="auto") document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme",theme);
+  const b=$("themeBtn"); if(b){b.innerHTML=({auto:'<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>',light:'<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>',dark:'<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="currentColor"/></svg>'})[theme]; b.setAttribute("aria-label",T("themeLabel")+": "+T("theme_"+theme));b.title=T("themeLabel")+": "+T("theme_"+theme);}
+  try{requestAnimationFrame(drawTree)}catch(e){}
+}
+function showView(v,scroll){
+  if(!VIEWS.includes(v)) v="kast";
+  document.querySelectorAll("[data-view]").forEach(el=>el.classList.toggle("on",el.dataset.view===v));
+  document.querySelectorAll("nav a").forEach(a=>{if(a.getAttribute("href")==="#"+v)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+  $("more").classList.toggle("cur",!!$("more").querySelector(`a[href="#${v}"]`));
+  renderPager(v);
+  if(v==="kast") requestAnimationFrame(drawTree);
+  hydrateFigures();
+  if(scroll!==false) window.scrollTo({top:0,behavior:"instant"in window?"instant":"auto"});
+}
+function go(e){const a=e.target.closest("a[href^='#']");if(!a)return;e.preventDefault();const v=a.getAttribute("href").slice(1);try{history.replaceState(null,"","#"+v)}catch(_){}$("more").open=false;showView(v)}
+["mainnav","pager","explore"].forEach(id=>$(id).addEventListener("click",go));
+document.addEventListener("click",e=>{if(!e.target.closest("#more"))$("more").open=false});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")$("more").open=false});
+addEventListener("hashchange",()=>showView(location.hash.slice(1)));
+showView((location.hash||"#kast").slice(1));
+addEventListener("load",()=>window.scrollTo(0,0));
+
+/* ---------- boot ---------- */
+$("draw").onclick=()=>draw(false);
+$("flipall").onclick=()=>{drawn.forEach(d=>d.open=true);render()};
+$("rev").onchange=()=>draw(false);
+$("q").oninput=()=>renderMeanings();
+$("lang").innerHTML=LANGS.map(([c,n])=>`<option value="${c}">${n}</option>`).join("");
+$("lang").onchange=e=>setLang(e.target.value);
+applyTheme();
+$("themeBtn").addEventListener("click",()=>{theme=THEMES[(THEMES.indexOf(theme)+1)%3];try{localStorage.setItem("orakel-theme",theme)}catch(e){}applyTheme()});
+let start="lt";
+/* while building, Lithuanian is the only complete language: start in it unless the visitor chose another */
+try{const s=localStorage.getItem("orakel-lang");if(s&&LANGS.some(l=>l[0]===s))start=s}catch(e){}
+setLang(start).then(()=>{drawTree(); document.fonts&&document.fonts.ready.then(drawTree)});
+getSample().then(async s=>{if(!s){$("aiNote").hidden=false;$("aiBtn").disabled=true;$("recBtn").disabled=true;$("photo").disabled=true;return}
+  const lim=await s.limits().catch(()=>null);imagesOK=!!(lim&&lim.images);if(!imagesOK)$("photo").disabled=true});
+</script>
+
+</html>

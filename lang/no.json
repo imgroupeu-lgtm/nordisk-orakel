@@ -1,0 +1,488 @@
+{
+ "ui": {
+  "langName": "Norsk",
+  "aiLanguage": "Norwegian (bokmål)",
+  "eyebrow": "Prototype · Runer",
+  "lede": "Den eldre futharken har 24 runer. Still et spørsmål, velg en legging og trekk runene. Hver rune vises med det vi vet historisk om navnet, og med en moderne tolkning.",
+  "questionPlaceholder": "Ditt spørsmål, f.eks. «Hva bør jeg ta med meg inn i vinteren?»",
+  "questionLabel": "Ditt spørsmål",
+  "reversedToggle": "Omvendte runer",
+  "drawBtn": "Trekk runer",
+  "revealAll": "Vis alle",
+  "meaningsTitle": "Betydninger",
+  "revealHint": "Trykk på steinene for å snu dem, eller velg «Vis alle».",
+  "questionPrefix": "Spørsmål",
+  "reversedWord": "omvendt",
+  "reversedTag": "Omvendt",
+  "revealStone": "Snu stein {n}",
+  "faceDownN": "Stein {n} ligger med blank side opp",
+  "faceDownNote": "{n} stein(er) landet med blank side opp og leses ikke.",
+  "ringsLegend": "Indre ring: kjernen i saken · midtre: det som påvirker · ytre: bakgrunn",
+  "readingLabel": "Moderne tolkning",
+  "histLabel": "Historisk",
+  "symNote": "Denne runen ser lik ut begge veier og har derfor ingen omvendt tolkning.",
+  "aiNote": "AI-funksjonene under virker bare når siden er åpnet i Claude.",
+  "premiumChip": "Premium · prototype",
+  "aiTitle": "Tolkning av hele leggingen",
+  "aiDesc": "AI leser runene sammen ut fra spørsmålet ditt: hovedtema, rune for rune, hvordan de henger sammen, og råd.",
+  "aiBtn": "Tolk runene",
+  "stop": "Stopp",
+  "interpreting": "Tolker runene …",
+  "aiHeads": [
+   "Hovedtema",
+   "Rune for rune",
+   "Hvordan runene henger sammen",
+   "Råd"
+  ],
+  "photoTitle": "Fotografer dine egne runesteiner",
+  "photoDesc": "Last opp et bilde av runesteinene dine, tatt rett ovenfra. Vi gjenkjenner runene, du kontrollerer listen, og så får du tolkningen.",
+  "dropLabel": "Velg eller slipp et bilde",
+  "spreadOnPhoto": "Hvilken legging er på bildet",
+  "freeSpread": "Fri legging (vet ikke)",
+  "previewAlt": "Bildet du lastet opp",
+  "recBtn": "Gjenkjenn runer",
+  "photoInterp": "Tolk denne leggingen",
+  "photoReady": "Bildet er klart.",
+  "looking": "Ser på bildet …",
+  "found": "Fant {n} runer. Kontroller listen før tolkning.",
+  "noneFound": "Fant ingen runer på bildet. Prøv et skarpere bilde tatt rett ovenfra.",
+  "chooseRune": "– velg rune –",
+  "runeN": "Rune {n}",
+  "confHigh": "sikker",
+  "confMedium": "ganske sikker",
+  "confLow": "usikker",
+  "notRecognized": "ikke gjenkjent",
+  "refTitle": "De 24 runene",
+  "refDesc": "Futharken deles tradisjonelt i tre ætter på åtte runer. Velg en rune for å se navnet, hva det betyr, og den moderne tolkningen.",
+  "footer": "Runetydning på denne siden er kultur, refleksjon og underholdning. Det er ikke medisinske, juridiske eller økonomiske råd, og ingen resultater er garantert. Runene trekkes tilfeldig. Tolkningene er moderne: vi har ingen sikre kilder på at runer ble brukt til spådom i vikingtiden. AI-tolkningen er laget av kunstig intelligens, ikke av et menneske.",
+  "sourcesNote": "Historiske opplysninger: rekonstruerte urgermanske navn og de norrøne og gammelengelske runediktene (Store norske leksikon, Wikipedia med kilder). Tre runer (ᛉ, ᛊ, ᛟ) er misbrukt i nazistisk og ekstrem symbolikk; her brukes de bare i sin opprinnelige betydning.",
+  "errors": {
+   "not_granted": "Du har ikke gitt siden lov til å bruke Claude.",
+   "sampling_disabled": "AI er ikke tilgjengelig for denne kontoen.",
+   "rate_limited": "For mange forespørsler akkurat nå. Prøv igjen om litt.",
+   "session_expired": "Du må logge inn på nytt.",
+   "image_rejected": "Bildet kunne ikke leses. Prøv et JPEG- eller PNG-bilde.",
+   "images_unavailable": "Bildeopplasting er ikke tilgjengelig her.",
+   "refused": "Denne forespørselen kan ikke besvares. Prøv et annet spørsmål.",
+   "invalid_json": "Svaret kunne ikke leses. Prøv igjen.",
+   "empty_completion": "Fikk ikke noe svar. Prøv igjen.",
+   "generic": "Noe gikk galt. Prøv igjen."
+  },
+  "navCast": "Kast",
+  "navRunes": "Runene",
+  "navName": "Navn i runer",
+  "navBooks": "Svartebøker",
+  "heroTitle": "Spør runene",
+  "heroStone": "Dagens rune",
+  "heroStoneHint": "Samme rune for alle i dag. Trykk for å lese om den.",
+  "castTitle": "Kastet",
+  "clothCaption": "Den romerske historikeren Tacitus beskrev rundt år 98 hvordan germanere kastet merkede trebiter på en hvit duk for å søke svar. Om merkene var runer, vet ingen.",
+  "nameTitle": "Navnet ditt i runer",
+  "nameDesc": "Skriv et navn eller et ord, så skriver vi det med den eldre futharken.",
+  "namePlaceholder": "F.eks. Ingrid",
+  "nameLabel": "Navn eller ord",
+  "nameCopy": "Kopier runene",
+  "nameCopied": "Kopiert",
+  "nameEmpty": "Skriv noe over for å se det i runer.",
+  "nameNote": "Dette er en moderne lydskrift. Det fantes ingen fast regel for å skrive dagens navn med den eldre futharken, og bokstaver som c, q, x og y har ingen egen rune.",
+  "booksTitle": "Fra svartebøkene",
+  "booksDesc": "Norske svartebøker er håndskrevne bøker med formler og råd fra omtrent 1480 til 1850. De fleste handler om vern og helbredelse. Denne delen er under arbeid.",
+  "booksFacts": [
+   {
+    "n": "100–200",
+    "t": "bevarte svartebøker i Norge, avhengig av hvordan de telles"
+   },
+   {
+    "n": "ca. 1480–1520",
+    "t": "Vinjeboka fra Telemark, Nordens eldste bevarte svartebok"
+   },
+   {
+    "n": "1 576",
+    "t": "formler og ritualer samlet av A. C. Bang i 1901–02"
+   }
+  ],
+  "booksTopics": [
+   "Å stille blod",
+   "Signing og lesing",
+   "Vern mot brann",
+   "Vern for buskapen",
+   "Å finne tyver",
+   "Lykke i handel og kortspill",
+   "Vern mot trolldom",
+   "Jonsok",
+   "Jul og oskoreia"
+  ],
+  "booksSoon": "Kommer",
+  "booksNote": "Skadelig magi, tvang og forbannelser omtales bare som historie, aldri som oppskrift.",
+  "srcTitle": "Om kildene",
+  "navTools": "Runeverkstedet",
+  "toolsTitle": "Runeverkstedet",
+  "toolsDesc": "Fire verktøy. To bygger på historiske runesystemer, ett på kalenderprinsippet fra runestavene, og ett er moderne tallmystikk. Hvert verktøy sier selv hva det bygger på.",
+  "tabName": "Navn i runer",
+  "tabCipher": "Lønnruner",
+  "tabNum": "Navnets rune",
+  "tabCal": "Runekalender",
+  "tagHistoric": "Historisk system",
+  "tagModern": "Moderne",
+  "tagCalendar": "Historisk prinsipp",
+  "scriptElder": "Eldre futhark",
+  "scriptYounger": "Yngre futhark",
+  "scriptMedieval": "Middelalderruner",
+  "scriptElderNote": "Den eldre futharken ble brukt omtrent år 150–700. Hver rune har sin egen lyd.",
+  "scriptYoungerNote": "Vikingtidens alfabet fra omkring år 800 hadde bare 16 runer. Én rune dekket flere lyder: ᚢ for u, o, v, w, y og ø, ᛁ for i og e, ᚴ for k og g, ᛏ for t og d, ᛒ for b og p. Samme rune ble ikke skrevet to ganger etter hverandre.",
+  "scriptMedievalNote": "I middelalderen fikk runene prikker for å skille lyder, for eksempel ᛂ for e, ᛑ for d, ᚵ for g og ᛔ for p. Alfabetet var ferdig utviklet tidlig på 1200-tallet.",
+  "cipherDesc": "Lønnruner er en historisk kode. Hver rune skrives som to tall: hvilken ætt den står i, og hvilken plass den har i ætten. I kvistruner står ætten som kvister til venstre på en stav og plassen som kvister til høyre. Lønnruner finnes blant annet på Rök-steinen i Sverige, i Maeshowe på Orknøy (1100-tallet) og i Bryggen-innskriftene i Bergen.",
+  "cipherReverse": "Tell ættene baklengs (3–2–1), slik mange innskrifter gjør",
+  "cipherCode": "Koden",
+  "cipherEmpty": "Skriv et navn over for å se det som lønnruner.",
+  "numDesc": "Dette er moderne tallmystikk, ikke vikingtradisjon. Den svenske runologen Sigurd Agrell flyttet i 1920- og 1930-årene fehu til slutten av runerekken og ga runene tallverdier, der uruz er 1 og fehu er 24. Teorien har ingen støtte i historiske kilder. Hvordan Agrell selv summerte ord, er ikke dokumentert i kildene vi har; her legger vi sammen verdiene og tar resten ved deling på 24.",
+  "numResult": "Navnets rune",
+  "numSum": "Sum",
+  "numReduce": "{sum} delt på 24 gir rest {r}",
+  "numZero": "(rest 0 regnes som 24)",
+  "numEmpty": "Skriv et navn i feltet over for å regne ut navnets rune.",
+  "calDesc": "Runekalendere (runestaver) ble brukt i Norden fra middelalderen; den eldste kjente er fra Nyköping og antas å være fra 1200-tallet, men de fleste er fra 1500- og 1600-tallet. De første sju runene i den yngre futharken gikk igjen gjennom året som ukedager. Nitten tegn – de 16 runene og tre ekstra (ᛮ ᛯ ᛰ) – var gyllentall og markerte dagene med nymåne.",
+  "calYear": "Årstall",
+  "calGolden": "Gyllental",
+  "calGoldenText": "År {y} har gyllental {g}. På en runekalender ble dette tegnet satt ved dagene med nymåne det året.",
+  "calSunday": "Søndagsrune",
+  "calSundayText": "I {y} faller søndagene på runen {r}.",
+  "calLeap": "{y} er skuddår: fra 1. mars blir søndagsrunen {r}.",
+  "calToday": "I dag i runekalenderen",
+  "calTodayText": "Dag {d} i året står under runen {r}.",
+  "calNote": "Gyllentallet regnes slik: (årstall delt på 19, rest) + 1. Søndagsrunen er regnet ut fra den gregorianske kalenderen, med ᚠ på 1. januar; Danmark–Norge gikk over til den gregorianske kalenderen i 1700, så eldre staver fulgte den julianske.",
+  "booksGroupsTitle": "Bangs fjorten grupper",
+  "booksGroupsDesc": "Folkeminnesamleren A. C. Bang samlet 1 576 formularer fra norske svartebøker og folkemunne og ordnet dem i fjorten grupper (1901–02).",
+  "booksGroups": [
+   {
+    "n": "I",
+    "t": "Odin og folebenet",
+    "d": "Formler mot vred og forstuing hos hest og menneske, i samme tradisjon som den kjente Merseburg-formelen."
+   },
+   {
+    "n": "II",
+    "t": "Maning",
+    "d": "Besvergelser der sykdom, troll eller avind mananes bort, ofte i fortellende form."
+   },
+   {
+    "n": "III",
+    "t": "Den hjelpende gjesten",
+    "d": "En overnaturlig person dukker opp og forteller hvilket legemiddel som skal brukes."
+   },
+   {
+    "n": "IV",
+    "t": "De tre nornene",
+    "d": "Formler der tre kvinner – nornene, Frøya eller Jomfru Maria – binder sykdommen."
+   },
+   {
+    "n": "V",
+    "t": "Nøklene",
+    "d": "Å «binde» og «klomse»: låse munnen på en fiende eller et rovdyr."
+   },
+   {
+    "n": "VI",
+    "t": "Sympatimidler",
+    "d": "Den største gruppen: like virker på like, med planter, dyr og gjenstander."
+   },
+   {
+    "n": "VII",
+    "t": "Overtroiske kunster",
+    "d": "Å se sin tilkommende, finne tyver og gjøre seg usynlig."
+   },
+   {
+    "n": "VIII",
+    "t": "Overføring",
+    "d": "Sykdommen føres over i et dyr, en gjenstand eller jorden."
+   },
+   {
+    "n": "IX",
+    "t": "Ulike formularer",
+    "d": "Ringer, tegn og figurer av forskjellig slag."
+   },
+   {
+    "n": "X",
+    "t": "Besvergelser ved det hellige",
+    "d": "Formler som påkaller Gud, helgener og hellige navn."
+   },
+   {
+    "n": "XI",
+    "t": "Svartekunst",
+    "d": "Skadelig magi, tyvebinding og skattegraving. Omtales her bare som historie."
+   },
+   {
+    "n": "XII",
+    "t": "Folkemedisin",
+    "d": "Rene legeråd med urter og husmidler."
+   },
+   {
+    "n": "XIII",
+    "t": "Tekniske oppskrifter",
+    "d": "Praktiske og kuriøse oppskrifter."
+   },
+   {
+    "n": "XIV",
+    "t": "Rasjonaliserende formularer",
+    "d": "Navnet viser til oppskrifter som søker en «naturlig» forklaring."
+   }
+  ],
+  "moonTitle": "Måne, sol og torsdag",
+  "moonLede": "Følger trolldommen i svartebøkene månen og stjernene? Vi har gått gjennom de omkring 1 300 formularene vi kunne lese maskinelt i Bangs samling. Svaret er: noen ganger, men sjeldnere enn mange tror.",
+  "moonFacts": [
+   {
+    "n": "ca. 13 %",
+    "t": "av formularene setter en betingelse om tid eller natur: månefase, ukedag, høytid, soloppgang eller rennende vann."
+   },
+   {
+    "n": "ca. 11",
+    "t": "formularer angir månefasen, for eksempel at vorter skal behandles når månen tar av, eller at en rot plantes like etter nymåne."
+   },
+   {
+    "n": "4",
+    "t": "formularer nevner stjernetegn og planeter, for eksempel å støpe kuler «i Skyttens tegn», slik man kunne se i almanakken."
+   }
+  ],
+  "moonText": "Tidsbetingelsene er vanligst blant de overtroiske kunstene (omtrent halvparten) og i svartekunsten (omtrent en tredjedel), og sjeldnest i helbredelsesformlene. Mange formler beskriver også et kosmisk bilde: sykdommen «flyr mellom himmel og jord, mellom måne og sol», og det onde mananes bort til blå berg «der verken sol eller måne skinner». Stjernetegnene kom inn via trykte almanakker og lærd europeisk tradisjon, ikke fra gammel norrøn tro.",
+  "weekTitle": "Ukedager nevnt i formularene",
+  "weekNote": "Antall formularer som nevner hver ukedag (inkludert skjærtorsdag og langfredag). Tallene er omtrentlige fordi teksten er lest maskinelt. Om torsdagen har sammenheng med Tor (Torsdag = Tors dag), sier kildene ikke noe om.",
+  "weekdays": [
+   "Mandag",
+   "Tirsdag",
+   "Onsdag",
+   "Torsdag",
+   "Fredag",
+   "Lørdag",
+   "Søndag"
+  ],
+  "feastTitle": "Høytider",
+  "feasts": [
+   {
+    "n": "17",
+    "t": "Julaften og julenatt, blant annet for å se sin tilkommende"
+   },
+   {
+    "n": "15",
+    "t": "Jonsok (sankthans)"
+   },
+   {
+    "n": "ca. 20",
+    "t": "Påsken: skjærtorsdag, langfredag og påskedag"
+   },
+   {
+    "n": "16",
+    "t": "«Før sol går opp»"
+   }
+  ],
+  "galleryTitle": "Mytene i bilder",
+  "galleryDesc": "Malerier og tegninger fra 1800-tallet som er fri for opphavsrett.",
+  "capAsgard": "Peter Nicolai Arbo, «Åsgårdsreien» (1872). Oskoreia, det spøkelsesaktige følget som red gjennom luften i julen.",
+  "capNokken": "Theodor Kittelsen, «Nøkken» (1904). Vannvesenet som lokket folk ned i dypet.",
+  "capYggdrasil": "Oluf Olufsen Bagge, «Yggdrasil» (1847). Verdenstreet i norrøn mytologi.",
+  "capThor": "Mårten Eskil Winge, «Tors strid med jotnene» (1872).",
+  "capVolva": "Lorenz Frølich, «Volven, Odin, Sleipne og helhunden» (utgitt 1895).",
+  "capDynna": "Dynnasteinen fra Hadeland, en runestein fra 1000-tallet.",
+  "capPrimstav": "Primstav fra Norsk Folkemuseum.",
+  "heroArt": "Verdenstreet Yggdrasil, tegnet for denne siden."
+ },
+ "spreads": {
+  "en": {
+   "label": "Dagens rune",
+   "desc": "Én rune som tema for dagen.",
+   "pos": [
+    "Dagens tema"
+   ]
+  },
+  "tre": {
+   "label": "Nornene (3)",
+   "desc": "Tre runer oppkalt etter nornene i Voluspå: Urd, Verdande og Skuld. Selve leggingen er en moderne skikk.",
+   "pos": [
+    "Urd · det som har vært",
+    "Verdande · det som skjer nå",
+    "Skuld · det som skal bli"
+   ]
+  },
+  "ni": {
+   "label": "Kast med ni runer",
+   "desc": "Ni runer kastes på duken. Bare runer med tegnet opp leses, og jo nærmere midten, desto viktigere. Dette er en moderne praksis.",
+   "zones": [
+    "Indre ring · kjernen",
+    "Midtre ring · påvirkning",
+    "Ytre ring · bakgrunn"
+   ]
+  }
+ },
+ "aettir": [
+  "1. ætt · ᚠ–ᚹ",
+  "2. ætt · ᚺ–ᛊ",
+  "3. ætt · ᛏ–ᛟ"
+ ],
+ "runes": [
+  {
+   "name": "Fehu",
+   "lit": "Fe, buskap, rikdom",
+   "hist": "Det norrøne runediktet bruker navnet fé, det gammelengelske feoh.",
+   "up": "Velstand, verdier du har arbeidet for, noe som kan deles.",
+   "rev": "Tap, uro rundt penger, verdier som glipper."
+  },
+  {
+   "name": "Uruz",
+   "lit": "Urokse (usikker rekonstruksjon)",
+   "hist": "Det gammelengelske runediktet sier urokse, det islandske sier regn eller uvær.",
+   "up": "Råstyrke, helse, utholdenhet.",
+   "rev": "Svekket kraft, kraft brukt feil."
+  },
+  {
+   "name": "Thurisaz",
+   "lit": "Tusse, jotun (usikker rekonstruksjon)",
+   "hist": "De norrøne diktene sier þurs (jotun), det gammelengelske þorn (torn).",
+   "up": "En motstand som må møtes, beskyttelse, en terskel.",
+   "rev": "Uoverlagt handling, en konflikt du selv forsterker."
+  },
+  {
+   "name": "Ansuz",
+   "lit": "Gud, ås",
+   "hist": "Det islandske diktet sier óss (åsene), det gammelengelske ós.",
+   "up": "Ord, råd, innsikt fra noen klokere.",
+   "rev": "Misforståelser, dårlige råd, å ikke bli hørt."
+  },
+  {
+   "name": "Raidho",
+   "lit": "Ritt, reise",
+   "hist": "Norrønt reið, gammelengelsk rád.",
+   "up": "Reise, bevegelse, riktig rytme.",
+   "rev": "Forsinkelse, feil retning, en tur som bør utsettes."
+  },
+  {
+   "name": "Kaunan",
+   "lit": "Byll, sår (usikker rekonstruksjon)",
+   "hist": "Det islandske diktet sier kaun (sår), det gammelengelske cén (fakkel).",
+   "up": "Lys i mørket, kunnskap, kreativ gnist.",
+   "rev": "Noe som verker, en innsikt du unngår."
+  },
+  {
+   "name": "Gebo",
+   "lit": "Gave",
+   "hist": "Finnes bare i det gammelengelske runediktet (gyfu), ikke i den yngre futharken.",
+   "up": "Gave, gjensidighet, et godt samarbeid.",
+   "rev": null
+  },
+  {
+   "name": "Wunjo",
+   "lit": "Glede",
+   "hist": "Finnes bare i det gammelengelske runediktet (wynn).",
+   "up": "Glede, fellesskap, at noe faller på plass.",
+   "rev": "Misnøye, isolasjon, glede som uteblir."
+  },
+  {
+   "name": "Hagalaz",
+   "lit": "Hagl",
+   "hist": "Norrønt hagall, gammelengelsk hægl.",
+   "up": "Forstyrrelse utenfra som renser, en storm som går over.",
+   "rev": null
+  },
+  {
+   "name": "Naudiz",
+   "lit": "Nød, tvang",
+   "hist": "Norrønt nauð, gammelengelsk nýd.",
+   "up": "Behov, begrensning, tålmodighet under press.",
+   "rev": null
+  },
+  {
+   "name": "Isaz",
+   "lit": "Is",
+   "hist": "Norrønt íss, gammelengelsk ís.",
+   "up": "Stillstand, pause, klarhet når alt fryser.",
+   "rev": null
+  },
+  {
+   "name": "Jera",
+   "lit": "År, god avling",
+   "hist": "Det islandske diktet sier ár (godt år), det gammelengelske gér.",
+   "up": "Innhøsting, resultater som kommer i sin tid.",
+   "rev": null
+  },
+  {
+   "name": "Eihwaz",
+   "lit": "Barlind (usikker rekonstruksjon)",
+   "hist": "Finnes bare i det gammelengelske runediktet (eoh). Både navn og lydverdi er omdiskutert.",
+   "up": "Utholdenhet, forbindelse mellom det gamle og det nye.",
+   "rev": null
+  },
+  {
+   "name": "Perthro",
+   "lit": "Ukjent betydning",
+   "hist": "Gammelengelsk peorð. Ingen kilde forteller sikkert hva navnet betyr.",
+   "up": "Det ukjente, tilfeldigheter, noe skjult som viser seg.",
+   "rev": "Hemmeligheter som tynger, tilfeldigheter som går imot deg."
+  },
+  {
+   "name": "Algiz",
+   "lit": "Elg (usikker rekonstruksjon)",
+   "hist": "Det opprinnelige navnet er ukjent; bare en forvansket gammelengelsk form (eolhx) er bevart. Runen ble brukt av SS som «Lebensrune».",
+   "up": "Beskyttelse, vaktsomhet, å sette grenser.",
+   "rev": "Sårbarhet, å overse en advarsel."
+  },
+  {
+   "name": "Sowilo",
+   "lit": "Sol",
+   "hist": "Norrønt sól, gammelengelsk sigel. En dobbel sowilo ble brukt som SS-tegn.",
+   "up": "Sol, kraft, suksess, klarhet.",
+   "rev": null
+  },
+  {
+   "name": "Tiwaz",
+   "lit": "Guden Tyr",
+   "hist": "Norrønt týr; det islandske diktet kaller ham den enhåndede guden.",
+   "up": "Rettferd, mot, å ofre noe for det som er riktig.",
+   "rev": "Urettferdighet, motløshet, en kamp som ikke er din."
+  },
+  {
+   "name": "Berkanan",
+   "lit": "Bjørk",
+   "hist": "Norrønt bjarkan, gammelengelsk beorc.",
+   "up": "Vekst, ny begynnelse, omsorg.",
+   "rev": "Stagnasjon, bekymring for familien."
+  },
+  {
+   "name": "Ehwaz",
+   "lit": "Hest",
+   "hist": "Finnes bare i det gammelengelske runediktet (eh).",
+   "up": "Samarbeid, tillit, bevegelse fremover.",
+   "rev": "Mistillit, rastløshet, et partnerskap i ubalanse."
+  },
+  {
+   "name": "Mannaz",
+   "lit": "Menneske",
+   "hist": "Norrønt maðr, gammelengelsk mann.",
+   "up": "Deg selv blant andre, fellesskap, selvinnsikt.",
+   "rev": "Isolasjon, selvbedrag, å stenge andre ute."
+  },
+  {
+   "name": "Laguz",
+   "lit": "Vann (usikker rekonstruksjon)",
+   "hist": "Norrønt lögr, gammelengelsk lagu (hav).",
+   "up": "Intuisjon, flyt, følelser.",
+   "rev": "Forvirring, å gå seg vill i følelser."
+  },
+  {
+   "name": "Ingwaz",
+   "lit": "Guden Ing",
+   "hist": "Finnes bare i det gammelengelske runediktet (ing).",
+   "up": "Fullføring, indre vekst, hvile før noe nytt.",
+   "rev": null
+  },
+  {
+   "name": "Dagaz",
+   "lit": "Dag",
+   "hist": "Finnes bare i det gammelengelske runediktet (dæg).",
+   "up": "Gjennombrudd, daggry, en ny fase.",
+   "rev": null
+  },
+  {
+   "name": "Othala",
+   "lit": "Arv, odel",
+   "hist": "Finnes bare i det gammelengelske runediktet (éþel, eiendom). Runen ble brukt i SS-merker og av ekstremister i dag.",
+   "up": "Hjem, arv, røtter, det som varer.",
+   "rev": "Strid om arv, rotløshet, gamle mønstre som binder."
+  }
+ ]
+}

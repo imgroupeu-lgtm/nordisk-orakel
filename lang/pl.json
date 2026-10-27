@@ -1,0 +1,321 @@
+{
+ "ui": {
+  "langName": "Polski",
+  "aiLanguage": "Polish",
+  "eyebrow": "Prototyp · Runy",
+  "lede": "Starszy futhark ma 24 runy. Zadaj pytanie, wybierz układ i wylosuj runy. Każda runa jest pokazana z tym, co wiemy historycznie o jej nazwie, oraz ze współczesną interpretacją.",
+  "questionPlaceholder": "Twoje pytanie, np. „Co powinienem zabrać ze sobą w zimę?”",
+  "questionLabel": "Twoje pytanie",
+  "reversedToggle": "Runy odwrócone",
+  "drawBtn": "Losuj runy",
+  "revealAll": "Pokaż wszystkie",
+  "meaningsTitle": "Znaczenia",
+  "revealHint": "Dotknij kamieni, aby je odwrócić, albo wybierz „Pokaż wszystkie”.",
+  "questionPrefix": "Pytanie",
+  "reversedWord": "odwrócona",
+  "reversedTag": "Odwrócona",
+  "revealStone": "Odwróć kamień {n}",
+  "faceDownN": "Kamień {n} leży pustą stroną do góry",
+  "faceDownNote": "Kamienie ({n}) upadły pustą stroną do góry i nie są odczytywane.",
+  "ringsLegend": "Wewnętrzny krąg: sedno sprawy · środkowy: to, co wpływa · zewnętrzny: tło",
+  "readingLabel": "Współczesna interpretacja",
+  "histLabel": "Historia",
+  "symNote": "Ta runa wygląda tak samo w obie strony, więc nie ma interpretacji odwróconej.",
+  "aiNote": "Funkcje AI poniżej działają tylko wtedy, gdy strona jest otwarta w Claude.",
+  "premiumChip": "Premium · prototyp",
+  "aiTitle": "Interpretacja całego układu",
+  "aiDesc": "AI odczytuje runy razem na podstawie twojego pytania: główny temat, runa po runie, jak się ze sobą łączą, i rada.",
+  "aiBtn": "Zinterpretuj runy",
+  "stop": "Stop",
+  "interpreting": "Interpretuję runy …",
+  "aiHeads": [
+   "Główny temat",
+   "Runa po runie",
+   "Jak runy się łączą",
+   "Rada"
+  ],
+  "photoTitle": "Sfotografuj własne kamienie runiczne",
+  "photoDesc": "Prześlij zdjęcie swoich kamieni runicznych, zrobione prosto z góry. My rozpoznajemy runy, ty sprawdzasz listę, a potem dostajesz interpretację.",
+  "dropLabel": "Wybierz lub upuść obraz",
+  "spreadOnPhoto": "Jaki układ jest na zdjęciu",
+  "freeSpread": "Dowolny układ (nie wiem)",
+  "previewAlt": "Przesłane zdjęcie",
+  "recBtn": "Rozpoznaj runy",
+  "photoInterp": "Zinterpretuj ten układ",
+  "photoReady": "Obraz jest gotowy.",
+  "looking": "Patrzę na obraz …",
+  "found": "Znaleziono run: {n}. Sprawdź listę przed interpretacją.",
+  "noneFound": "Nie znaleziono żadnych run na obrazie. Spróbuj ostrzejszego zdjęcia zrobionego prosto z góry.",
+  "chooseRune": "– wybierz runę –",
+  "runeN": "Runa {n}",
+  "confHigh": "pewna",
+  "confMedium": "dość pewna",
+  "confLow": "niepewna",
+  "notRecognized": "nie rozpoznano",
+  "refTitle": "24 runy",
+  "refDesc": "Futhark tradycyjnie dzieli się na trzy ættir po osiem run. Wybierz runę, aby zobaczyć jej nazwę, znaczenie i współczesną interpretację.",
+  "footer": "Wróżenie z run na tej stronie to kultura, refleksja i rozrywka. Nie jest to porada medyczna, prawna ani finansowa, a żadne wyniki nie są gwarantowane. Runy są losowane przypadkowo. Interpretacje są współczesne: nie mamy pewnych źródeł, że w epoce wikingów runy służyły do wróżenia. Interpretacja AI została stworzona przez sztuczną inteligencję, a nie przez człowieka.",
+  "sourcesNote": "Informacje historyczne: zrekonstruowane nazwy pragermańskie oraz staronordyckie i staroangielskie poematy runiczne (Store norske leksikon, Wikipedia ze źródłami). Trzy runy (ᛉ, ᛊ, ᛟ) zostały nadużyte w nazistowskiej i ekstremistycznej symbolice; tutaj są używane wyłącznie w swoim pierwotnym znaczeniu.",
+  "errors": {
+   "not_granted": "Strona nie ma zgody na korzystanie z Claude.",
+   "sampling_disabled": "AI nie jest dostępne dla tego konta.",
+   "rate_limited": "Za dużo zapytań w tej chwili. Spróbuj za chwilę.",
+   "session_expired": "Musisz zalogować się ponownie.",
+   "image_rejected": "Nie udało się odczytać obrazu. Spróbuj obrazu JPEG lub PNG.",
+   "images_unavailable": "Przesyłanie obrazów nie jest tu dostępne.",
+   "refused": "Na to zapytanie nie można odpowiedzieć. Spróbuj innego pytania.",
+   "invalid_json": "Nie udało się odczytać odpowiedzi. Spróbuj ponownie.",
+   "empty_completion": "Nie otrzymano odpowiedzi. Spróbuj ponownie.",
+   "generic": "Coś poszło nie tak. Spróbuj ponownie."
+  },
+  "navCast": "Rzut",
+  "navRunes": "Runy",
+  "navName": "Imię runami",
+  "navBooks": "Czarne księgi",
+  "heroTitle": "Zapytaj runy",
+  "heroStone": "Runa dnia",
+  "heroStoneHint": "Dziś ta sama runa dla wszystkich. Dotknij, aby o niej poczytać.",
+  "castTitle": "Rzut",
+  "clothCaption": "Rzymski historyk Tacyt opisał około roku 98, jak Germanie rzucali oznaczone kawałki drewna na biały materiał, aby szukać odpowiedzi. Czy te znaki były runami, nikt nie wie.",
+  "nameTitle": "Twoje imię runami",
+  "nameDesc": "Wpisz imię lub słowo, a zapiszemy je starszym futharkiem.",
+  "namePlaceholder": "Np. Ingrid",
+  "nameLabel": "Imię lub słowo",
+  "nameCopy": "Kopiuj runy",
+  "nameCopied": "Skopiowano",
+  "nameEmpty": "Wpisz coś powyżej, aby zobaczyć to runami.",
+  "nameNote": "To współczesny zapis fonetyczny. Nie istniała stała reguła zapisywania dzisiejszych imion starszym futharkiem, a litery takie jak c, q, x i y nie mają własnej runy.",
+  "booksTitle": "Z czarnych ksiąg (svartebøker)",
+  "booksDesc": "Norweskie czarne księgi (svartebøker) to ręcznie pisane księgi z formułami i radami z lat mniej więcej 1480–1850. Większość dotyczy ochrony i leczenia. Ta część jest w przygotowaniu.",
+  "booksSoon": "Wkrótce",
+  "booksNote": "Szkodliwa magia, przymus i klątwy są wspominane tylko jako historia, nigdy jako przepis.",
+  "srcTitle": "O źródłach",
+  "booksFacts": [
+   {
+    "n": "100–200",
+    "t": "zachowanych czarnych ksiąg w Norwegii, zależnie od sposobu liczenia"
+   },
+   {
+    "n": "ok. 1480–1520",
+    "t": "Vinjeboka z Telemarku, najstarsza zachowana czarna księga w Skandynawii"
+   },
+   {
+    "n": "1576",
+    "t": "formuł i rytuałów zebranych przez A. C. Banga w latach 1901–02"
+   }
+  ],
+  "booksTopics": [
+   "Zatrzymywanie krwi",
+   "Zamawianie i czytanie (signing)",
+   "Ochrona przed ogniem",
+   "Ochrona bydła",
+   "Wykrywanie złodziei",
+   "Szczęście w handlu i grach karcianych",
+   "Ochrona przed czarami",
+   "Noc Kupały (jonsok)",
+   "Boże Narodzenie i oskoreia"
+  ]
+ },
+ "spreads": {
+  "en": {
+   "label": "Runa dnia",
+   "desc": "Jedna runa jako temat dnia.",
+   "pos": [
+    "Temat dnia"
+   ]
+  },
+  "tre": {
+   "label": "Norny (3)",
+   "desc": "Trzy runy nazwane od Norn z Völuspá: Urd, Werdandi i Skuld. Sam układ jest współczesnym zwyczajem.",
+   "pos": [
+    "Urd · to, co było",
+    "Werdandi · to, co dzieje się teraz",
+    "Skuld · to, co będzie"
+   ]
+  },
+  "ni": {
+   "label": "Rzut dziewięcioma runami",
+   "desc": "Dziewięć run rzuca się na tkaninę. Odczytywane są tylko runy znakiem do góry, a im bliżej środka, tym ważniejsze. To współczesna praktyka.",
+   "zones": [
+    "Wewnętrzny krąg · sedno",
+    "Środkowy krąg · wpływ",
+    "Zewnętrzny krąg · tło"
+   ]
+  }
+ },
+ "aettir": [
+  "1. ætt · ᚠ–ᚹ",
+  "2. ætt · ᚺ–ᛊ",
+  "3. ætt · ᛏ–ᛟ"
+ ],
+ "runes": [
+  {
+   "name": "Fehu",
+   "lit": "Bydło, bogactwo",
+   "hist": "Staronordycki poemat runiczny używa nazwy fé, staroangielski feoh.",
+   "up": "Dostatek, wartości wypracowane własną pracą, coś, czym można się dzielić.",
+   "rev": "Strata, niepokój wokół pieniędzy, wartości, które się wymykają."
+  },
+  {
+   "name": "Uruz",
+   "lit": "Tur (niepewna rekonstrukcja)",
+   "hist": "Staroangielski poemat runiczny mówi tur, islandzki deszcz lub niepogoda.",
+   "up": "Surowa siła, zdrowie, wytrwałość.",
+   "rev": "Osłabiona siła, siła użyta niewłaściwie."
+  },
+  {
+   "name": "Thurisaz",
+   "lit": "Olbrzym, jötunn (niepewna rekonstrukcja)",
+   "hist": "Poematy staronordyckie mówią þurs (olbrzym), staroangielski þorn (cierń).",
+   "up": "Opór, któremu trzeba stawić czoła, ochrona, próg.",
+   "rev": "Nieprzemyślane działanie, konflikt, który sam wzmacniasz."
+  },
+  {
+   "name": "Ansuz",
+   "lit": "Bóg, as",
+   "hist": "Poemat islandzki mówi óss (asowie), staroangielski ós.",
+   "up": "Słowa, rada, wgląd od kogoś mądrzejszego.",
+   "rev": "Nieporozumienia, złe rady, brak wysłuchania."
+  },
+  {
+   "name": "Raidho",
+   "lit": "Jazda konna, podróż",
+   "hist": "Staronordyckie reið, staroangielskie rád.",
+   "up": "Podróż, ruch, właściwy rytm.",
+   "rev": "Opóźnienie, zły kierunek, wyprawa, którą warto odłożyć."
+  },
+  {
+   "name": "Kaunan",
+   "lit": "Wrzód, rana (niepewna rekonstrukcja)",
+   "hist": "Poemat islandzki mówi kaun (rana), staroangielski cén (pochodnia).",
+   "up": "Światło w ciemności, wiedza, twórcza iskra.",
+   "rev": "Coś, co boli, wgląd, którego unikasz."
+  },
+  {
+   "name": "Gebo",
+   "lit": "Dar",
+   "hist": "Występuje tylko w staroangielskim poemacie runicznym (gyfu), nie w młodszym futharku.",
+   "up": "Dar, wzajemność, dobra współpraca.",
+   "rev": null
+  },
+  {
+   "name": "Wunjo",
+   "lit": "Radość",
+   "hist": "Występuje tylko w staroangielskim poemacie runicznym (wynn).",
+   "up": "Radość, wspólnota, to, że coś trafia na swoje miejsce.",
+   "rev": "Niezadowolenie, izolacja, radość, która nie nadchodzi."
+  },
+  {
+   "name": "Hagalaz",
+   "lit": "Grad",
+   "hist": "Staronordyckie hagall, staroangielskie hægl.",
+   "up": "Zakłócenie z zewnątrz, które oczyszcza, burza, która mija.",
+   "rev": null
+  },
+  {
+   "name": "Naudiz",
+   "lit": "Potrzeba, przymus",
+   "hist": "Staronordyckie nauð, staroangielskie nýd.",
+   "up": "Potrzeba, ograniczenie, cierpliwość pod presją.",
+   "rev": null
+  },
+  {
+   "name": "Isaz",
+   "lit": "Lód",
+   "hist": "Staronordyckie íss, staroangielskie ís.",
+   "up": "Zastój, pauza, jasność, gdy wszystko zamarza.",
+   "rev": null
+  },
+  {
+   "name": "Jera",
+   "lit": "Rok, dobry plon",
+   "hist": "Poemat islandzki mówi ár (dobry rok), staroangielski gér.",
+   "up": "Żniwa, wyniki, które przychodzą w swoim czasie.",
+   "rev": null
+  },
+  {
+   "name": "Eihwaz",
+   "lit": "Cis (niepewna rekonstrukcja)",
+   "hist": "Występuje tylko w staroangielskim poemacie runicznym (eoh). Zarówno nazwa, jak i wartość dźwiękowa są sporne.",
+   "up": "Wytrwałość, połączenie między starym a nowym.",
+   "rev": null
+  },
+  {
+   "name": "Perthro",
+   "lit": "Znaczenie nieznane",
+   "hist": "Staroangielskie peorð. Żadne źródło nie mówi z pewnością, co oznacza ta nazwa.",
+   "up": "To, co nieznane, przypadek, coś ukrytego, co się ujawnia.",
+   "rev": "Sekrety, które ciążą, przypadki, które obracają się przeciwko tobie."
+  },
+  {
+   "name": "Algiz",
+   "lit": "Łoś (niepewna rekonstrukcja)",
+   "hist": "Pierwotna nazwa jest nieznana; zachowała się tylko zniekształcona forma staroangielska (eolhx). Runa była używana przez SS jako „Lebensrune”.",
+   "up": "Ochrona, czujność, stawianie granic.",
+   "rev": "Podatność na zranienie, przeoczenie ostrzeżenia."
+  },
+  {
+   "name": "Sowilo",
+   "lit": "Słońce",
+   "hist": "Staronordyckie sól, staroangielskie sigel. Podwójna sowilo była używana jako znak SS.",
+   "up": "Słońce, moc, sukces, jasność.",
+   "rev": null
+  },
+  {
+   "name": "Tiwaz",
+   "lit": "Bóg Tyr",
+   "hist": "Staronordyckie týr; poemat islandzki nazywa go jednorękim bogiem.",
+   "up": "Sprawiedliwość, odwaga, poświęcenie czegoś dla tego, co słuszne.",
+   "rev": "Niesprawiedliwość, zniechęcenie, walka, która nie jest twoja."
+  },
+  {
+   "name": "Berkanan",
+   "lit": "Brzoza",
+   "hist": "Staronordyckie bjarkan, staroangielskie beorc.",
+   "up": "Wzrost, nowy początek, troska.",
+   "rev": "Stagnacja, zmartwienie o rodzinę."
+  },
+  {
+   "name": "Ehwaz",
+   "lit": "Koń",
+   "hist": "Występuje tylko w staroangielskim poemacie runicznym (eh).",
+   "up": "Współpraca, zaufanie, ruch naprzód.",
+   "rev": "Nieufność, niepokój, partnerstwo wytrącone z równowagi."
+  },
+  {
+   "name": "Mannaz",
+   "lit": "Człowiek",
+   "hist": "Staronordyckie maðr, staroangielskie mann.",
+   "up": "Ty sam wśród innych, wspólnota, samopoznanie.",
+   "rev": "Izolacja, samooszukiwanie się, zamykanie się na innych."
+  },
+  {
+   "name": "Laguz",
+   "lit": "Woda (niepewna rekonstrukcja)",
+   "hist": "Staronordyckie lögr, staroangielskie lagu (morze).",
+   "up": "Intuicja, płynność, uczucia.",
+   "rev": "Zamęt, gubienie się w uczuciach."
+  },
+  {
+   "name": "Ingwaz",
+   "lit": "Bóg Ing",
+   "hist": "Występuje tylko w staroangielskim poemacie runicznym (ing).",
+   "up": "Dopełnienie, wewnętrzny wzrost, odpoczynek przed czymś nowym.",
+   "rev": null
+  },
+  {
+   "name": "Dagaz",
+   "lit": "Dzień",
+   "hist": "Występuje tylko w staroangielskim poemacie runicznym (dæg).",
+   "up": "Przełom, świt, nowa faza.",
+   "rev": null
+  },
+  {
+   "name": "Othala",
+   "lit": "Dziedzictwo, odal (ziemia rodowa)",
+   "hist": "Występuje tylko w staroangielskim poemacie runicznym (éþel, posiadłość). Runa była używana w odznakach SS i jest dziś używana przez ekstremistów.",
+   "up": "Dom, dziedzictwo, korzenie, to, co trwa.",
+   "rev": "Spór o spadek, brak korzeni, stare wzorce, które krępują."
+  }
+ ]
+}

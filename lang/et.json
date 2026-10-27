@@ -1,0 +1,321 @@
+{
+ "ui": {
+  "langName": "Eesti",
+  "aiLanguage": "Estonian",
+  "eyebrow": "Prototüüp · Runid",
+  "lede": "Vanemal futharkil on 24 runi. Esita küsimus, vali laotus ja tõmba runid. Iga runi juures näidatakse, mida me ajalooliselt tema nime kohta teame, ning tänapäevast tõlgendust.",
+  "questionPlaceholder": "Sinu küsimus, nt „Mida peaksin endaga talve kaasa võtma?“",
+  "questionLabel": "Sinu küsimus",
+  "reversedToggle": "Tagurpidi runid",
+  "drawBtn": "Tõmba runid",
+  "revealAll": "Näita kõiki",
+  "meaningsTitle": "Tähendused",
+  "revealHint": "Puuduta kive, et neid pöörata, või vali „Näita kõiki“.",
+  "questionPrefix": "Küsimus",
+  "reversedWord": "tagurpidi",
+  "reversedTag": "Tagurpidi",
+  "revealStone": "Pööra kivi {n}",
+  "faceDownN": "Kivi {n} on tühja küljega ülespoole",
+  "faceDownNote": "Kive, mis kukkusid tühja küljega ülespoole: {n}. Neid ei loeta.",
+  "ringsLegend": "Sisemine ring: asja tuum · keskmine: mis mõjutab · välimine: taust",
+  "readingLabel": "Tänapäevane tõlgendus",
+  "histLabel": "Ajalooliselt",
+  "symNote": "See rune näeb välja ühtmoodi mõlemas suunas, mistõttu tal pole tagurpidi tõlgendust.",
+  "aiNote": "Allolevad tehisintellekti funktsioonid töötavad ainult siis, kui leht on avatud Claude'is.",
+  "premiumChip": "Premium · prototüüp",
+  "aiTitle": "Kogu laotuse tõlgendus",
+  "aiDesc": "Tehisintellekt loeb runid koos sinu küsimuse põhjal: peateema, rune runi haaval, kuidas need omavahel seostuvad, ja nõuanne.",
+  "aiBtn": "Tõlgenda runid",
+  "stop": "Peata",
+  "interpreting": "Tõlgendan runisid …",
+  "aiHeads": [
+   "Peateema",
+   "Rune runi haaval",
+   "Kuidas runid omavahel seostuvad",
+   "Nõuanne"
+  ],
+  "photoTitle": "Pildista oma runikive",
+  "photoDesc": "Laadi üles pilt oma runikividest, tehtud otse ülalt. Meie tuvastame runid, sina kontrollid nimekirja ja siis saad tõlgenduse.",
+  "dropLabel": "Vali või lohista pilt siia",
+  "spreadOnPhoto": "Milline laotus on pildil",
+  "freeSpread": "Vaba laotus (ei tea)",
+  "previewAlt": "Sinu üleslaaditud pilt",
+  "recBtn": "Tuvasta runid",
+  "photoInterp": "Tõlgenda seda laotust",
+  "photoReady": "Pilt on valmis.",
+  "looking": "Vaatan pilti …",
+  "found": "Leitud {n} runi. Kontrolli nimekirja enne tõlgendamist.",
+  "noneFound": "Pildilt ei leitud ühtegi runi. Proovi teravamat pilti, mis on tehtud otse ülalt.",
+  "chooseRune": "– vali rune –",
+  "runeN": "Rune {n}",
+  "confHigh": "kindel",
+  "confMedium": "üsna kindel",
+  "confLow": "ebakindel",
+  "notRecognized": "tuvastamata",
+  "refTitle": "24 runi",
+  "refDesc": "Futhark jagatakse traditsiooniliselt kolmeks ættiks, igaühes kaheksa runi. Vali rune, et näha nime, mida see tähendab, ja tänapäevast tõlgendust.",
+  "footer": "Runide tõlgendamine sellel lehel on kultuur, mõtisklus ja meelelahutus. See ei ole meditsiiniline, õiguslik ega rahaline nõuanne ning mingeid tulemusi ei garanteerita. Runid tõmmatakse juhuslikult. Tõlgendused on tänapäevased: meil pole kindlaid allikaid, et viikingiajal oleks rune ennustamiseks kasutatud. Tehisintellekti tõlgenduse on loonud tehisintellekt, mitte inimene.",
+  "sourcesNote": "Ajaloolised andmed: rekonstrueeritud algermaani nimed ning vanapõhja ja vanainglise runiluuletused (Store norske leksikon, Vikipeedia allikatega). Kolme runi (ᛉ, ᛊ, ᛟ) on kuritarvitatud natslikus ja ekstremistlikus sümboolikas; siin kasutatakse neid ainult algses tähenduses.",
+  "errors": {
+   "not_granted": "Sa ei ole andnud lehele luba Claude'i kasutada.",
+   "sampling_disabled": "Tehisintellekt ei ole selle konto jaoks saadaval.",
+   "rate_limited": "Praegu liiga palju päringuid. Proovi hetke pärast uuesti.",
+   "session_expired": "Pead uuesti sisse logima.",
+   "image_rejected": "Pilti ei õnnestunud lugeda. Proovi JPEG- või PNG-pilti.",
+   "images_unavailable": "Piltide üleslaadimine ei ole siin saadaval.",
+   "refused": "Sellele päringule ei saa vastata. Proovi teist küsimust.",
+   "invalid_json": "Vastust ei õnnestunud lugeda. Proovi uuesti.",
+   "empty_completion": "Vastust ei saadud. Proovi uuesti.",
+   "generic": "Midagi läks valesti. Proovi uuesti."
+  },
+  "navCast": "Heide",
+  "navRunes": "Ruunid",
+  "navName": "Nimi ruunides",
+  "navBooks": "Mustad raamatud",
+  "heroTitle": "Küsi ruunidelt",
+  "heroStone": "Päeva ruun",
+  "heroStoneHint": "Täna on kõigile sama ruun. Puuduta, et selle kohta lugeda.",
+  "castTitle": "Heide",
+  "clothCaption": "Rooma ajaloolane Tacitus kirjeldas umbes aastal 98, kuidas germaanlased viskasid valgele riidele märgitud puutükke, et vastuseid otsida. Kas märgid olid ruunid, seda ei tea keegi.",
+  "nameTitle": "Sinu nimi ruunides",
+  "nameDesc": "Kirjuta nimi või sõna, ja me kirjutame selle vanema futharkiga.",
+  "namePlaceholder": "Nt Ingrid",
+  "nameLabel": "Nimi või sõna",
+  "nameCopy": "Kopeeri ruunid",
+  "nameCopied": "Kopeeritud",
+  "nameEmpty": "Kirjuta midagi ülal, et seda ruunides näha.",
+  "nameNote": "See on tänapäevane häälikupõhine kirjapilt. Tänapäeva nimede kirjutamiseks vanema futharkiga polnud kindlat reeglit ja tähtedel c, q, x ja y pole oma ruuni.",
+  "booksTitle": "Mustadest raamatutest (svartebøker)",
+  "booksDesc": "Norra mustad raamatud (svartebøker) on käsitsi kirjutatud raamatud loitsude ja nõuannetega umbes aastatest 1480–1850. Enamik neist käsitleb kaitset ja ravimist. See osa on veel pooleli.",
+  "booksSoon": "Tulekul",
+  "booksNote": "Kahjulikku maagiat, sundimist ja needusi mainitakse ainult ajaloona, mitte kunagi retseptina.",
+  "srcTitle": "Allikatest",
+  "booksFacts": [
+   {
+    "n": "100–200",
+    "t": "säilinud musta raamatut Norras, olenevalt lugemisviisist"
+   },
+   {
+    "n": "u 1480–1520",
+    "t": "Vinjeboka Telemarkist, Põhjamaade vanim säilinud must raamat"
+   },
+   {
+    "n": "1576",
+    "t": "loitsu ja riitust, mille A. C. Bang kogus aastatel 1901–02"
+   }
+  ],
+  "booksTopics": [
+   "Vere peatamine",
+   "Ravivad loitsud (signing)",
+   "Kaitse tule vastu",
+   "Kariloomade kaitse",
+   "Varaste leidmine",
+   "Õnn kaubanduses ja kaardimängus",
+   "Kaitse nõiduse vastu",
+   "Jaanipäev",
+   "Jõulud ja oskoreia"
+  ]
+ },
+ "spreads": {
+  "en": {
+   "label": "Päeva rune",
+   "desc": "Üks rune päeva teemana.",
+   "pos": [
+    "Päeva teema"
+   ]
+  },
+  "tre": {
+   "label": "Nornid (3)",
+   "desc": "Kolm runi, mis on nimetatud „Völuspá“ nornide järgi: Urd, Verdandi ja Skuld. Laotus ise on tänapäevane komme.",
+   "pos": [
+    "Urd · mis on olnud",
+    "Verdandi · mis toimub praegu",
+    "Skuld · mis tuleb"
+   ]
+  },
+  "ni": {
+   "label": "Üheksa runi heide",
+   "desc": "Üheksa runi visatakse riidele. Loetakse ainult märgiga ülespoole jäänud runisid ning mida lähemal keskmele, seda olulisemad. See on tänapäevane tava.",
+   "zones": [
+    "Sisemine ring · tuum",
+    "Keskmine ring · mõju",
+    "Välimine ring · taust"
+   ]
+  }
+ },
+ "aettir": [
+  "1. ætt · ᚠ–ᚹ",
+  "2. ætt · ᚺ–ᛊ",
+  "3. ætt · ᛏ–ᛟ"
+ ],
+ "runes": [
+  {
+   "name": "Fehu",
+   "lit": "Kariloomad, rikkus",
+   "hist": "Vanapõhja runiluuletuses kasutatakse nime fé, vanainglise keeles feoh.",
+   "up": "Jõukus, väärtused, mille eest oled töötanud, miski, mida saab jagada.",
+   "rev": "Kaotus, rahaga seotud rahutus, väärtused, mis libisevad käest."
+  },
+  {
+   "name": "Uruz",
+   "lit": "Piison (ebakindel rekonstruktsioon)",
+   "hist": "Vanainglise runiluuletuses öeldakse piison, islandi omas vihm või rebenev ilm.",
+   "up": "Toores jõud, tervis, vastupidavus.",
+   "rev": "Nõrgenenud jõud, valesti kasutatud jõud."
+  },
+  {
+   "name": "Thurisaz",
+   "lit": "Hiiglane, jotun (ebakindel rekonstruktsioon)",
+   "hist": "Vanapõhja luuletustes öeldakse þurs (jotun), vanainglise keeles þorn (okas).",
+   "up": "Vastupanu, millega tuleb kohtuda, kaitse, lävi.",
+   "rev": "Läbimõtlematu tegutsemine, konflikt, mida ise võimendad."
+  },
+  {
+   "name": "Ansuz",
+   "lit": "Jumal, ase",
+   "hist": "Islandi luuletuses öeldakse óss (aasad), vanainglise keeles ós.",
+   "up": "Sõnad, nõu, tarkama inimese arusaam.",
+   "rev": "Arusaamatused, halvad nõuanded, kuulmata jäämine."
+  },
+  {
+   "name": "Raidho",
+   "lit": "Ratsutamine, reis",
+   "hist": "Vanapõhja reið, vanainglise rád.",
+   "up": "Reis, liikumine, õige rütm.",
+   "rev": "Viivitus, vale suund, sõit, mida tasub edasi lükata."
+  },
+  {
+   "name": "Kaunan",
+   "lit": "Paise, haav (ebakindel rekonstruktsioon)",
+   "hist": "Islandi luuletuses öeldakse kaun (haav), vanainglise keeles cén (tõrvik).",
+   "up": "Valgus pimeduses, teadmised, loominguline säde.",
+   "rev": "Miski, mis valutab, arusaam, mida väldid."
+  },
+  {
+   "name": "Gebo",
+   "lit": "Kingitus",
+   "hist": "Esineb ainult vanainglise runiluuletuses (gyfu), noorema futharki hulgas seda ei ole.",
+   "up": "Kingitus, vastastikkus, hea koostöö.",
+   "rev": null
+  },
+  {
+   "name": "Wunjo",
+   "lit": "Rõõm",
+   "hist": "Esineb ainult vanainglise runiluuletuses (wynn).",
+   "up": "Rõõm, kogukond, see, kui miski loksub paika.",
+   "rev": "Rahulolematus, isolatsioon, rõõm, mis jääb tulemata."
+  },
+  {
+   "name": "Hagalaz",
+   "lit": "Rahe",
+   "hist": "Vanapõhja hagall, vanainglise hægl.",
+   "up": "Väljastpoolt tulev häiring, mis puhastab, torm, mis möödub.",
+   "rev": null
+  },
+  {
+   "name": "Naudiz",
+   "lit": "Puudus, sunnitus",
+   "hist": "Vanapõhja nauð, vanainglise nýd.",
+   "up": "Vajadus, piirang, kannatlikkus surve all.",
+   "rev": null
+  },
+  {
+   "name": "Isaz",
+   "lit": "Jää",
+   "hist": "Vanapõhja íss, vanainglise ís.",
+   "up": "Seisak, paus, selgus, kui kõik külmub.",
+   "rev": null
+  },
+  {
+   "name": "Jera",
+   "lit": "Aasta, hea saak",
+   "hist": "Islandi luuletuses öeldakse ár (hea aasta), vanainglise keeles gér.",
+   "up": "Lõikus, tulemused, mis tulevad omal ajal.",
+   "rev": null
+  },
+  {
+   "name": "Eihwaz",
+   "lit": "Jugapuu (ebakindel rekonstruktsioon)",
+   "hist": "Esineb ainult vanainglise runiluuletuses (eoh). Nii nimi kui häälikuväärtus on vaieldavad.",
+   "up": "Vastupidavus, side vana ja uue vahel.",
+   "rev": null
+  },
+  {
+   "name": "Perthro",
+   "lit": "Tundmatu tähendus",
+   "hist": "Vanainglise peorð. Ükski allikas ei ütle kindlalt, mida nimi tähendab.",
+   "up": "Tundmatu, juhus, miski varjatud, mis ilmsiks tuleb.",
+   "rev": "Saladused, mis rõhuvad, juhused, mis lähevad sinu vastu."
+  },
+  {
+   "name": "Algiz",
+   "lit": "Põder (ebakindel rekonstruktsioon)",
+   "hist": "Algne nimi on teadmata; säilinud on ainult moonutatud vanainglise vorm (eolhx). SS kasutas seda runi „Lebensrune'ina“.",
+   "up": "Kaitse, valvsus, piiride seadmine.",
+   "rev": "Haavatavus, hoiatuse tähelepanuta jätmine."
+  },
+  {
+   "name": "Sowilo",
+   "lit": "Päike",
+   "hist": "Vanapõhja sól, vanainglise sigel. Topelt-sowilot kasutati SS-märgina.",
+   "up": "Päike, jõud, edu, selgus.",
+   "rev": null
+  },
+  {
+   "name": "Tiwaz",
+   "lit": "Jumal Tyr",
+   "hist": "Vanapõhja týr; islandi luuletus nimetab teda ühekäeliseks jumalaks.",
+   "up": "Õiglus, julgus, millegi ohverdamine selle nimel, mis on õige.",
+   "rev": "Ebaõiglus, julguse kadumine, võitlus, mis ei ole sinu oma."
+  },
+  {
+   "name": "Berkanan",
+   "lit": "Kask",
+   "hist": "Vanapõhja bjarkan, vanainglise beorc.",
+   "up": "Kasv, uus algus, hoolitsus.",
+   "rev": "Stagnatsioon, mure pere pärast."
+  },
+  {
+   "name": "Ehwaz",
+   "lit": "Hobune",
+   "hist": "Esineb ainult vanainglise runiluuletuses (eh).",
+   "up": "Koostöö, usaldus, liikumine edasi.",
+   "rev": "Usaldamatus, rahutus, tasakaalust väljas partnerlus."
+  },
+  {
+   "name": "Mannaz",
+   "lit": "Inimene",
+   "hist": "Vanapõhja maðr, vanainglise mann.",
+   "up": "Sina ise teiste seas, kogukond, enesetundmine.",
+   "rev": "Isolatsioon, enesepettus, teiste välja lülitamine."
+  },
+  {
+   "name": "Laguz",
+   "lit": "Vesi (ebakindel rekonstruktsioon)",
+   "hist": "Vanapõhja lögr, vanainglise lagu (meri).",
+   "up": "Intuitsioon, voolamine, tunded.",
+   "rev": "Segadus, eksimine tunnetes."
+  },
+  {
+   "name": "Ingwaz",
+   "lit": "Jumal Ing",
+   "hist": "Esineb ainult vanainglise runiluuletuses (ing).",
+   "up": "Lõpetamine, sisemine kasv, puhkus enne midagi uut.",
+   "rev": null
+  },
+  {
+   "name": "Dagaz",
+   "lit": "Päev",
+   "hist": "Esineb ainult vanainglise runiluuletuses (dæg).",
+   "up": "Läbimurre, koidik, uus etapp.",
+   "rev": null
+  },
+  {
+   "name": "Othala",
+   "lit": "Pärand, esivanemate maa",
+   "hist": "Esineb ainult vanainglise runiluuletuses (éþel, vara). Runi kasutati SS-märkides ja seda kasutavad ka tänapäeva ekstremistid.",
+   "up": "Kodu, pärand, juured, see, mis kestab.",
+   "rev": "Vaidlus pärandi üle, juurteta olek, vanad mustrid, mis köidavad."
+  }
+ ]
+}

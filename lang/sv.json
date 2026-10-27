@@ -1,0 +1,321 @@
+{
+ "ui": {
+  "langName": "Svenska",
+  "aiLanguage": "Swedish",
+  "eyebrow": "Prototyp · Runor",
+  "lede": "Den äldre futharken har 24 runor. Ställ en fråga, välj en läggning och dra runorna. Varje runa visas med det vi vet historiskt om namnet och med en modern tolkning.",
+  "questionPlaceholder": "Din fråga, t.ex. «Vad bör jag ta med mig in i vintern?»",
+  "questionLabel": "Din fråga",
+  "reversedToggle": "Omvända runor",
+  "drawBtn": "Dra runor",
+  "revealAll": "Visa alla",
+  "meaningsTitle": "Betydelser",
+  "revealHint": "Tryck på stenarna för att vända dem, eller välj «Visa alla».",
+  "questionPrefix": "Fråga",
+  "reversedWord": "omvänd",
+  "reversedTag": "Omvänd",
+  "revealStone": "Vänd sten {n}",
+  "faceDownN": "Sten {n} ligger med den tomma sidan upp",
+  "faceDownNote": "{n} sten(ar) landade med den tomma sidan upp och läses inte.",
+  "ringsLegend": "Inre ring: kärnan i saken · mittre: det som påverkar · yttre: bakgrund",
+  "readingLabel": "Modern tolkning",
+  "histLabel": "Historiskt",
+  "symNote": "Den här runan ser likadan ut åt båda hållen och har därför ingen omvänd tolkning.",
+  "aiNote": "AI-funktionerna nedan fungerar bara när sidan är öppnad i Claude.",
+  "premiumChip": "Premium · prototyp",
+  "aiTitle": "Tolkning av hela läggningen",
+  "aiDesc": "AI läser runorna tillsammans utifrån din fråga: huvudtema, runa för runa, hur de hänger ihop, och råd.",
+  "aiBtn": "Tolka runorna",
+  "stop": "Stopp",
+  "interpreting": "Tolkar runorna …",
+  "aiHeads": [
+   "Huvudtema",
+   "Runa för runa",
+   "Hur runorna hänger ihop",
+   "Råd"
+  ],
+  "photoTitle": "Fotografera dina egna runstenar",
+  "photoDesc": "Ladda upp en bild av dina runstenar, tagen rakt uppifrån. Vi känner igen runorna, du kontrollerar listan, och sedan får du tolkningen.",
+  "dropLabel": "Välj eller släpp en bild",
+  "spreadOnPhoto": "Vilken läggning som finns på bilden",
+  "freeSpread": "Fri läggning (vet inte)",
+  "previewAlt": "Bilden du laddade upp",
+  "recBtn": "Känn igen runor",
+  "photoInterp": "Tolka den här läggningen",
+  "photoReady": "Bilden är klar.",
+  "looking": "Tittar på bilden …",
+  "found": "Hittade {n} runor. Kontrollera listan före tolkning.",
+  "noneFound": "Hittade inga runor på bilden. Prova en skarpare bild tagen rakt uppifrån.",
+  "chooseRune": "– välj runa –",
+  "runeN": "Runa {n}",
+  "confHigh": "säker",
+  "confMedium": "ganska säker",
+  "confLow": "osäker",
+  "notRecognized": "inte igenkänd",
+  "refTitle": "De 24 runorna",
+  "refDesc": "Futharken delas traditionellt in i tre ätter med åtta runor vardera. Välj en runa för att se namnet, vad det betyder och den moderna tolkningen.",
+  "footer": "Runtydning på den här sidan är kultur, reflektion och underhållning. Det är inte medicinska, juridiska eller ekonomiska råd, och inga resultat garanteras. Runorna dras slumpmässigt. Tolkningarna är moderna: vi har inga säkra källor på att runor användes för spådom under vikingatiden. AI-tolkningen är gjord av artificiell intelligens, inte av en människa.",
+  "sourcesNote": "Historiska uppgifter: rekonstruerade urgermanska namn och de fornnordiska och fornengelska runedikterna (Store norske leksikon, Wikipedia med källor). Tre runor (ᛉ, ᛊ, ᛟ) har missbrukats i nazistisk och extrem symbolik; här används de bara i sin ursprungliga betydelse.",
+  "errors": {
+   "not_granted": "Du har inte gett sidan tillåtelse att använda Claude.",
+   "sampling_disabled": "AI är inte tillgängligt för det här kontot.",
+   "rate_limited": "För många förfrågningar just nu. Försök igen om en stund.",
+   "session_expired": "Du måste logga in igen.",
+   "image_rejected": "Bilden kunde inte läsas. Prova en JPEG- eller PNG-bild.",
+   "images_unavailable": "Uppladdning av bilder är inte tillgänglig här.",
+   "refused": "Den här förfrågan kan inte besvaras. Prova en annan fråga.",
+   "invalid_json": "Svaret kunde inte läsas. Försök igen.",
+   "empty_completion": "Fick inget svar. Försök igen.",
+   "generic": "Något gick fel. Försök igen."
+  },
+  "navCast": "Kast",
+  "navRunes": "Runorna",
+  "navName": "Namn i runor",
+  "navBooks": "Svartkonstböcker",
+  "heroTitle": "Fråga runorna",
+  "heroStone": "Dagens runa",
+  "heroStoneHint": "Samma runa för alla i dag. Tryck för att läsa om den.",
+  "castTitle": "Kastet",
+  "clothCaption": "Den romerske historikern Tacitus beskrev omkring år 98 hur germaner kastade märkta träbitar på en vit duk för att söka svar. Om märkena var runor vet ingen.",
+  "nameTitle": "Ditt namn i runor",
+  "nameDesc": "Skriv ett namn eller ett ord, så skriver vi det med den äldre futharken.",
+  "namePlaceholder": "T.ex. Ingrid",
+  "nameLabel": "Namn eller ord",
+  "nameCopy": "Kopiera runorna",
+  "nameCopied": "Kopierat",
+  "nameEmpty": "Skriv något ovan för att se det i runor.",
+  "nameNote": "Detta är en modern ljudenlig skrivning. Det fanns ingen fast regel för hur dagens namn skrevs med den äldre futharken, och bokstäver som c, q, x och y har ingen egen runa.",
+  "booksTitle": "Ur svartkonstböckerna (svartebøker)",
+  "booksDesc": "Norska svartkonstböcker (svartebøker) är handskrivna böcker med formler och råd från omkring 1480 till 1850. De flesta handlar om skydd och läkedom. Den här delen är under arbete.",
+  "booksSoon": "Kommer snart",
+  "booksNote": "Skadlig magi, tvång och förbannelser nämns bara som historia, aldrig som recept.",
+  "srcTitle": "Om källorna",
+  "booksFacts": [
+   {
+    "n": "100–200",
+    "t": "bevarade svartkonstböcker i Norge, beroende på hur man räknar"
+   },
+   {
+    "n": "ca 1480–1520",
+    "t": "Vinjeboka från Telemark, Nordens äldsta bevarade svartkonstbok"
+   },
+   {
+    "n": "1 576",
+    "t": "formler och ritualer samlade av A. C. Bang 1901–02"
+   }
+  ],
+  "booksTopics": [
+   "Att stilla blod",
+   "Signing och läsning (läkeformler)",
+   "Skydd mot eld",
+   "Skydd för boskapen",
+   "Att hitta tjuvar",
+   "Lycka i handel och kortspel",
+   "Skydd mot trolldom",
+   "Midsommar (jonsok)",
+   "Jul och oskoreia"
+  ]
+ },
+ "spreads": {
+  "en": {
+   "label": "Dagens runa",
+   "desc": "En runa som tema för dagen.",
+   "pos": [
+    "Dagens tema"
+   ]
+  },
+  "tre": {
+   "label": "Nornorna (3)",
+   "desc": "Tre runor uppkallade efter nornorna i Völuspá: Urd, Verdandi och Skuld. Själva läggningen är en modern sed.",
+   "pos": [
+    "Urd · det som har varit",
+    "Verdandi · det som sker nu",
+    "Skuld · det som ska bli"
+   ]
+  },
+  "ni": {
+   "label": "Kast med nio runor",
+   "desc": "Nio runor kastas på duken. Bara runor med tecknet uppåt läses, och ju närmare mitten, desto viktigare. Det här är en modern praxis.",
+   "zones": [
+    "Inre ring · kärnan",
+    "Mittre ring · påverkan",
+    "Yttre ring · bakgrund"
+   ]
+  }
+ },
+ "aettir": [
+  "1. ätt · ᚠ–ᚹ",
+  "2. ätt · ᚺ–ᛊ",
+  "3. ätt · ᛏ–ᛟ"
+ ],
+ "runes": [
+  {
+   "name": "Fehu",
+   "lit": "Fä, boskap, rikedom",
+   "hist": "Det fornnordiska runedikten använder namnet fé, det fornengelska feoh.",
+   "up": "Välstånd, värden du har arbetat för, något som kan delas.",
+   "rev": "Förlust, oro kring pengar, värden som glider undan."
+  },
+  {
+   "name": "Uruz",
+   "lit": "Uroxe (osäker rekonstruktion)",
+   "hist": "Det fornengelska runedikten säger uroxe, det isländska säger regn eller oväder.",
+   "up": "Råstyrka, hälsa, uthållighet.",
+   "rev": "Försvagad kraft, kraft som används fel."
+  },
+  {
+   "name": "Thurisaz",
+   "lit": "Jätte, jotun (osäker rekonstruktion)",
+   "hist": "De fornnordiska dikterna säger þurs (jotun), det fornengelska þorn (törne).",
+   "up": "Ett motstånd som måste mötas, skydd, en tröskel.",
+   "rev": "Oöverlagd handling, en konflikt du själv förstärker."
+  },
+  {
+   "name": "Ansuz",
+   "lit": "Gud, ås",
+   "hist": "Det isländska dikten säger óss (asarna), det fornengelska ós.",
+   "up": "Ord, råd, insikt från någon klokare.",
+   "rev": "Missförstånd, dåliga råd, att inte bli hörd."
+  },
+  {
+   "name": "Raidho",
+   "lit": "Ritt, resa",
+   "hist": "Fornnordiska reið, fornengelska rád.",
+   "up": "Resa, rörelse, rätt rytm.",
+   "rev": "Försening, fel riktning, en tur som bör skjutas upp."
+  },
+  {
+   "name": "Kaunan",
+   "lit": "Böld, sår (osäker rekonstruktion)",
+   "hist": "Det isländska dikten säger kaun (sår), det fornengelska cén (fackla).",
+   "up": "Ljus i mörkret, kunskap, kreativ gnista.",
+   "rev": "Något som värker, en insikt du undviker."
+  },
+  {
+   "name": "Gebo",
+   "lit": "Gåva",
+   "hist": "Finns bara i det fornengelska runedikten (gyfu), inte i den yngre futharken.",
+   "up": "Gåva, ömsesidighet, ett gott samarbete.",
+   "rev": null
+  },
+  {
+   "name": "Wunjo",
+   "lit": "Glädje",
+   "hist": "Finns bara i det fornengelska runedikten (wynn).",
+   "up": "Glädje, gemenskap, att något faller på plats.",
+   "rev": "Missnöje, isolering, glädje som uteblir."
+  },
+  {
+   "name": "Hagalaz",
+   "lit": "Hagel",
+   "hist": "Fornnordiska hagall, fornengelska hægl.",
+   "up": "Störning utifrån som renar, en storm som går över.",
+   "rev": null
+  },
+  {
+   "name": "Naudiz",
+   "lit": "Nöd, tvång",
+   "hist": "Fornnordiska nauð, fornengelska nýd.",
+   "up": "Behov, begränsning, tålamod under press.",
+   "rev": null
+  },
+  {
+   "name": "Isaz",
+   "lit": "Is",
+   "hist": "Fornnordiska íss, fornengelska ís.",
+   "up": "Stillastående, paus, klarhet när allt fryser.",
+   "rev": null
+  },
+  {
+   "name": "Jera",
+   "lit": "År, god skörd",
+   "hist": "Det isländska dikten säger ár (gott år), det fornengelska gér.",
+   "up": "Skörd, resultat som kommer i sin tid.",
+   "rev": null
+  },
+  {
+   "name": "Eihwaz",
+   "lit": "Idegran (osäker rekonstruktion)",
+   "hist": "Finns bara i det fornengelska runedikten (eoh). Både namn och ljudvärde är omdiskuterade.",
+   "up": "Uthållighet, förbindelse mellan det gamla och det nya.",
+   "rev": null
+  },
+  {
+   "name": "Perthro",
+   "lit": "Okänd betydelse",
+   "hist": "Fornengelska peorð. Ingen källa berättar säkert vad namnet betyder.",
+   "up": "Det okända, slump, något dolt som visar sig.",
+   "rev": "Hemligheter som tynger, slumpen som går emot dig."
+  },
+  {
+   "name": "Algiz",
+   "lit": "Älg (osäker rekonstruktion)",
+   "hist": "Det ursprungliga namnet är okänt; bara en förvanskad fornengelsk form (eolhx) finns bevarad. Runan användes av SS som «Lebensrune».",
+   "up": "Skydd, vaksamhet, att sätta gränser.",
+   "rev": "Sårbarhet, att förbise en varning."
+  },
+  {
+   "name": "Sowilo",
+   "lit": "Sol",
+   "hist": "Fornnordiska sól, fornengelska sigel. En dubbel sowilo användes som SS-tecken.",
+   "up": "Sol, kraft, framgång, klarhet.",
+   "rev": null
+  },
+  {
+   "name": "Tiwaz",
+   "lit": "Guden Tyr",
+   "hist": "Fornnordiska týr; det isländska dikten kallar honom den enhänta guden.",
+   "up": "Rättvisa, mod, att offra något för det som är rätt.",
+   "rev": "Orättvisa, modlöshet, en kamp som inte är din."
+  },
+  {
+   "name": "Berkanan",
+   "lit": "Björk",
+   "hist": "Fornnordiska bjarkan, fornengelska beorc.",
+   "up": "Växt, ny början, omsorg.",
+   "rev": "Stagnation, oro för familjen."
+  },
+  {
+   "name": "Ehwaz",
+   "lit": "Häst",
+   "hist": "Finns bara i det fornengelska runedikten (eh).",
+   "up": "Samarbete, tillit, rörelse framåt.",
+   "rev": "Misstro, rastlöshet, ett partnerskap i obalans."
+  },
+  {
+   "name": "Mannaz",
+   "lit": "Människa",
+   "hist": "Fornnordiska maðr, fornengelska mann.",
+   "up": "Dig själv bland andra, gemenskap, självinsikt.",
+   "rev": "Isolering, självbedrägeri, att stänga andra ute."
+  },
+  {
+   "name": "Laguz",
+   "lit": "Vatten (osäker rekonstruktion)",
+   "hist": "Fornnordiska lögr, fornengelska lagu (hav).",
+   "up": "Intuition, flöde, känslor.",
+   "rev": "Förvirring, att gå vilse i känslor."
+  },
+  {
+   "name": "Ingwaz",
+   "lit": "Guden Ing",
+   "hist": "Finns bara i det fornengelska runedikten (ing).",
+   "up": "Fullbordan, inre växt, vila före något nytt.",
+   "rev": null
+  },
+  {
+   "name": "Dagaz",
+   "lit": "Dag",
+   "hist": "Finns bara i det fornengelska runedikten (dæg).",
+   "up": "Genombrott, gryning, en ny fas.",
+   "rev": null
+  },
+  {
+   "name": "Othala",
+   "lit": "Arv, odal",
+   "hist": "Finns bara i det fornengelska runedikten (éþel, egendom). Runan användes i SS-märken och av extremister i dag.",
+   "up": "Hem, arv, rötter, det som består.",
+   "rev": "Strid om arv, rotlöshet, gamla mönster som binder."
+  }
+ ]
+}

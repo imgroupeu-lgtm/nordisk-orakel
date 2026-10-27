@@ -1,0 +1,321 @@
+{
+ "ui": {
+  "langName": "English",
+  "aiLanguage": "English",
+  "eyebrow": "Prototype · Runes",
+  "lede": "The Elder Futhark has 24 runes. Ask a question, choose a spread and draw the runes. Each rune is shown with what we know historically about its name, and with a modern interpretation.",
+  "questionPlaceholder": "Your question, e.g. “What should I take with me into winter?”",
+  "questionLabel": "Your question",
+  "reversedToggle": "Reversed runes",
+  "drawBtn": "Draw runes",
+  "revealAll": "Reveal all",
+  "meaningsTitle": "Meanings",
+  "revealHint": "Tap the stones to turn them over, or choose “Reveal all”.",
+  "questionPrefix": "Question",
+  "reversedWord": "reversed",
+  "reversedTag": "Reversed",
+  "revealStone": "Turn over stone {n}",
+  "faceDownN": "Stone {n} landed blank side up",
+  "faceDownNote": "{n} stone(s) landed blank side up and are not read.",
+  "ringsLegend": "Inner ring: the core of the matter · middle: what influences it · outer: background",
+  "readingLabel": "Modern interpretation",
+  "histLabel": "Historical",
+  "symNote": "This rune looks the same both ways and therefore has no reversed interpretation.",
+  "aiNote": "The AI features below only work when the page is opened in Claude.",
+  "premiumChip": "Premium · prototype",
+  "aiTitle": "Interpretation of the whole spread",
+  "aiDesc": "AI reads the runes together based on your question: main theme, rune by rune, how they connect, and advice.",
+  "aiBtn": "Interpret the runes",
+  "stop": "Stop",
+  "interpreting": "Interpreting the runes …",
+  "aiHeads": [
+   "Main theme",
+   "Rune by rune",
+   "How the runes connect",
+   "Advice"
+  ],
+  "photoTitle": "Photograph your own rune stones",
+  "photoDesc": "Upload a photo of your rune stones, taken straight from above. We recognise the runes, you check the list, and then you get the interpretation.",
+  "dropLabel": "Choose or drop an image",
+  "spreadOnPhoto": "Which spread is in the photo",
+  "freeSpread": "Free spread (don't know)",
+  "previewAlt": "The image you uploaded",
+  "recBtn": "Recognise runes",
+  "photoInterp": "Interpret this spread",
+  "photoReady": "The image is ready.",
+  "looking": "Looking at the image …",
+  "found": "Found {n} runes. Check the list before interpreting.",
+  "noneFound": "Found no runes in the image. Try a sharper photo taken straight from above.",
+  "chooseRune": "– choose rune –",
+  "runeN": "Rune {n}",
+  "confHigh": "certain",
+  "confMedium": "fairly certain",
+  "confLow": "uncertain",
+  "notRecognized": "not recognised",
+  "refTitle": "The 24 runes",
+  "refDesc": "The futhark is traditionally divided into three aettir of eight runes. Choose a rune to see its name, what it means, and the modern interpretation.",
+  "footer": "Rune reading on this site is culture, reflection and entertainment. It is not medical, legal or financial advice, and no results are guaranteed. The runes are drawn at random. The interpretations are modern: we have no reliable sources that runes were used for divination in the Viking Age. The AI interpretation is produced by artificial intelligence, not by a human.",
+  "sourcesNote": "Historical information: reconstructed Proto-Germanic names and the Old Norse and Old English rune poems (Store norske leksikon, Wikipedia with sources). Three runes (ᛉ, ᛊ, ᛟ) have been misused in Nazi and extremist symbolism; here they are used only in their original meaning.",
+  "errors": {
+   "not_granted": "You have not given the site permission to use Claude.",
+   "sampling_disabled": "AI is not available for this account.",
+   "rate_limited": "Too many requests right now. Try again in a moment.",
+   "session_expired": "You need to log in again.",
+   "image_rejected": "The image could not be read. Try a JPEG or PNG image.",
+   "images_unavailable": "Image upload is not available here.",
+   "refused": "This request cannot be answered. Try a different question.",
+   "invalid_json": "The response could not be read. Try again.",
+   "empty_completion": "No response received. Try again.",
+   "generic": "Something went wrong. Try again."
+  },
+  "navCast": "Cast",
+  "navRunes": "The runes",
+  "navName": "Name in runes",
+  "navBooks": "Black books",
+  "heroTitle": "Ask the runes",
+  "heroStone": "Rune of the day",
+  "heroStoneHint": "The same rune for everyone today. Tap to read about it.",
+  "castTitle": "The cast",
+  "clothCaption": "The Roman historian Tacitus described around the year 98 how Germanic peoples threw marked pieces of wood onto a white cloth to seek answers. Whether the marks were runes, no one knows.",
+  "nameTitle": "Your name in runes",
+  "nameDesc": "Write a name or a word and we will write it in the Elder Futhark.",
+  "namePlaceholder": "E.g. Ingrid",
+  "nameLabel": "Name or word",
+  "nameCopy": "Copy the runes",
+  "nameCopied": "Copied",
+  "nameEmpty": "Write something above to see it in runes.",
+  "nameNote": "This is a modern phonetic spelling. There was no fixed rule for writing present-day names in the Elder Futhark, and letters such as c, q, x and y have no rune of their own.",
+  "booksTitle": "From the black books (svartebøker)",
+  "booksDesc": "Norwegian black books (svartebøker) are handwritten books of charms and advice from about 1480 to 1850. Most deal with protection and healing. This section is a work in progress.",
+  "booksSoon": "Coming soon",
+  "booksNote": "Harmful magic, coercion and curses are mentioned only as history, never as a recipe.",
+  "srcTitle": "About the sources",
+  "booksFacts": [
+   {
+    "n": "100–200",
+    "t": "surviving black books in Norway, depending on how they are counted"
+   },
+   {
+    "n": "c. 1480–1520",
+    "t": "the Vinjeboka from Telemark, the oldest surviving black book in the Nordic countries"
+   },
+   {
+    "n": "1,576",
+    "t": "charms and rituals collected by A. C. Bang in 1901–02"
+   }
+  ],
+  "booksTopics": [
+   "Stopping blood",
+   "Healing charms (signing)",
+   "Protection against fire",
+   "Protection for livestock",
+   "Finding thieves",
+   "Luck in trade and card games",
+   "Protection against witchcraft",
+   "Midsummer (Jonsok)",
+   "Christmas and the oskoreia"
+  ]
+ },
+ "spreads": {
+  "en": {
+   "label": "Rune of the day",
+   "desc": "One rune as the theme for the day.",
+   "pos": [
+    "Theme of the day"
+   ]
+  },
+  "tre": {
+   "label": "The Norns (3)",
+   "desc": "Three runes named after the Norns in the Völuspá: Urd, Verdandi and Skuld. The spread itself is a modern custom.",
+   "pos": [
+    "Urd · what has been",
+    "Verdandi · what is happening now",
+    "Skuld · what is to come"
+   ]
+  },
+  "ni": {
+   "label": "Cast of nine runes",
+   "desc": "Nine runes are cast onto the cloth. Only runes with the symbol facing up are read, and the closer to the centre, the more important. This is a modern practice.",
+   "zones": [
+    "Inner ring · the core",
+    "Middle ring · influence",
+    "Outer ring · background"
+   ]
+  }
+ },
+ "aettir": [
+  "1st aett · ᚠ–ᚹ",
+  "2nd aett · ᚺ–ᛊ",
+  "3rd aett · ᛏ–ᛟ"
+ ],
+ "runes": [
+  {
+   "name": "Fehu",
+   "lit": "Cattle, wealth",
+   "hist": "The Old Norse rune poem uses the name fé, the Old English feoh.",
+   "up": "Prosperity, assets you have worked for, something that can be shared.",
+   "rev": "Loss, unrest around money, assets slipping away."
+  },
+  {
+   "name": "Uruz",
+   "lit": "Aurochs (uncertain reconstruction)",
+   "hist": "The Old English rune poem says aurochs, the Icelandic one says rain or bad weather.",
+   "up": "Raw strength, health, endurance.",
+   "rev": "Weakened strength, strength used wrongly."
+  },
+  {
+   "name": "Thurisaz",
+   "lit": "Giant, jötunn (uncertain reconstruction)",
+   "hist": "The Old Norse poems say þurs (giant), the Old English þorn (thorn).",
+   "up": "An opposition that must be faced, protection, a threshold.",
+   "rev": "Rash action, a conflict you make worse yourself."
+  },
+  {
+   "name": "Ansuz",
+   "lit": "God, áss",
+   "hist": "The Icelandic poem says óss (the Æsir), the Old English ós.",
+   "up": "Words, advice, insight from someone wiser.",
+   "rev": "Misunderstandings, bad advice, not being heard."
+  },
+  {
+   "name": "Raidho",
+   "lit": "Ride, journey",
+   "hist": "Old Norse reið, Old English rád.",
+   "up": "Travel, movement, the right rhythm.",
+   "rev": "Delay, wrong direction, a trip that should be postponed."
+  },
+  {
+   "name": "Kaunan",
+   "lit": "Boil, sore (uncertain reconstruction)",
+   "hist": "The Icelandic poem says kaun (sore), the Old English cén (torch).",
+   "up": "Light in the dark, knowledge, a creative spark.",
+   "rev": "Something that aches, an insight you avoid."
+  },
+  {
+   "name": "Gebo",
+   "lit": "Gift",
+   "hist": "Found only in the Old English rune poem (gyfu), not in the Younger Futhark.",
+   "up": "Gift, reciprocity, good cooperation.",
+   "rev": null
+  },
+  {
+   "name": "Wunjo",
+   "lit": "Joy",
+   "hist": "Found only in the Old English rune poem (wynn).",
+   "up": "Joy, fellowship, things falling into place.",
+   "rev": "Discontent, isolation, joy that fails to appear."
+  },
+  {
+   "name": "Hagalaz",
+   "lit": "Hail",
+   "hist": "Old Norse hagall, Old English hægl.",
+   "up": "Disruption from outside that cleanses, a storm that passes.",
+   "rev": null
+  },
+  {
+   "name": "Naudiz",
+   "lit": "Need, constraint",
+   "hist": "Old Norse nauð, Old English nýd.",
+   "up": "Need, limitation, patience under pressure.",
+   "rev": null
+  },
+  {
+   "name": "Isaz",
+   "lit": "Ice",
+   "hist": "Old Norse íss, Old English ís.",
+   "up": "Standstill, a pause, clarity when everything freezes.",
+   "rev": null
+  },
+  {
+   "name": "Jera",
+   "lit": "Year, good harvest",
+   "hist": "The Icelandic poem says ár (good year), the Old English gér.",
+   "up": "Harvest, results that come in their own time.",
+   "rev": null
+  },
+  {
+   "name": "Eihwaz",
+   "lit": "Yew (uncertain reconstruction)",
+   "hist": "Found only in the Old English rune poem (eoh). Both the name and the sound value are disputed.",
+   "up": "Endurance, a link between the old and the new.",
+   "rev": null
+  },
+  {
+   "name": "Perthro",
+   "lit": "Meaning unknown",
+   "hist": "Old English peorð. No source says with certainty what the name means.",
+   "up": "The unknown, chance, something hidden coming to light.",
+   "rev": "Secrets that weigh on you, coincidences that go against you."
+  },
+  {
+   "name": "Algiz",
+   "lit": "Elk (uncertain reconstruction)",
+   "hist": "The original name is unknown; only a corrupted Old English form (eolhx) has survived. The rune was used by the SS as the “Lebensrune”.",
+   "up": "Protection, vigilance, setting boundaries.",
+   "rev": "Vulnerability, overlooking a warning."
+  },
+  {
+   "name": "Sowilo",
+   "lit": "Sun",
+   "hist": "Old Norse sól, Old English sigel. A double sowilo was used as the SS sign.",
+   "up": "Sun, power, success, clarity.",
+   "rev": null
+  },
+  {
+   "name": "Tiwaz",
+   "lit": "The god Tyr",
+   "hist": "Old Norse týr; the Icelandic poem calls him the one-handed god.",
+   "up": "Justice, courage, sacrificing something for what is right.",
+   "rev": "Injustice, discouragement, a fight that is not yours."
+  },
+  {
+   "name": "Berkanan",
+   "lit": "Birch",
+   "hist": "Old Norse bjarkan, Old English beorc.",
+   "up": "Growth, new beginnings, care.",
+   "rev": "Stagnation, worry about the family."
+  },
+  {
+   "name": "Ehwaz",
+   "lit": "Horse",
+   "hist": "Found only in the Old English rune poem (eh).",
+   "up": "Cooperation, trust, moving forward.",
+   "rev": "Mistrust, restlessness, a partnership out of balance."
+  },
+  {
+   "name": "Mannaz",
+   "lit": "Human",
+   "hist": "Old Norse maðr, Old English mann.",
+   "up": "Yourself among others, community, self-knowledge.",
+   "rev": "Isolation, self-deception, shutting others out."
+  },
+  {
+   "name": "Laguz",
+   "lit": "Water (uncertain reconstruction)",
+   "hist": "Old Norse lögr, Old English lagu (sea).",
+   "up": "Intuition, flow, feelings.",
+   "rev": "Confusion, getting lost in emotions."
+  },
+  {
+   "name": "Ingwaz",
+   "lit": "The god Ing",
+   "hist": "Found only in the Old English rune poem (ing).",
+   "up": "Completion, inner growth, rest before something new.",
+   "rev": null
+  },
+  {
+   "name": "Dagaz",
+   "lit": "Day",
+   "hist": "Found only in the Old English rune poem (dæg).",
+   "up": "Breakthrough, dawn, a new phase.",
+   "rev": null
+  },
+  {
+   "name": "Othala",
+   "lit": "Inheritance, ancestral land (odal)",
+   "hist": "Found only in the Old English rune poem (éþel, estate). The rune was used in SS badges and is used by extremists today.",
+   "up": "Home, inheritance, roots, what lasts.",
+   "rev": "Dispute over inheritance, rootlessness, old patterns that bind."
+  }
+ ]
+}

@@ -1,0 +1,321 @@
+{
+ "ui": {
+  "langName": "Latviešu",
+  "aiLanguage": "Latvian",
+  "eyebrow": "Prototips · Runas",
+  "lede": "Vecākajam futharkam ir 24 runas. Uzdod jautājumu, izvēlies izkārtojumu un velc runas. Katrai runai tiek parādīts, ko vēsturiski zinām par tās nosaukumu, un mūsdienīgs skaidrojums.",
+  "questionPlaceholder": "Tavs jautājums, piem., „Ko man ņemt līdzi ziemā?“",
+  "questionLabel": "Tavs jautājums",
+  "reversedToggle": "Apgrieztas runas",
+  "drawBtn": "Vilkt runas",
+  "revealAll": "Rādīt visas",
+  "meaningsTitle": "Nozīmes",
+  "revealHint": "Pieskaries akmeņiem, lai tos apgrieztu, vai izvēlies „Rādīt visas“.",
+  "questionPrefix": "Jautājums",
+  "reversedWord": "apgriezta",
+  "reversedTag": "Apgriezta",
+  "revealStone": "Apgriezt akmeni {n}",
+  "faceDownN": "Akmens {n} guļ ar tukšo pusi uz augšu",
+  "faceDownNote": "Akmeņi, kas nokrita ar tukšo pusi uz augšu: {n}. Tie netiek lasīti.",
+  "ringsLegend": "Iekšējais gredzens: lietas kodols · vidējais: kas ietekmē · ārējais: fons",
+  "readingLabel": "Mūsdienīgs skaidrojums",
+  "histLabel": "Vēsturiski",
+  "symNote": "Šī runa izskatās vienādi abos virzienos, tāpēc tai nav apgrieztā skaidrojuma.",
+  "aiNote": "Tālāk esošās MI funkcijas darbojas tikai tad, ja lapa ir atvērta Claude.",
+  "premiumChip": "Premium · prototips",
+  "aiTitle": "Visa izkārtojuma skaidrojums",
+  "aiDesc": "MI lasa runas kopā, balstoties uz tavu jautājumu: galvenā tēma, runa pa runai, kā tās savā starpā saistās, un padoms.",
+  "aiBtn": "Skaidrot runas",
+  "stop": "Apturēt",
+  "interpreting": "Skaidro runas …",
+  "aiHeads": [
+   "Galvenā tēma",
+   "Runa pa runai",
+   "Kā runas savā starpā saistās",
+   "Padoms"
+  ],
+  "photoTitle": "Nofotografē savus runu akmeņus",
+  "photoDesc": "Augšupielādē savu runu akmeņu attēlu, uzņemtu tieši no augšas. Mēs atpazīstam runas, tu pārbaudi sarakstu, un tad saņem skaidrojumu.",
+  "dropLabel": "Izvēlies vai nometi attēlu",
+  "spreadOnPhoto": "Kāds izkārtojums ir attēlā",
+  "freeSpread": "Brīvs izkārtojums (nezinu)",
+  "previewAlt": "Tavs augšupielādētais attēls",
+  "recBtn": "Atpazīt runas",
+  "photoInterp": "Skaidrot šo izkārtojumu",
+  "photoReady": "Attēls ir gatavs.",
+  "looking": "Skatās attēlu …",
+  "found": "Atrastas {n} runas. Pārbaudi sarakstu pirms skaidrošanas.",
+  "noneFound": "Attēlā runas netika atrastas. Mēģini asāku attēlu, uzņemtu tieši no augšas.",
+  "chooseRune": "– izvēlies runu –",
+  "runeN": "Runa {n}",
+  "confHigh": "droši",
+  "confMedium": "diezgan droši",
+  "confLow": "nedroši",
+  "notRecognized": "neatpazīta",
+  "refTitle": "24 runas",
+  "refDesc": "Futharks tradicionāli tiek dalīts trīs ættir pa astoņām runām. Izvēlies runu, lai redzētu nosaukumu, ko tas nozīmē, un mūsdienīgo skaidrojumu.",
+  "footer": "Runu skaidrojums šajā lapā ir kultūra, pārdomas un izklaide. Tie nav medicīniski, juridiski vai finanšu padomi, un nekādi rezultāti netiek garantēti. Runas tiek vilktas nejauši. Skaidrojumi ir mūsdienīgi: mums nav drošu avotu, ka vikingu laikā runas būtu lietotas zīlēšanai. MI skaidrojumu radījis mākslīgais intelekts, nevis cilvēks.",
+  "sourcesNote": "Vēsturiskā informācija: rekonstruēti pirmģermāņu nosaukumi un senskandināvu un senangļu runu dzejoļi (Store norske leksikon, Vikipēdija ar avotiem). Trīs runas (ᛉ, ᛊ, ᛟ) ir ļaunprātīgi izmantotas nacistiskajā un ekstrēmistu simbolikā; šeit tās lietotas tikai sākotnējā nozīmē.",
+  "errors": {
+   "not_granted": "Tu neesi devis lapai atļauju izmantot Claude.",
+   "sampling_disabled": "MI šim kontam nav pieejams.",
+   "rate_limited": "Pašlaik pārāk daudz pieprasījumu. Mēģini vēlreiz pēc brīža.",
+   "session_expired": "Tev jāpieslēdzas no jauna.",
+   "image_rejected": "Attēlu neizdevās nolasīt. Mēģini JPEG vai PNG attēlu.",
+   "images_unavailable": "Attēlu augšupielāde šeit nav pieejama.",
+   "refused": "Uz šo pieprasījumu nevar atbildēt. Mēģini citu jautājumu.",
+   "invalid_json": "Atbildi neizdevās nolasīt. Mēģini vēlreiz.",
+   "empty_completion": "Atbilde nav saņemta. Mēģini vēlreiz.",
+   "generic": "Kaut kas nogāja greizi. Mēģini vēlreiz."
+  },
+  "navCast": "Metiens",
+  "navRunes": "Runas",
+  "navName": "Vārds runās",
+  "navBooks": "Melnās grāmatas",
+  "heroTitle": "Vaicā runām",
+  "heroStone": "Dienas runa",
+  "heroStoneHint": "Šodien visiem viena un tā pati runa. Pieskaries, lai lasītu par to.",
+  "castTitle": "Metiens",
+  "clothCaption": "Romiešu vēsturnieks Tacits ap 98. gadu aprakstīja, kā ģermāņi uz balta auduma meta iezīmētus koka gabaliņus, lai meklētu atbildes. Vai šīs zīmes bija runas, nezina neviens.",
+  "nameTitle": "Tavs vārds runās",
+  "nameDesc": "Ieraksti vārdu (personvārdu) vai jebkuru citu vārdu, un mēs to uzrakstīsim ar vecāko futharku.",
+  "namePlaceholder": "Piem., Ingrid",
+  "nameLabel": "Personvārds vai vārds",
+  "nameCopy": "Kopēt runas",
+  "nameCopied": "Nokopēts",
+  "nameEmpty": "Ieraksti kaut ko augstāk, lai to redzētu runās.",
+  "nameNote": "Šis ir mūsdienu fonētisks pieraksts. Nebija noteikta likuma, kā mūsdienu vārdus rakstīt ar vecāko futharku, un burtiem c, q, x un y nav savas runas.",
+  "booksTitle": "No melnajām grāmatām (svartebøker)",
+  "booksDesc": "Norvēģu melnās grāmatas (svartebøker) ir ar roku rakstītas grāmatas ar buramvārdiem un padomiem no aptuveni 1480. līdz 1850. gadam. Lielākā daļa attiecas uz aizsardzību un dziedināšanu. Šī sadaļa vēl top.",
+  "booksSoon": "Drīzumā",
+  "booksNote": "Kaitīga maģija, piespiešana un lāsti minēti tikai kā vēsture, nekad kā recepte.",
+  "srcTitle": "Par avotiem",
+  "booksFacts": [
+   {
+    "n": "100–200",
+    "t": "saglabājušās melnās grāmatas Norvēģijā, atkarībā no tā, kā skaita"
+   },
+   {
+    "n": "ap 1480.–1520.",
+    "t": "Vinjeboka no Telemarkas, vecākā saglabājusies melnā grāmata Ziemeļvalstīs"
+   },
+   {
+    "n": "1576",
+    "t": "buramvārdi un rituāli, ko 1901.–02. gadā apkopoja A. C. Bangs"
+   }
+  ],
+  "booksTopics": [
+   "Asiņu apturēšana",
+   "Dziedinoši buramvārdi (signing)",
+   "Aizsardzība pret uguni",
+   "Lopu aizsardzība",
+   "Zagļu atrašana",
+   "Veiksme tirdzniecībā un kāršu spēlēs",
+   "Aizsardzība pret burvestībām",
+   "Jāņi",
+   "Ziemassvētki un oskoreia"
+  ]
+ },
+ "spreads": {
+  "en": {
+   "label": "Dienas runa",
+   "desc": "Viena runa kā dienas tēma.",
+   "pos": [
+    "Dienas tēma"
+   ]
+  },
+  "tre": {
+   "label": "Nornas (3)",
+   "desc": "Trīs runas, nosauktas pēc Nornām no „Völvas pareģojuma“ (Völuspá): Urda, Verdandi un Skulda. Pats izkārtojums ir mūsdienu paradums.",
+   "pos": [
+    "Urda · kas ir bijis",
+    "Verdandi · kas notiek tagad",
+    "Skulda · kas būs"
+   ]
+  },
+  "ni": {
+   "label": "Deviņu runu metiens",
+   "desc": "Deviņas runas tiek mestas uz auduma. Tiek lasītas tikai runas ar zīmi uz augšu, un jo tuvāk centram, jo svarīgākas. Šī ir mūsdienu prakse.",
+   "zones": [
+    "Iekšējais gredzens · kodols",
+    "Vidējais gredzens · ietekme",
+    "Ārējais gredzens · fons"
+   ]
+  }
+ },
+ "aettir": [
+  "1. ætt · ᚠ–ᚹ",
+  "2. ætt · ᚺ–ᛊ",
+  "3. ætt · ᛏ–ᛟ"
+ ],
+ "runes": [
+  {
+   "name": "Fehu",
+   "lit": "Lopi, bagātība",
+   "hist": "Senskandināvu runu dzejolī lietots nosaukums fé, senangļu – feoh.",
+   "up": "Labklājība, vērtības, par kurām esi strādājis, kas var tikt dalīts.",
+   "rev": "Zaudējums, nemiers ap naudu, vērtības, kas izslīd."
+  },
+  {
+   "name": "Uruz",
+   "lit": "Sumbrs (nedroša rekonstrukcija)",
+   "hist": "Senangļu runu dzejolī teikts sumbrs, islandiešu – lietus vai slapjdraņķis.",
+   "up": "Neapstrādāts spēks, veselība, izturība.",
+   "rev": "Novājināts spēks, nepareizi izmantots spēks."
+  },
+  {
+   "name": "Thurisaz",
+   "lit": "Milzis, jotuns (nedroša rekonstrukcija)",
+   "hist": "Senskandināvu dzejoļos teikts þurs (jotuns), senangļu – þorn (ērkšķis).",
+   "up": "Pretestība, ar kuru jāsastopas, aizsardzība, slieksnis.",
+   "rev": "Neapdomīga rīcība, konflikts, ko pats pastiprini."
+  },
+  {
+   "name": "Ansuz",
+   "lit": "Dievs, ass",
+   "hist": "Islandiešu dzejolī teikts óss (asi), senangļu – ós.",
+   "up": "Vārdi, padoms, atziņa no kāda gudrāka.",
+   "rev": "Pārpratumi, slikti padomi, netikt sadzirdētam."
+  },
+  {
+   "name": "Raidho",
+   "lit": "Jāšana, ceļojums",
+   "hist": "Senskandināvu reið, senangļu rád.",
+   "up": "Ceļojums, kustība, pareizs ritms.",
+   "rev": "Kavēšanās, nepareizs virziens, brauciens, ko labāk atlikt."
+  },
+  {
+   "name": "Kaunan",
+   "lit": "Augonis, brūce (nedroša rekonstrukcija)",
+   "hist": "Islandiešu dzejolī teikts kaun (brūce), senangļu – cén (lāpa).",
+   "up": "Gaisma tumsā, zināšanas, radoša dzirkstele.",
+   "rev": "Kas sāp, atziņa, no kuras izvairies."
+  },
+  {
+   "name": "Gebo",
+   "lit": "Dāvana",
+   "hist": "Sastopama tikai senangļu runu dzejolī (gyfu), jaunākajā futharkā tās nav.",
+   "up": "Dāvana, savstarpīgums, laba sadarbība.",
+   "rev": null
+  },
+  {
+   "name": "Wunjo",
+   "lit": "Prieks",
+   "hist": "Sastopama tikai senangļu runu dzejolī (wynn).",
+   "up": "Prieks, kopiena, kad kaut kas nostājas savā vietā.",
+   "rev": "Neapmierinātība, izolācija, prieks, kas nepienāk."
+  },
+  {
+   "name": "Hagalaz",
+   "lit": "Krusa",
+   "hist": "Senskandināvu hagall, senangļu hægl.",
+   "up": "Traucējums no ārpuses, kas šķīsta, vētra, kas pāriet.",
+   "rev": null
+  },
+  {
+   "name": "Naudiz",
+   "lit": "Trūkums, spaids",
+   "hist": "Senskandināvu nauð, senangļu nýd.",
+   "up": "Vajadzība, ierobežojums, pacietība zem spiediena.",
+   "rev": null
+  },
+  {
+   "name": "Isaz",
+   "lit": "Ledus",
+   "hist": "Senskandināvu íss, senangļu ís.",
+   "up": "Stāvēšana uz vietas, pauze, skaidrība, kad viss sasalst.",
+   "rev": null
+  },
+  {
+   "name": "Jera",
+   "lit": "Gads, laba raža",
+   "hist": "Islandiešu dzejolī teikts ár (labs gads), senangļu – gér.",
+   "up": "Ražas novākšana, rezultāti, kas nāk savā laikā.",
+   "rev": null
+  },
+  {
+   "name": "Eihwaz",
+   "lit": "Īve (nedroša rekonstrukcija)",
+   "hist": "Sastopama tikai senangļu runu dzejolī (eoh). Gan nosaukums, gan skaņas vērtība ir apstrīdēta.",
+   "up": "Izturība, saikne starp veco un jauno.",
+   "rev": null
+  },
+  {
+   "name": "Perthro",
+   "lit": "Nezināma nozīme",
+   "hist": "Senangļu peorð. Neviens avots droši nesaka, ko šis nosaukums nozīmē.",
+   "up": "Nezināmais, nejaušības, kaut kas apslēpts, kas atklājas.",
+   "rev": "Noslēpumi, kas nospiež, nejaušības, kas vēršas pret tevi."
+  },
+  {
+   "name": "Algiz",
+   "lit": "Alnis (nedroša rekonstrukcija)",
+   "hist": "Sākotnējais nosaukums nav zināms; saglabājusies tikai sagrozīta senangļu forma (eolhx). SS šo runu lietoja kā „Lebensrune“.",
+   "up": "Aizsardzība, modrība, robežu noteikšana.",
+   "rev": "Neaizsargātība, brīdinājuma neievērošana."
+  },
+  {
+   "name": "Sowilo",
+   "lit": "Saule",
+   "hist": "Senskandināvu sól, senangļu sigel. Dubulta sowilo tika lietota kā SS zīme.",
+   "up": "Saule, spēks, panākumi, skaidrība.",
+   "rev": null
+  },
+  {
+   "name": "Tiwaz",
+   "lit": "Dievs Tīrs",
+   "hist": "Senskandināvu týr; islandiešu dzejolis viņu dēvē par vienroča dievu.",
+   "up": "Taisnīgums, drosme, upurēšanās par to, kas ir pareizi.",
+   "rev": "Netaisnība, drosmes zaudēšana, cīņa, kas nav tava."
+  },
+  {
+   "name": "Berkanan",
+   "lit": "Bērzs",
+   "hist": "Senskandināvu bjarkan, senangļu beorc.",
+   "up": "Augšana, jauns sākums, gādība.",
+   "rev": "Stagnācija, bažas par ģimeni."
+  },
+  {
+   "name": "Ehwaz",
+   "lit": "Zirgs",
+   "hist": "Sastopama tikai senangļu runu dzejolī (eh).",
+   "up": "Sadarbība, uzticēšanās, kustība uz priekšu.",
+   "rev": "Neuzticēšanās, nemiers, nelīdzsvarota partnerība."
+  },
+  {
+   "name": "Mannaz",
+   "lit": "Cilvēks",
+   "hist": "Senskandināvu maðr, senangļu mann.",
+   "up": "Tu pats starp citiem, kopiena, pašizziņa.",
+   "rev": "Izolācija, paštīšanās, citu izslēgšana."
+  },
+  {
+   "name": "Laguz",
+   "lit": "Ūdens (nedroša rekonstrukcija)",
+   "hist": "Senskandināvu lögr, senangļu lagu (jūra).",
+   "up": "Intuīcija, plūsma, jūtas.",
+   "rev": "Apjukums, apmaldīšanās jūtās."
+  },
+  {
+   "name": "Ingwaz",
+   "lit": "Dievs Ings",
+   "hist": "Sastopama tikai senangļu runu dzejolī (ing).",
+   "up": "Pabeigšana, iekšēja izaugsme, atpūta pirms kaut kā jauna.",
+   "rev": null
+  },
+  {
+   "name": "Dagaz",
+   "lit": "Diena",
+   "hist": "Sastopama tikai senangļu runu dzejolī (dæg).",
+   "up": "Izrāviens, rītausma, jauns posms.",
+   "rev": null
+  },
+  {
+   "name": "Othala",
+   "lit": "Mantojums, senču zeme",
+   "hist": "Sastopama tikai senangļu runu dzejolī (éþel, īpašums). Runa tika lietota SS zīmēs un to lieto ekstrēmisti arī šodien.",
+   "up": "Mājas, mantojums, saknes, kas paliek.",
+   "rev": "Strīds par mantojumu, bezsakņu sajūta, vecie modeļi, kas sasaista."
+  }
+ ]
+}

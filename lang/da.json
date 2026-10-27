@@ -1,0 +1,321 @@
+{
+ "ui": {
+  "langName": "Dansk",
+  "aiLanguage": "Danish",
+  "eyebrow": "Prototype · Runer",
+  "lede": "Den ældre futhark har 24 runer. Stil et spørgsmål, vælg en lægning og træk runerne. Hver rune vises med det, vi historisk ved om navnet, og med en moderne fortolkning.",
+  "questionPlaceholder": "Dit spørgsmål, f.eks. «Hvad bør jeg tage med mig ind i vinteren?»",
+  "questionLabel": "Dit spørgsmål",
+  "reversedToggle": "Omvendte runer",
+  "drawBtn": "Træk runer",
+  "revealAll": "Vis alle",
+  "meaningsTitle": "Betydninger",
+  "revealHint": "Tryk på stenene for at vende dem, eller vælg «Vis alle».",
+  "questionPrefix": "Spørgsmål",
+  "reversedWord": "omvendt",
+  "reversedTag": "Omvendt",
+  "revealStone": "Vend sten {n}",
+  "faceDownN": "Sten {n} ligger med den blanke side opad",
+  "faceDownNote": "{n} sten landede med den blanke side opad og læses ikke.",
+  "ringsLegend": "Indre ring: sagens kerne · midterste: det, der påvirker · ydre: baggrund",
+  "readingLabel": "Moderne fortolkning",
+  "histLabel": "Historisk",
+  "symNote": "Denne rune ser ens ud begge veje og har derfor ingen omvendt fortolkning.",
+  "aiNote": "AI-funktionerne nedenfor virker kun, når siden er åbnet i Claude.",
+  "premiumChip": "Premium · prototype",
+  "aiTitle": "Fortolkning af hele lægningen",
+  "aiDesc": "AI læser runerne sammen ud fra dit spørgsmål: hovedtema, rune for rune, hvordan de hænger sammen, og råd.",
+  "aiBtn": "Fortolk runerne",
+  "stop": "Stop",
+  "interpreting": "Fortolker runerne …",
+  "aiHeads": [
+   "Hovedtema",
+   "Rune for rune",
+   "Hvordan runerne hænger sammen",
+   "Råd"
+  ],
+  "photoTitle": "Fotografer dine egne runesten",
+  "photoDesc": "Upload et billede af dine runesten, taget lige ovenfra. Vi genkender runerne, du kontrollerer listen, og så får du fortolkningen.",
+  "dropLabel": "Vælg eller slip et billede",
+  "spreadOnPhoto": "Hvilken lægning der er på billedet",
+  "freeSpread": "Fri lægning (ved ikke)",
+  "previewAlt": "Billedet du uploadede",
+  "recBtn": "Genkend runer",
+  "photoInterp": "Fortolk denne lægning",
+  "photoReady": "Billedet er klar.",
+  "looking": "Kigger på billedet …",
+  "found": "Fandt {n} runer. Kontroller listen før fortolkning.",
+  "noneFound": "Fandt ingen runer på billedet. Prøv et skarpere billede taget lige ovenfra.",
+  "chooseRune": "– vælg rune –",
+  "runeN": "Rune {n}",
+  "confHigh": "sikker",
+  "confMedium": "ret sikker",
+  "confLow": "usikker",
+  "notRecognized": "ikke genkendt",
+  "refTitle": "De 24 runer",
+  "refDesc": "Futharken deles traditionelt i tre ætter med otte runer hver. Vælg en rune for at se navnet, hvad det betyder, og den moderne fortolkning.",
+  "footer": "Runetydning på denne side er kultur, refleksion og underholdning. Det er ikke medicinsk, juridisk eller økonomisk rådgivning, og intet resultat er garanteret. Runerne trækkes tilfældigt. Fortolkningerne er moderne: vi har ingen sikre kilder på, at runer blev brugt til spådom i vikingetiden. AI-fortolkningen er lavet af kunstig intelligens, ikke af et menneske.",
+  "sourcesNote": "Historiske oplysninger: rekonstruerede urgermanske navne og de oldnordiske og oldengelske runedigte (Store norske leksikon, Wikipedia med kilder). Tre runer (ᛉ, ᛊ, ᛟ) er blevet misbrugt i nazistisk og ekstrem symbolik; her bruges de kun i deres oprindelige betydning.",
+  "errors": {
+   "not_granted": "Du har ikke givet siden tilladelse til at bruge Claude.",
+   "sampling_disabled": "AI er ikke tilgængelig for denne konto.",
+   "rate_limited": "For mange forespørgsler lige nu. Prøv igen om lidt.",
+   "session_expired": "Du skal logge ind igen.",
+   "image_rejected": "Billedet kunne ikke læses. Prøv et JPEG- eller PNG-billede.",
+   "images_unavailable": "Upload af billeder er ikke tilgængeligt her.",
+   "refused": "Denne forespørgsel kan ikke besvares. Prøv et andet spørgsmål.",
+   "invalid_json": "Svaret kunne ikke læses. Prøv igen.",
+   "empty_completion": "Fik ikke noget svar. Prøv igen.",
+   "generic": "Noget gik galt. Prøv igen."
+  },
+  "navCast": "Kast",
+  "navRunes": "Runerne",
+  "navName": "Navn i runer",
+  "navBooks": "Sortebøger",
+  "heroTitle": "Spørg runerne",
+  "heroStone": "Dagens rune",
+  "heroStoneHint": "Samme rune til alle i dag. Tryk for at læse om den.",
+  "castTitle": "Kastet",
+  "clothCaption": "Den romerske historiker Tacitus beskrev omkring år 98, hvordan germanere kastede mærkede stykker træ på et hvidt klæde for at søge svar. Om mærkerne var runer, ved ingen.",
+  "nameTitle": "Dit navn i runer",
+  "nameDesc": "Skriv et navn eller et ord, så skriver vi det med den ældre futhark.",
+  "namePlaceholder": "F.eks. Ingrid",
+  "nameLabel": "Navn eller ord",
+  "nameCopy": "Kopiér runerne",
+  "nameCopied": "Kopieret",
+  "nameEmpty": "Skriv noget ovenfor for at se det i runer.",
+  "nameNote": "Dette er en moderne lydskrift. Der fandtes ingen fast regel for at skrive nutidens navne med den ældre futhark, og bogstaver som c, q, x og y har ingen egen rune.",
+  "booksTitle": "Fra sortebøgerne (svartebøker)",
+  "booksDesc": "Norske sortebøger (svartebøker) er håndskrevne bøger med formler og råd fra omkring 1480 til 1850. De fleste handler om beskyttelse og helbredelse. Dette afsnit er under udarbejdelse.",
+  "booksSoon": "Kommer snart",
+  "booksNote": "Skadelig magi, tvang og forbandelser omtales kun som historie, aldrig som opskrift.",
+  "srcTitle": "Om kilderne",
+  "booksFacts": [
+   {
+    "n": "100–200",
+    "t": "bevarede sortebøger i Norge, afhængigt af hvordan de tælles"
+   },
+   {
+    "n": "ca. 1480–1520",
+    "t": "Vinjeboka fra Telemark, Nordens ældste bevarede sortebog"
+   },
+   {
+    "n": "1.576",
+    "t": "formler og ritualer samlet af A. C. Bang i 1901–02"
+   }
+  ],
+  "booksTopics": [
+   "At stille blod",
+   "Signing og læsning (helbredende formler)",
+   "Beskyttelse mod brand",
+   "Beskyttelse af kvæget",
+   "At finde tyve",
+   "Held i handel og kortspil",
+   "Beskyttelse mod trolddom",
+   "Sankthans",
+   "Jul og oskoreia"
+  ]
+ },
+ "spreads": {
+  "en": {
+   "label": "Dagens rune",
+   "desc": "Én rune som tema for dagen.",
+   "pos": [
+    "Dagens tema"
+   ]
+  },
+  "tre": {
+   "label": "Nornerne (3)",
+   "desc": "Tre runer opkaldt efter nornerne i Vølvens spådom (Völuspá): Urd, Verdande og Skuld. Selve lægningen er en moderne skik.",
+   "pos": [
+    "Urd · det, der har været",
+    "Verdande · det, der sker nu",
+    "Skuld · det, der skal blive"
+   ]
+  },
+  "ni": {
+   "label": "Kast med ni runer",
+   "desc": "Ni runer kastes på dugen. Kun runer med tegnet opad læses, og jo tættere på midten, desto vigtigere. Dette er en moderne praksis.",
+   "zones": [
+    "Indre ring · kernen",
+    "Midterste ring · påvirkning",
+    "Ydre ring · baggrund"
+   ]
+  }
+ },
+ "aettir": [
+  "1. æt · ᚠ–ᚹ",
+  "2. æt · ᚺ–ᛊ",
+  "3. æt · ᛏ–ᛟ"
+ ],
+ "runes": [
+  {
+   "name": "Fehu",
+   "lit": "Fæ, kvæg, rigdom",
+   "hist": "Det oldnordiske runedigt bruger navnet fé, det oldengelske feoh.",
+   "up": "Velstand, værdier du har arbejdet for, noget der kan deles.",
+   "rev": "Tab, uro omkring penge, værdier der glipper."
+  },
+  {
+   "name": "Uruz",
+   "lit": "Urokse (usikker rekonstruktion)",
+   "hist": "Det oldengelske runedigt siger urokse, det islandske siger regn eller uvejr.",
+   "up": "Råstyrke, helbred, udholdenhed.",
+   "rev": "Svækket kraft, kraft brugt forkert."
+  },
+  {
+   "name": "Thurisaz",
+   "lit": "Jætte, jotun (usikker rekonstruktion)",
+   "hist": "De oldnordiske digte siger þurs (jotun), det oldengelske þorn (torn).",
+   "up": "En modstand der skal mødes, beskyttelse, en tærskel.",
+   "rev": "Uoverlagt handling, en konflikt du selv forstærker."
+  },
+  {
+   "name": "Ansuz",
+   "lit": "Gud, ase",
+   "hist": "Det islandske digt siger óss (aserne), det oldengelske ós.",
+   "up": "Ord, råd, indsigt fra en klogere.",
+   "rev": "Misforståelser, dårlige råd, ikke at blive hørt."
+  },
+  {
+   "name": "Raidho",
+   "lit": "Ridt, rejse",
+   "hist": "Oldnordisk reið, oldengelsk rád.",
+   "up": "Rejse, bevægelse, den rette rytme.",
+   "rev": "Forsinkelse, forkert retning, en tur der bør udsættes."
+  },
+  {
+   "name": "Kaunan",
+   "lit": "Bylde, sår (usikker rekonstruktion)",
+   "hist": "Det islandske digt siger kaun (sår), det oldengelske cén (fakkel).",
+   "up": "Lys i mørket, viden, kreativ gnist.",
+   "rev": "Noget der gør ondt, en indsigt du undgår."
+  },
+  {
+   "name": "Gebo",
+   "lit": "Gave",
+   "hist": "Findes kun i det oldengelske runedigt (gyfu), ikke i den yngre futhark.",
+   "up": "Gave, gensidighed, et godt samarbejde.",
+   "rev": null
+  },
+  {
+   "name": "Wunjo",
+   "lit": "Glæde",
+   "hist": "Findes kun i det oldengelske runedigt (wynn).",
+   "up": "Glæde, fællesskab, at noget falder på plads.",
+   "rev": "Utilfredshed, isolation, glæde der udebliver."
+  },
+  {
+   "name": "Hagalaz",
+   "lit": "Hagl",
+   "hist": "Oldnordisk hagall, oldengelsk hægl.",
+   "up": "Forstyrrelse udefra der renser, en storm der går over.",
+   "rev": null
+  },
+  {
+   "name": "Naudiz",
+   "lit": "Nød, tvang",
+   "hist": "Oldnordisk nauð, oldengelsk nýd.",
+   "up": "Behov, begrænsning, tålmodighed under pres.",
+   "rev": null
+  },
+  {
+   "name": "Isaz",
+   "lit": "Is",
+   "hist": "Oldnordisk íss, oldengelsk ís.",
+   "up": "Stilstand, pause, klarhed når alt fryser.",
+   "rev": null
+  },
+  {
+   "name": "Jera",
+   "lit": "År, god høst",
+   "hist": "Det islandske digt siger ár (godt år), det oldengelske gér.",
+   "up": "Høst, resultater der kommer i deres tid.",
+   "rev": null
+  },
+  {
+   "name": "Eihwaz",
+   "lit": "Taks (usikker rekonstruktion)",
+   "hist": "Findes kun i det oldengelske runedigt (eoh). Både navn og lydværdi er omdiskuteret.",
+   "up": "Udholdenhed, forbindelse mellem det gamle og det nye.",
+   "rev": null
+  },
+  {
+   "name": "Perthro",
+   "lit": "Ukendt betydning",
+   "hist": "Oldengelsk peorð. Ingen kilde fortæller sikkert, hvad navnet betyder.",
+   "up": "Det ukendte, tilfældigheder, noget skjult der viser sig.",
+   "rev": "Hemmeligheder der tynger, tilfældigheder der går dig imod."
+  },
+  {
+   "name": "Algiz",
+   "lit": "Elg (usikker rekonstruktion)",
+   "hist": "Det oprindelige navn er ukendt; kun en forvansket oldengelsk form (eolhx) er bevaret. Runen blev brugt af SS som «Lebensrune».",
+   "up": "Beskyttelse, årvågenhed, at sætte grænser.",
+   "rev": "Sårbarhed, at overse en advarsel."
+  },
+  {
+   "name": "Sowilo",
+   "lit": "Sol",
+   "hist": "Oldnordisk sól, oldengelsk sigel. En dobbelt sowilo blev brugt som SS-tegn.",
+   "up": "Sol, kraft, succes, klarhed.",
+   "rev": null
+  },
+  {
+   "name": "Tiwaz",
+   "lit": "Guden Tyr",
+   "hist": "Oldnordisk týr; det islandske digt kalder ham den enhåndede gud.",
+   "up": "Retfærdighed, mod, at ofre noget for det, der er rigtigt.",
+   "rev": "Uretfærdighed, modløshed, en kamp der ikke er din."
+  },
+  {
+   "name": "Berkanan",
+   "lit": "Birk",
+   "hist": "Oldnordisk bjarkan, oldengelsk beorc.",
+   "up": "Vækst, ny begyndelse, omsorg.",
+   "rev": "Stagnation, bekymring for familien."
+  },
+  {
+   "name": "Ehwaz",
+   "lit": "Hest",
+   "hist": "Findes kun i det oldengelske runedigt (eh).",
+   "up": "Samarbejde, tillid, bevægelse fremad.",
+   "rev": "Mistillid, rastløshed, et partnerskab i ubalance."
+  },
+  {
+   "name": "Mannaz",
+   "lit": "Menneske",
+   "hist": "Oldnordisk maðr, oldengelsk mann.",
+   "up": "Dig selv blandt andre, fællesskab, selvindsigt.",
+   "rev": "Isolation, selvbedrag, at lukke andre ude."
+  },
+  {
+   "name": "Laguz",
+   "lit": "Vand (usikker rekonstruktion)",
+   "hist": "Oldnordisk lögr, oldengelsk lagu (hav).",
+   "up": "Intuition, flow, følelser.",
+   "rev": "Forvirring, at fare vild i følelser."
+  },
+  {
+   "name": "Ingwaz",
+   "lit": "Guden Ing",
+   "hist": "Findes kun i det oldengelske runedigt (ing).",
+   "up": "Fuldførelse, indre vækst, hvile før noget nyt.",
+   "rev": null
+  },
+  {
+   "name": "Dagaz",
+   "lit": "Dag",
+   "hist": "Findes kun i det oldengelske runedigt (dæg).",
+   "up": "Gennembrud, daggry, en ny fase.",
+   "rev": null
+  },
+  {
+   "name": "Othala",
+   "lit": "Arv, odel",
+   "hist": "Findes kun i det oldengelske runedigt (éþel, ejendom). Runen blev brugt i SS-mærker og af ekstremister i dag.",
+   "up": "Hjem, arv, rødder, det der varer.",
+   "rev": "Strid om arv, rodløshed, gamle mønstre der binder."
+  }
+ ]
+}

@@ -1,0 +1,321 @@
+{
+ "ui": {
+  "langName": "Suomi",
+  "aiLanguage": "Finnish",
+  "eyebrow": "Prototyyppi · Riimut",
+  "lede": "Vanhemmassa futharkissa on 24 riimua. Esitä kysymys, valitse asettelu ja nosta riimut. Jokaisesta riimusta näytetään, mitä nimestä tiedetään historiallisesti, sekä nykyaikainen tulkinta.",
+  "questionPlaceholder": "Kysymyksesi, esim. «Mitä minun kannattaa ottaa mukaan talveen?»",
+  "questionLabel": "Kysymyksesi",
+  "reversedToggle": "Käänteiset riimut",
+  "drawBtn": "Nosta riimut",
+  "revealAll": "Näytä kaikki",
+  "meaningsTitle": "Merkitykset",
+  "revealHint": "Napauta kiviä kääntääksesi ne tai valitse «Näytä kaikki».",
+  "questionPrefix": "Kysymys",
+  "reversedWord": "käänteinen",
+  "reversedTag": "Käänteinen",
+  "revealStone": "Käännä kivi {n}",
+  "faceDownN": "Kivi {n} on tyhjä puoli ylöspäin",
+  "faceDownNote": "{n} kiveä päätyi tyhjä puoli ylöspäin, eikä niitä tulkita.",
+  "ringsLegend": "Sisärengas: asian ydin · keskirengas: mikä vaikuttaa · ulkorengas: tausta",
+  "readingLabel": "Nykyaikainen tulkinta",
+  "histLabel": "Historiallinen",
+  "symNote": "Tämä riimu näyttää samalta kumpaankin suuntaan, joten sillä ei ole käänteistä tulkintaa.",
+  "aiNote": "Alla olevat tekoälytoiminnot toimivat vain, kun sivu on avattu Claudessa.",
+  "premiumChip": "Premium · prototyyppi",
+  "aiTitle": "Koko asettelun tulkinta",
+  "aiDesc": "Tekoäly lukee riimut yhdessä kysymyksesi pohjalta: pääteema, riimu riimulta, miten ne liittyvät toisiinsa, ja neuvo.",
+  "aiBtn": "Tulkitse riimut",
+  "stop": "Pysäytä",
+  "interpreting": "Tulkitaan riimuja …",
+  "aiHeads": [
+   "Pääteema",
+   "Riimu riimulta",
+   "Miten riimut liittyvät toisiinsa",
+   "Neuvo"
+  ],
+  "photoTitle": "Valokuvaa omat riimukivesi",
+  "photoDesc": "Lataa kuva riimukivistäsi, otettuna suoraan ylhäältä. Tunnistamme riimut, sinä tarkistat listan, ja sitten saat tulkinnan.",
+  "dropLabel": "Valitse tai pudota kuva",
+  "spreadOnPhoto": "Mikä asettelu kuvassa on",
+  "freeSpread": "Vapaa asettelu (en tiedä)",
+  "previewAlt": "Lataamasi kuva",
+  "recBtn": "Tunnista riimut",
+  "photoInterp": "Tulkitse tämä asettelu",
+  "photoReady": "Kuva on valmis.",
+  "looking": "Katsotaan kuvaa …",
+  "found": "Löytyi {n} riimua. Tarkista lista ennen tulkintaa.",
+  "noneFound": "Kuvasta ei löytynyt riimuja. Kokeile tarkempaa kuvaa, joka on otettu suoraan ylhäältä.",
+  "chooseRune": "– valitse riimu –",
+  "runeN": "Riimu {n}",
+  "confHigh": "varma",
+  "confMedium": "melko varma",
+  "confLow": "epävarma",
+  "notRecognized": "ei tunnistettu",
+  "refTitle": "24 riimua",
+  "refDesc": "Futhark jaetaan perinteisesti kolmeen ættiin, joissa kussakin on kahdeksan riimua. Valitse riimu nähdäksesi nimen, sen merkityksen ja nykyaikaisen tulkinnan.",
+  "footer": "Riimujen tulkinta tällä sivulla on kulttuuria, pohdintaa ja viihdettä. Se ei ole lääketieteellistä, juridista eikä taloudellista neuvontaa, eikä mitään tulosta taata. Riimut nostetaan satunnaisesti. Tulkinnat ovat nykyaikaisia: meillä ei ole varmoja lähteitä siitä, että riimuja olisi käytetty ennustamiseen viikinkiaikana. Tekoälytulkinnan on tehnyt tekoäly, ei ihminen.",
+  "sourcesNote": "Historialliset tiedot: rekonstruoidut muinaisgermaaniset nimet sekä muinaisnorjalaiset ja muinaisenglantilaiset riimurunot (Store norske leksikon, Wikipedia lähteineen). Kolmea riimua (ᛉ, ᛊ, ᛟ) on käytetty väärin natsistisessa ja äärimmäisessä symboliikassa; täällä niitä käytetään vain alkuperäisessä merkityksessään.",
+  "errors": {
+   "not_granted": "Et ole antanut sivulle lupaa käyttää Claudea.",
+   "sampling_disabled": "Tekoäly ei ole käytettävissä tälle tilille.",
+   "rate_limited": "Liian monta pyyntöä juuri nyt. Yritä hetken kuluttua uudelleen.",
+   "session_expired": "Sinun täytyy kirjautua uudelleen sisään.",
+   "image_rejected": "Kuvaa ei voitu lukea. Kokeile JPEG- tai PNG-kuvaa.",
+   "images_unavailable": "Kuvien lataus ei ole täällä käytettävissä.",
+   "refused": "Tähän pyyntöön ei voi vastata. Kokeile toista kysymystä.",
+   "invalid_json": "Vastausta ei voitu lukea. Yritä uudelleen.",
+   "empty_completion": "Vastausta ei saatu. Yritä uudelleen.",
+   "generic": "Jokin meni pieleen. Yritä uudelleen."
+  },
+  "navCast": "Heitto",
+  "navRunes": "Riimut",
+  "navName": "Nimi riimuin",
+  "navBooks": "Mustat kirjat",
+  "heroTitle": "Kysy riimuilta",
+  "heroStone": "Päivän riimu",
+  "heroStoneHint": "Sama riimu kaikille tänään. Napauta lukeaksesi siitä.",
+  "castTitle": "Heitto",
+  "clothCaption": "Roomalainen historioitsija Tacitus kuvasi noin vuonna 98, kuinka germaanit heittivät merkittyjä puunpaloja valkoiselle liinalle hakeakseen vastauksia. Olivatko merkit riimuja, sitä kukaan ei tiedä.",
+  "nameTitle": "Nimesi riimuin",
+  "nameDesc": "Kirjoita nimi tai sana, niin kirjoitamme sen vanhemmalla futharkilla.",
+  "namePlaceholder": "Esim. Ingrid",
+  "nameLabel": "Nimi tai sana",
+  "nameCopy": "Kopioi riimut",
+  "nameCopied": "Kopioitu",
+  "nameEmpty": "Kirjoita jotain yllä nähdäksesi sen riimuina.",
+  "nameNote": "Tämä on nykyaikainen äänteitä seuraava kirjoitustapa. Nykynimien kirjoittamiseen vanhemmalla futharkilla ei ollut kiinteää sääntöä, ja kirjaimilla c, q, x ja y ei ole omaa riimua.",
+  "booksTitle": "Mustista kirjoista (svartebøker)",
+  "booksDesc": "Norjalaiset mustat kirjat (svartebøker) ovat käsin kirjoitettuja loitsu- ja neuvokirjoja noin vuosilta 1480–1850. Useimmat käsittelevät suojelua ja parantamista. Tämä osio on työn alla.",
+  "booksSoon": "Tulossa",
+  "booksNote": "Vahingollinen taikuus, pakottaminen ja kirot mainitaan vain historiana, eivät koskaan ohjeena.",
+  "srcTitle": "Lähteistä",
+  "booksFacts": [
+   {
+    "n": "100–200",
+    "t": "säilynyttä mustaa kirjaa Norjassa, laskutavasta riippuen"
+   },
+   {
+    "n": "n. 1480–1520",
+    "t": "Vinjeboka Telemarkista, Pohjoismaiden vanhin säilynyt musta kirja"
+   },
+   {
+    "n": "1 576",
+    "t": "loitsua ja rituaalia, jotka A. C. Bang keräsi vuosina 1901–02"
+   }
+  ],
+  "booksTopics": [
+   "Veren tyrehdyttäminen",
+   "Parantavat loitsut (signing)",
+   "Suoja tulta vastaan",
+   "Karjan suojelu",
+   "Varkaiden löytäminen",
+   "Onni kaupankäynnissä ja korttipeleissä",
+   "Suoja noituutta vastaan",
+   "Juhannus",
+   "Joulu ja oskoreia"
+  ]
+ },
+ "spreads": {
+  "en": {
+   "label": "Päivän riimu",
+   "desc": "Yksi riimu päivän teemana.",
+   "pos": [
+    "Päivän teema"
+   ]
+  },
+  "tre": {
+   "label": "Nornat (3)",
+   "desc": "Kolme riimua, nimetty Völuspássa esiintyvien nornien mukaan: Urd, Verdandi ja Skuld. Itse asettelu on nykyaikainen tapa.",
+   "pos": [
+    "Urd · mikä on ollut",
+    "Verdandi · mikä tapahtuu nyt",
+    "Skuld · minkä on määrä tulla"
+   ]
+  },
+  "ni": {
+   "label": "Yhdeksän riimun heitto",
+   "desc": "Yhdeksän riimua heitetään liinalle. Vain merkki ylöspäin olevat riimut tulkitaan, ja mitä lähempänä keskustaa, sitä tärkeämpi. Tämä on nykyaikainen käytäntö.",
+   "zones": [
+    "Sisärengas · ydin",
+    "Keskirengas · vaikutus",
+    "Ulkorengas · tausta"
+   ]
+  }
+ },
+ "aettir": [
+  "1. ætt · ᚠ–ᚹ",
+  "2. ætt · ᚺ–ᛊ",
+  "3. ætt · ᛏ–ᛟ"
+ ],
+ "runes": [
+  {
+   "name": "Fehu",
+   "lit": "Karja, omaisuus, rikkaus",
+   "hist": "Muinaisnorjalainen riimurunoelma käyttää nimeä fé, muinaisenglantilainen feoh.",
+   "up": "Vauraus, työllä ansaitut arvot, jotain jaettavaa.",
+   "rev": "Menetys, levottomuus rahan suhteen, arvot jotka lipsuvat käsistä."
+  },
+  {
+   "name": "Uruz",
+   "lit": "Uroshärkä (epävarma rekonstruktio)",
+   "hist": "Muinaisenglantilainen riimurunoelma sanoo uroshärkä, islantilainen sanoo sade tai ilmanmyrsky.",
+   "up": "Raaka voima, terveys, sinnikkyys.",
+   "rev": "Heikentynyt voima, väärin käytetty voima."
+  },
+  {
+   "name": "Thurisaz",
+   "lit": "Jättiläinen, jotun (epävarma rekonstruktio)",
+   "hist": "Muinaisnorjalaiset runot sanovat þurs (jotun), muinaisenglantilainen þorn (piikki).",
+   "up": "Vastus joka on kohdattava, suojelu, kynnys.",
+   "rev": "Harkitsematon toiminta, ristiriita jota itse pahennat."
+  },
+  {
+   "name": "Ansuz",
+   "lit": "Jumala, aasi",
+   "hist": "Islantilainen runo sanoo óss (aasit), muinaisenglantilainen ós.",
+   "up": "Sanat, neuvo, viisaamman antama oivallus.",
+   "rev": "Väärinymmärrykset, huonot neuvot, se ettei tule kuulluksi."
+  },
+  {
+   "name": "Raidho",
+   "lit": "Ratsastus, matka",
+   "hist": "Muinaisnorjaksi reið, muinaisenglanniksi rád.",
+   "up": "Matka, liike, oikea rytmi.",
+   "rev": "Viivästys, väärä suunta, matka joka kannattaa lykätä."
+  },
+  {
+   "name": "Kaunan",
+   "lit": "Paise, haava (epävarma rekonstruktio)",
+   "hist": "Islantilainen runo sanoo kaun (haava), muinaisenglantilainen cén (soihtu).",
+   "up": "Valo pimeässä, tieto, luova kipinä.",
+   "rev": "Jokin joka kivistää, oivallus jota vältät."
+  },
+  {
+   "name": "Gebo",
+   "lit": "Lahja",
+   "hist": "Esiintyy vain muinaisenglantilaisessa riimurunoelmassa (gyfu), ei nuoremmassa futharkissa.",
+   "up": "Lahja, vastavuoroisuus, hyvä yhteistyö.",
+   "rev": null
+  },
+  {
+   "name": "Wunjo",
+   "lit": "Ilo",
+   "hist": "Esiintyy vain muinaisenglantilaisessa riimurunoelmassa (wynn).",
+   "up": "Ilo, yhteisö, se että jokin loksahtaa paikalleen.",
+   "rev": "Tyytymättömyys, eristäytyminen, ilo joka jää tulematta."
+  },
+  {
+   "name": "Hagalaz",
+   "lit": "Rakeet",
+   "hist": "Muinaisnorjaksi hagall, muinaisenglanniksi hægl.",
+   "up": "Ulkopuolelta tuleva häiriö joka puhdistaa, myrsky joka menee ohi.",
+   "rev": null
+  },
+  {
+   "name": "Naudiz",
+   "lit": "Hätä, pakko",
+   "hist": "Muinaisnorjaksi nauð, muinaisenglanniksi nýd.",
+   "up": "Tarve, rajoitus, kärsivällisyys paineen alla.",
+   "rev": null
+  },
+  {
+   "name": "Isaz",
+   "lit": "Jää",
+   "hist": "Muinaisnorjaksi íss, muinaisenglanniksi ís.",
+   "up": "Pysähtyneisyys, tauko, selkeys kun kaikki jäätyy.",
+   "rev": null
+  },
+  {
+   "name": "Jera",
+   "lit": "Vuosi, hyvä sato",
+   "hist": "Islantilainen runo sanoo ár (hyvä vuosi), muinaisenglantilainen gér.",
+   "up": "Sadonkorjuu, tulokset jotka tulevat aikanaan.",
+   "rev": null
+  },
+  {
+   "name": "Eihwaz",
+   "lit": "Marjakuusi (epävarma rekonstruktio)",
+   "hist": "Esiintyy vain muinaisenglantilaisessa riimurunoelmassa (eoh). Sekä nimi että äännearvo ovat kiistanalaisia.",
+   "up": "Sinnikkyys, yhteys vanhan ja uuden välillä.",
+   "rev": null
+  },
+  {
+   "name": "Perthro",
+   "lit": "Tuntematon merkitys",
+   "hist": "Muinaisenglanniksi peorð. Mikään lähde ei kerro varmasti, mitä nimi tarkoittaa.",
+   "up": "Tuntematon, sattuma, jotain kätkettyä joka paljastuu.",
+   "rev": "Salaisuudet jotka painavat, sattumat jotka käyvät sinua vastaan."
+  },
+  {
+   "name": "Algiz",
+   "lit": "Hirvi (epävarma rekonstruktio)",
+   "hist": "Alkuperäinen nimi on tuntematon; vain vääristynyt muinaisenglantilainen muoto (eolhx) on säilynyt. SS käytti riimua «Lebensrunena».",
+   "up": "Suojelu, valppaus, rajojen asettaminen.",
+   "rev": "Haavoittuvuus, varoituksen huomaamatta jättäminen."
+  },
+  {
+   "name": "Sowilo",
+   "lit": "Aurinko",
+   "hist": "Muinaisnorjaksi sól, muinaisenglanniksi sigel. Kaksoissowiloa käytettiin SS-tunnuksena.",
+   "up": "Aurinko, voima, menestys, selkeys.",
+   "rev": null
+  },
+  {
+   "name": "Tiwaz",
+   "lit": "Jumala Tyr",
+   "hist": "Muinaisnorjaksi týr; islantilainen runo kutsuu häntä yksikätiseksi jumalaksi.",
+   "up": "Oikeudenmukaisuus, rohkeus, uhrautuminen sen puolesta mikä on oikein.",
+   "rev": "Epäoikeudenmukaisuus, lannistuneisuus, taistelu joka ei ole sinun."
+  },
+  {
+   "name": "Berkanan",
+   "lit": "Koivu",
+   "hist": "Muinaisnorjaksi bjarkan, muinaisenglanniksi beorc.",
+   "up": "Kasvu, uusi alku, huolenpito.",
+   "rev": "Pysähtyneisyys, huoli perheestä."
+  },
+  {
+   "name": "Ehwaz",
+   "lit": "Hevonen",
+   "hist": "Esiintyy vain muinaisenglantilaisessa riimurunoelmassa (eh).",
+   "up": "Yhteistyö, luottamus, eteenpäin meneminen.",
+   "rev": "Epäluottamus, levottomuus, epätasapainoinen kumppanuus."
+  },
+  {
+   "name": "Mannaz",
+   "lit": "Ihminen",
+   "hist": "Muinaisnorjaksi maðr, muinaisenglanniksi mann.",
+   "up": "Sinä muiden joukossa, yhteisö, itsetuntemus.",
+   "rev": "Eristäytyminen, itsepetos, muiden ulossulkeminen."
+  },
+  {
+   "name": "Laguz",
+   "lit": "Vesi (epävarma rekonstruktio)",
+   "hist": "Muinaisnorjaksi lögr, muinaisenglanniksi lagu (meri).",
+   "up": "Intuitio, virtaus, tunteet.",
+   "rev": "Hämmennys, eksyminen tunteisiin."
+  },
+  {
+   "name": "Ingwaz",
+   "lit": "Jumala Ing",
+   "hist": "Esiintyy vain muinaisenglantilaisessa riimurunoelmassa (ing).",
+   "up": "Päätökseen saattaminen, sisäinen kasvu, lepo ennen jotain uutta.",
+   "rev": null
+  },
+  {
+   "name": "Dagaz",
+   "lit": "Päivä",
+   "hist": "Esiintyy vain muinaisenglantilaisessa riimurunoelmassa (dæg).",
+   "up": "Läpimurto, aamunkoitto, uusi vaihe.",
+   "rev": null
+  },
+  {
+   "name": "Othala",
+   "lit": "Perintö, perintömaa",
+   "hist": "Esiintyy vain muinaisenglantilaisessa riimurunoelmassa (éþel, omaisuus). Riimua käytettiin SS-tunnuksissa ja sitä käyttävät nykyäänkin ääriryhmät.",
+   "up": "Koti, perintö, juuret, se mikä kestää.",
+   "rev": "Riita perinnöstä, juurettomuus, vanhat kaavat jotka sitovat."
+  }
+ ]
+}
